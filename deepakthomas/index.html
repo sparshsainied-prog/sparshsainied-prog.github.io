@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Deepak Thomas | Headless Horselord</title>
+<meta name="description" content="Headless Horselord, a medieval Indian dark fantasy graphic novel by Deepak Thomas, with art by Hazem Ameen.">
+<meta property="og:title" content="A homepage for Deepak Thomas, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Deepak Thomas and Headless Horselord, made by Sparsh Saini. Not his official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/deepakthomas/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23141414'/><rect x='3' y='3' width='11' height='26' fill='%23f2eee4'/><rect x='17' y='3' width='12' height='12' fill='%23a3302a'/><rect x='17' y='18' width='12' height='11' fill='%2367c0c4'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --ink: #141414;
+  --paper: #f2eee4;
+  --paper-2: #e3ddcf;
+  --rain: #67c0c4;
+  --sky: #a9dfe0;
+  --temple: #2f6a66;
+  --deep: #10292a;
+  --naga: #2e8a57;
+  --red: #a3302a;
+  --gold: #c99a3c;
+  --display: "Eczar", Georgia, serif;
+  --hand: "Kalam", "Comic Sans MS", cursive;
+  --gutter: clamp(1rem, 5vw, 4rem);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--hand); font-size: 1.12rem; line-height: 1.55; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; margin: 0; line-height: 1.02; letter-spacing: -.01em; }
+p { margin: 0 0 1rem; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+.wrap { max-width: 72rem; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Buttons are comic caption boxes: ink border, hard offset shadow */
+.btn { display: inline-block; padding: .55rem 1rem .45rem; background: #fff; color: var(--ink); border: 2.5px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); font-family: var(--hand); font-weight: 700; text-transform: uppercase; font-size: .98rem; letter-spacing: .02em; text-decoration: none; line-height: 1.25; }
+.btn:hover, .btn:focus-visible { background: var(--sky); }
+.btn.red { background: var(--red); color: #fff; }
+.btn.red:hover, .btn.red:focus-visible { background: var(--ink); }
+.row { display: flex; flex-wrap: wrap; gap: .9rem 1.1rem; align-items: center; }
+.quiet { font-weight: 700; text-underline-offset: .25em; }
+
+/* Who made this, first thing on the page */
+.top { position: absolute; z-index: 20; top: 0; left: 0; right: 0; }
+.made { margin: 0; padding: .45rem var(--gutter); background: var(--ink); color: var(--paper); font-size: .88rem; line-height: 1.35; text-align: center; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem var(--gutter); }
+.mark { font-family: var(--display); font-weight: 800; font-size: 1.3rem; text-decoration: none; }
+.bar nav { display: flex; gap: 1.2rem; font-weight: 700; font-size: 1rem; }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover { color: var(--red); }
+
+/* Hero: the Headless Horselord art starts as three ink-bordered comic panels,
+   each a close-up. Scrolling pulls them together until the gutters close and it is one splash page. */
+.hero { position: relative; height: 100svh; min-height: 38rem; }
+.js .hero { height: 330svh; }
+.stage { position: sticky; top: 0; height: 100svh; min-height: 38rem; overflow: hidden;
+  display: grid; grid-template-columns: var(--fw) minmax(0, 21rem); justify-content: center; align-items: center; gap: clamp(1.5rem, 3.5vw, 3.5rem);
+  padding: 6.4rem var(--gutter) 2rem; --fw: min(60vw, (100svh - 9rem) * 16 / 9);
+  background: var(--paper); }
+.frame { position: relative; width: var(--fw); aspect-ratio: 16 / 9; will-change: transform; }
+.panel { position: absolute; left: calc(var(--x) * 100%); top: calc(var(--y) * 100%); width: calc(var(--w) * 100%); height: calc(var(--h) * 100%); overflow: hidden; background: var(--ink); will-change: transform; }
+.art { position: absolute; left: calc(var(--x) / var(--w) * -100%); top: calc(var(--y) / var(--h) * -100%); width: calc(100% / var(--w)); height: calc(100% / var(--h)); will-change: transform; }
+.art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.edge { position: absolute; inset: 0; box-shadow: inset 0 0 0 3px var(--ink); pointer-events: none; will-change: opacity; }
+.pa { --x: 0; --y: 0; --w: .38; --h: 1; }
+.pb { --x: .38; --y: 0; --w: .62; --h: .52; }
+.pc { --x: .38; --y: .52; --w: .62; --h: .48; }
+.pa .art { transform-origin: 40% 2%; }
+.pb .art { transform-origin: 67% 17%; }
+.pc .art { transform-origin: 62% 72%; }
+.rain { position: absolute; inset: -40% 0 0; background: url(img/rain.png) 0 0 / 300px 300px repeat; opacity: 0; will-change: transform, opacity; pointer-events: none; }
+.cap { position: absolute; z-index: 3; left: 3%; top: 4%; max-width: 13rem; padding: .45rem .7rem .35rem; background: #f6e7b8; border: 2.5px solid var(--ink); font-family: var(--hand); font-weight: 700; text-transform: uppercase; font-size: clamp(.85rem, 1.3vw, 1.05rem); line-height: 1.25; will-change: transform, opacity; }
+
+.words { position: relative; }
+.kicker { font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; color: var(--red); margin-bottom: .4rem; }
+.words h1 { font-size: clamp(2.6rem, 4.6vw, 4.4rem); text-transform: uppercase; margin-bottom: .7rem; }
+.words h1 span { display: block; font-size: .42em; letter-spacing: .02em; color: var(--temple); margin-top: .35rem; }
+.words p.line { font-size: 1.1rem; margin-bottom: 1.3rem; }
+.end { will-change: transform, opacity; }
+
+/* Calm sections */
+.band { padding: clamp(4rem, 9vw, 7rem) 0; }
+h2 { font-size: clamp(2.2rem, 4.6vw, 3.6rem); margin-bottom: 1.1rem; text-transform: uppercase; }
+.book .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.book .hook { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.15; margin-bottom: 1.2rem; }
+.facts { list-style: none; padding: 0; margin: 0 0 1.6rem; border-top: 2.5px solid var(--ink); }
+.facts li { padding: .55rem 0; border-bottom: 1.5px solid rgba(20, 20, 20, .3); }
+.book figure { margin: 0; border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+
+.pages { background: var(--ink); color: var(--paper); }
+.pages h2 { color: #fff; }
+.strip { list-style: none; margin: 2.2rem 0 0; padding: 0 0 .6rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.strip img { width: 100%; height: auto; border: 3px solid var(--paper); }
+.strip p { font-size: .98rem; margin: .7rem 0 0; color: var(--paper-2); }
+
+.ks { background: var(--deep); color: var(--paper); }
+.ks .grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.ks .big { font-family: var(--display); font-weight: 800; font-size: clamp(4rem, 11vw, 8rem); line-height: .9; color: var(--rain); margin: 0; }
+.ks .big small { display: block; font-family: var(--hand); font-weight: 700; font-size: 1.1rem; color: var(--paper); text-transform: uppercase; letter-spacing: .04em; margin-top: .6rem; }
+.log { list-style: none; padding: 0; margin: 0 0 1.6rem; }
+.log li { display: grid; grid-template-columns: 4.4rem minmax(0, 1fr); gap: 1rem; padding: .7rem 0; border-bottom: 1.5px solid rgba(242, 238, 228, .22); }
+.log b { color: var(--gold); text-transform: uppercase; font-size: .95rem; }
+.ks .btn { box-shadow: 4px 4px 0 var(--rain); }
+
+.bharat .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); margin-top: 1.6rem; }
+.bharat article { border: 2.5px solid var(--ink); background: #fff; padding: 1.4rem 1.4rem .6rem; box-shadow: 6px 6px 0 var(--temple); }
+.bharat h3 { font-size: 1.6rem; margin-bottom: .5rem; }
+
+.about { background: var(--paper-2); }
+.about .grid { display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.about img { border: 3px solid var(--ink); filter: grayscale(1); }
+.about .lead { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 2.8vw, 2.2rem); line-height: 1.15; }
+
+.close { background: var(--red); color: #fff; text-align: center; }
+.close p.big { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 1; margin: 0 auto 1.6rem; }
+.close .row { justify-content: center; }
+.close .btn { box-shadow: 4px 4px 0 var(--ink); }
+footer { padding: 2.2rem 0 2.6rem; background: var(--ink); color: var(--paper-2); font-size: .95rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; }
+footer p { margin: 0; }
+
+@media (max-width: 820px) {
+  body { font-size: 1.06rem; }
+  .made { font-size: .8rem; }
+  .bar nav .wide { display: none; }
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); align-content: start; gap: 1.2rem; padding-top: 5.8rem; padding-bottom: 1rem; }
+  .frame { width: 100%; aspect-ratio: auto; height: 50svh; }
+  .art img { object-position: 50% 50%; }
+  .pa { --x: 0; --y: 0; --w: .48; --h: .5; }
+  .pb { --x: .48; --y: 0; --w: .52; --h: .5; }
+  .pc { --x: 0; --y: .5; --w: 1; --h: .5; }
+  .pa .art { transform-origin: 15% 22%; }
+  .pb .art { transform-origin: 85% 18%; }
+  .pc .art { transform-origin: 71% 74%; }
+  .cap { top: calc(100% + 2.2rem); left: 0; right: 0; max-width: none; text-align: center; font-size: 1.35rem; padding: .7rem .9rem .55rem; }
+  .words h1 { font-size: clamp(2.1rem, 10vw, 2.7rem); margin-bottom: .5rem; }
+  .words p.line { font-size: 1rem; margin-bottom: 1rem; }
+  .kicker { font-size: .85rem; }
+  .book .grid, .ks .grid, .bharat .grid, .about .grid { grid-template-columns: minmax(0, 1fr); }
+  .strip { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .strip li { flex: 0 0 72%; scroll-snap-align: start; }
+  .about img { max-width: 12rem; }
+}
+@media (max-height: 760px) and (min-width: 821px) { .words h1 { font-size: 3rem; } }
+</style>
+<style>:where(img){height:auto}</style>
+</head>
+<body>
+<div class="top" id="top">
+  <p class="made">A homepage idea made by Sparsh Saini for Deepak Thomas. Not their official site.</p>
+  <div class="bar">
+    <a class="mark" href="#top">Deepak Thomas</a>
+    <nav aria-label="Main">
+      <a href="#book">The book</a>
+      <a class="wide" href="#kickstarter">Kickstarter</a>
+      <a class="wide" href="#about">About</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero" aria-label="Headless Horselord by Deepak Thomas and Hazem Ameen">
+  <div class="stage">
+    <div class="frame" aria-hidden="true">
+      <div class="panel pa"><div class="art"><img src="img/splash.jpg" alt="" width="2200" height="1238" fetchpriority="high"></div><i class="edge"></i></div>
+      <div class="panel pb"><div class="art"><img src="img/splash.jpg" alt="" width="2200" height="1238"></div><i class="edge"></i></div>
+      <div class="panel pc"><div class="art"><img src="img/splash.jpg" alt="" width="2200" height="1238"></div><i class="edge"></i></div>
+      <div class="rain"></div>
+      <p class="cap">Betrayed. Executed. Forgotten.</p>
+    </div>
+
+    <div class="words">
+      <div class="end">
+        <p class="kicker">A medieval Indian dark fantasy graphic novel</p>
+        <h1>Headless Horselord <span>Volume 1: The Two Kings</span></h1>
+        <p class="line">A cursed kingdom. A monster king. A headless saviour. Written by Deepak Thomas, drawn by Hazem Ameen.</p>
+        <div class="row"><a class="btn red" href="https://mailchi.mp/0a49d63dccdc/headless-horselord-launch-team">Read chapter 1 free</a><a class="btn" href="#book">The book</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band book" id="book">
+  <div class="wrap grid">
+    <div>
+      <h2>The Two Kings</h2>
+      <p class="hook">An immortal revenant hunts demons through the cursed kingdom of Dakshina.</p>
+      <ul class="facts">
+        <li>164 pages, full colour</li>
+        <li>Volume 1 of a planned trilogy</li>
+        <li>Story by Deepak Thomas, art by Hazem Ameen</li>
+        <li>Sword and sorcery, inspired by medieval India</li>
+      </ul>
+      <div class="row"><a class="btn red" href="https://mailchi.mp/0a49d63dccdc/headless-horselord-launch-team">Read chapter 1 free</a><a class="btn" href="https://www.kickstarter.com/projects/headless-horselord/headless-horselord-volume-1">See it on Kickstarter</a></div>
+    </div>
+    <figure><img src="img/splash.jpg" alt="Art from Headless Horselord: the headless rider on a white horse swings his sword at a green demon on a temple roof in the rain" width="2200" height="1238" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="band pages" id="pages">
+  <div class="wrap">
+    <h2>Three pages in</h2>
+    <p>Hazem pencilled, inked and coloured every page. Here are three of them.</p>
+    <ul class="strip">
+      <li><img src="img/page-naga.jpg" alt="Comic page: a green serpent demon rears over the Horselord in a rainy forest, then he rides out as the ruins crash" width="760" height="1161" loading="lazy"><p>A serpent demon in the ruins, in the rain.</p></li>
+      <li><img src="img/page-monster.jpg" alt="Comic page: the Horselord on horseback beside a winged black beast on a battlefield" width="760" height="1161" loading="lazy"><p>On the battlefield.</p></li>
+      <li><img src="img/page-mango.jpg" alt="Comic page: the Horselord and his brother try to win over a frightened girl with a mango" width="760" height="1161" loading="lazy"><p>A quieter moment, and a mango.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band ks" id="kickstarter">
+  <div class="wrap grid">
+    <div>
+      <p class="big">236<small>backers on Kickstarter</small></p>
+    </div>
+    <div>
+      <h2>Funded three times over</h2>
+      <p>The campaign ran from 8 September to 13 October 2026 and raised CA$13,574 against a CA$4,000 goal. Kickstarter made it a Project We Love along the way.</p>
+      <ul class="log">
+        <li><b>9 Sep</b><span>Fully funded, a day in.</span></li>
+        <li><b>19 Sep</b><span>Art finished on every page.</span></li>
+        <li><b>3 Oct</b><span>Secret stretch goal: printed inner covers.</span></li>
+        <li><b>5 Oct</b><span>We made a map. Actually, two.</span></li>
+      </ul>
+      <p>The signed hardcover was a Kickstarter only edition.</p>
+      <a class="btn" href="https://www.kickstarter.com/projects/headless-horselord/headless-horselord-volume-1">Follow the project</a>
+    </div>
+  </div>
+</section>
+
+<section class="band bharat" id="novels">
+  <div class="wrap">
+    <h2>Also set in Bharat</h2>
+    <p>Before the Horselord, two epic fantasy novels from the last human realm of Triloka.</p>
+    <div class="grid">
+      <article><h3>Chandra</h3><p>The heir to the throne of Bharat, thought too weak to rule.</p></article>
+      <article><h3>Kautilya</h3><p>A princess born of a sacrifice to the gods, the only daughter of Bharat’s greatest warrior, who must lead a rebellion to restore her father’s legacy.</p></article>
+    </div>
+    <p style="margin-top:1.6rem"><a class="quiet" href="https://deepakthomaswriter.com/books/">Both books</a></p>
+  </div>
+</section>
+
+<section class="band about" id="about">
+  <div class="wrap grid">
+    <img src="img/deepak.jpg" alt="Deepak Thomas, smiling" width="600" height="600" loading="lazy">
+    <div>
+      <h2>Hi, I’m Deepak</h2>
+      <p class="lead">Indian mythology, blockbuster cinema and anime, all in one story.</p>
+      <p>I’m based in Toronto. I have an engineering degree and an MBA from IIM Calcutta, and writing is the side hustle I can’t stop thinking about.</p>
+      <p>When I’m not writing: quizzing, daydreaming, to-do lists, and thinking about war, politics and superhero casting.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band close">
+  <div class="wrap">
+    <p class="big">Ride with the Horselord</p>
+    <div class="row"><a class="btn" href="https://mailchi.mp/0a49d63dccdc/headless-horselord-launch-team">Read chapter 1 free</a><a class="btn" href="https://www.instagram.com/dthomaswrites/">@dthomaswrites</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Deepak Thomas. Not affiliated, not live. Art by Hazem Ameen, words and art belong to their owners.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero');
+  const $ = s => hero.querySelector(s);
+  const panels = [...hero.querySelectorAll('.panel')], arts = panels.map(p => p.firstElementChild);
+  const rain = $('.rain'), cap = $('.cap'), end = $('.end');
+  const c01 = v => Math.min(1, Math.max(0, v));
+  const ease = t => t * t * (3 - 2 * t);
+  // Start pose of each panel: spread on the page with gutters, a slight tilt, a close-up inside.
+  const start = [
+    { tx: -5, ty: 0, r: -1.4, s: .9, z: 2.1, from: .08 },
+    { tx: 4, ty: -5, r: 1.1, s: .88, z: 1.9, from: .2 },
+    { tx: 3, ty: 6, r: -.8, s: .88, z: 1.8, from: .32 }
+  ];
+  const edges = panels.map(p => p.querySelector('.edge')), frame = $('.frame'), words = $('.words');
+  const narrow = matchMedia('(max-width: 820px)');
+  const memo = new Map();
+  const set = (el, k, v) => { const key = el; let m = memo.get(key); if (!m) memo.set(key, m = {}); if (m[k] !== v) { m[k] = v; el.style[k] = v; } };
+  let shift = 0;
+  const measure = () => { shift = narrow.matches ? 0 : (words.offsetWidth + parseFloat(getComputedStyle(frame.parentNode).columnGap)) / 2; };
+  const draw = p => {
+    panels.forEach((el, i) => {
+      const a = start[i], k = ease(c01((p - a.from) / .42)), q = 1 - k;
+      set(el, 'transform', `translate(${(a.tx * q).toFixed(2)}%, ${(a.ty * q).toFixed(2)}%) rotate(${(a.r * q).toFixed(2)}deg) scale(${(1 - (1 - a.s) * q).toFixed(4)})`);
+      set(arts[i], 'transform', `scale(${(1 + (a.z - 1) * q).toFixed(4)})`);
+      set(edges[i], 'opacity', (1 - c01((p - .74) / .1)).toFixed(2));
+    });
+    const f = ease(c01((p - .6) / .25));
+    set(frame, 'transform', `translateX(${(shift * (1 - f)).toFixed(1)}px)`);
+    const r = c01((p - .55) / .2);
+    set(rain, 'opacity', (r * .55).toFixed(2));
+    set(rain, 'transform', `translate3d(${(-p * 27).toFixed(1)}%, ${(p * 100).toFixed(1)}%, 0)`);
+    const c = c01((p - .12) / .14);
+    set(cap, 'opacity', (1 - c).toFixed(2));
+    set(cap, 'transform', `translateY(${(-c * 1.2).toFixed(2)}rem)`);
+    const e = ease(c01((p - .76) / .2));
+    set(end, 'opacity', e.toFixed(3));
+    set(end, 'transform', `translateY(${((1 - e) * 1.4).toFixed(2)}rem)`);
+    set(end, 'visibility', e > 0 ? 'visible' : 'hidden');
+  };
+  measure();  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.classList.remove('js'); draw(1); rain.style.opacity = 0; cap.style.opacity = 0; return; }
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const run = hero.offsetHeight - innerHeight;
+    draw(run > 0 ? c01(-hero.getBoundingClientRect().top / run) : 1);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', () => { measure(); update(); });
+  update();
+})();
+</script>
+</body>
+</html>

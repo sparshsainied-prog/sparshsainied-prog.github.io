@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Melvin E. Edwards | Nuremberg, Mississippi</title>
+<meta name="description" content="Nuremberg, Mississippi, a literary legal drama by Melvin E. Edwards, in paperback and audiobook.">
+<meta property="og:title" content="A homepage for Melvin E. Edwards, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Melvin E. Edwards and Nuremberg, Mississippi, made by Sparsh Saini. Not his official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/melvineedwards/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%232b1a10'/><rect x='5' y='13' width='22' height='3' fill='%23a8272b'/><path d='M8 25h16' stroke='%23f3e6c8' stroke-width='2'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --walnut: #2b1a10;
+  --walnut-2: #3d2717;
+  --oak: #6b4527;
+  --paper: #f3e6c8;
+  --paper-2: #e2d0aa;
+  --file: #d8c59c;
+  --red: #a8272b;
+  --brass: #b08a4a;
+  --ink: #221510;
+  --display: "Playfair Display", Georgia, serif;
+  --type: "Courier Prime", "Courier New", monospace;
+  --gutter: clamp(1rem, 5vw, 4rem);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--walnut); color: var(--paper); font-family: var(--type); font-size: 1.08rem; line-height: 1.65; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; margin: 0; line-height: 1.04; }
+p { margin: 0 0 1rem; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+.wrap { max-width: 70rem; margin: 0 auto; padding: 0 var(--gutter); }
+.rule { width: 7rem; height: 3px; background: var(--red); border: 0; margin: 0 0 1.4rem; }
+
+/* Buttons: typed labels on case-file card, like the folder on the cover */
+.btn { display: inline-block; padding: .6rem 1.1rem .5rem; background: var(--file); color: var(--ink); border: 1px solid #a68f62; border-radius: 2px; box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .35); font-family: var(--type); font-weight: 700; font-size: .98rem; text-decoration: none; line-height: 1.3; }
+.btn:hover, .btn:focus-visible { background: var(--paper); }
+.btn.dark { background: var(--walnut); color: var(--paper); border-color: var(--brass); }
+.row { display: flex; flex-wrap: wrap; gap: .8rem 1.1rem; align-items: center; }
+.quiet { font-weight: 700; text-underline-offset: .25em; }
+
+.top { position: absolute; z-index: 20; top: 0; left: 0; right: 0; }
+.made { margin: 0; padding: .45rem var(--gutter); background: #170d07; color: var(--paper-2); font-size: .85rem; line-height: 1.35; text-align: center; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem var(--gutter); }
+.mark { font-family: var(--display); font-weight: 700; font-size: 1.3rem; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+.bar nav { display: flex; gap: 1.2rem; font-size: .98rem; }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover { color: var(--brass); }
+
+/* Hero: the view starts close on the COLORED sign, travels across the open doorway and the
+   empty judge's chair to the WHITE sign, then steps back to the whole cover. */
+.hero { position: relative; height: 100svh; min-height: 38rem; }
+.js .hero { height: 330svh; }
+.stage { position: sticky; top: 0; height: 100svh; min-height: 38rem; overflow: hidden;
+  display: grid; grid-template-columns: auto minmax(0, 27rem); justify-content: center; align-items: center; gap: clamp(2rem, 5vw, 5rem);
+  padding: 6.4rem var(--gutter) 1.6rem;
+  background: radial-gradient(ellipse 50% 50% at 35% 45%, rgba(243, 230, 200, .08), transparent 70%), var(--walnut); }
+.cover { position: relative; height: min(76svh, 46rem); aspect-ratio: 1; overflow: hidden; box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .55); }
+.cam { position: absolute; left: 0; top: 0; width: 100%; height: 100%; transform-origin: 0 0; will-change: transform; }
+.cam img { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.words { position: relative; }
+.open { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); font-family: var(--display); font-weight: 600; font-style: italic; font-size: clamp(1.5rem, 2.6vw, 2.2rem); line-height: 1.25; color: var(--paper); margin: 0; will-change: transform, opacity; }
+.end { will-change: transform, opacity; }
+.end .kind { font-family: var(--type); text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; color: var(--brass); margin-bottom: .6rem; }
+.end h1 { font-size: clamp(2.4rem, 4vw, 3.6rem); text-transform: uppercase; letter-spacing: .02em; margin-bottom: .9rem; }
+.end p { color: var(--paper-2); font-size: 1rem; }
+
+/* Calm sections */
+.band { padding: clamp(4rem, 9vw, 7rem) 0; }
+h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); margin-bottom: 1rem; }
+.case { background: var(--paper); color: var(--ink); }
+.case .grid { display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.case img { box-shadow: 0 1rem 2rem rgba(34, 21, 16, .35); }
+.case .lede { font-family: var(--display); font-weight: 600; font-size: clamp(1.35rem, 2.3vw, 1.7rem); line-height: 1.35; }
+.case .btn.dark { color: var(--paper); }
+.quotes { margin-top: 2rem; display: grid; gap: 1.2rem; }
+.quotes blockquote { margin: 0; padding-left: 1rem; border-left: 3px solid var(--red); font-style: italic; }
+.quotes cite { display: block; font-style: normal; font-size: .9rem; margin-top: .3rem; }
+
+.honours .seals { display: flex; flex-wrap: wrap; gap: 2rem 3rem; align-items: center; margin-top: 2rem; }
+.honours .seals figure { margin: 0; width: 9rem; text-align: center; font-size: .9rem; color: var(--paper-2); }
+.honours .seals img { width: 100%; height: auto; margin-bottom: .6rem; }
+
+.podcast { background: var(--walnut-2); }
+.podcast .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.places { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 2rem; }
+.places li { padding: .35rem 0; border-bottom: 1px dashed rgba(243, 230, 200, .25); break-inside: avoid; }
+
+.imprint { background: var(--paper-2); color: var(--ink); }
+.imprint .grid { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+
+.close { text-align: center; }
+.close p.big { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(1.9rem, 4.6vw, 3.2rem); line-height: 1.1; margin: 0 auto 1.4rem; max-width: 40rem; }
+.close .row { justify-content: center; }
+footer { padding: 2.2rem 0 2.6rem; background: #170d07; color: var(--paper-2); font-size: .92rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; }
+footer p { margin: 0; }
+
+@media (max-width: 820px) {
+  body { font-size: 1.02rem; }
+  .made { font-size: .78rem; }
+  .bar nav .wide { display: none; }
+  .mark { font-size: 1.1rem; }
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); justify-items: center; align-content: start; gap: 1.1rem; padding-top: 6rem; padding-bottom: 1rem; }
+  .cover { height: auto; width: 100%; max-width: 30rem; }
+  .words { width: 100%; }
+  .end h1 { font-size: 1.9rem; margin-bottom: .5rem; }
+  .end p { font-size: .95rem; margin-bottom: .8rem; line-height: 1.5; }
+  .end .kind { font-size: .75rem; margin-bottom: .3rem; }
+  .open { top: .4rem; transform: none; text-align: center; font-size: 1.45rem; }
+  .case .grid, .podcast .grid, .imprint .grid { grid-template-columns: minmax(0, 1fr); }
+  .case img { max-width: 13rem; }
+  .imprint img { max-width: 12rem; }
+  .honours .seals figure { width: 7rem; }
+}
+</style>
+<style>:where(img){height:auto}</style>
+</head>
+<body>
+<div class="top" id="top">
+  <p class="made">A homepage idea made by Sparsh Saini for Melvin E. Edwards. Not their official site.</p>
+  <div class="bar">
+    <a class="mark" href="#top">Melvin E. Edwards</a>
+    <nav aria-label="Main">
+      <a href="#book">The book</a>
+      <a class="wide" href="#podcast">Podcast</a>
+      <a class="wide" href="#imprint">Media Well Done</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero" aria-label="Nuremberg, Mississippi by Melvin E. Edwards">
+  <div class="stage">
+    <div class="cover">
+      <div class="cam">
+        <img src="img/court.jpg" alt="Cover of Nuremberg, Mississippi: courtroom doors marked COLORED and WHITE open on an empty judge's chair, a case file on the counter reads Logan v. Mississippi, 1965" width="1254" height="1254" fetchpriority="high">
+      </div>
+
+    </div>
+
+    <div class="words">
+      <p class="open" aria-hidden="true">A Black man is arrested for being out at night.</p>
+      <div class="end">
+        <p class="kind">A novel</p>
+        <h1>Nuremberg, Mississippi</h1>
+        <hr class="rule">
+        <p>A Black man is arrested for being out at night, and his case becomes a federal lawsuit against the machinery of Jim Crow.</p>
+        <div class="row"><a class="btn" href="https://www.lulu.com/shop/melvin-e-edwards/nuremberg-mississippi/paperback/product-dy7jznq.html">Paperback</a><a class="btn dark" href="https://libro.fm/audiobooks/9798240171932">Audiobook</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band case" id="book">
+  <div class="wrap grid">
+    <img src="img/paperback.jpg" alt="Paperback cover of Nuremberg, Mississippi: the courtroom doors with COLORED and WHITE signs, award seals at the top" width="384" height="576" loading="lazy">
+    <div>
+      <h2>The case</h2>
+      <hr class="rule">
+      <p class="lede">Attorney Silas Thorn tries to apply the precedents of the Nuremberg Trials to a Mississippi sundown town.</p>
+      <p>A literary legal drama set in the mid twentieth century. It looks at how state sanctioned discrimination worked: the complicity of the legal profession, and the bureaucratic habits that made atrocity invisible through official procedure and professional courtesy.</p>
+      <div class="row"><a class="btn dark" href="https://www.lulu.com/shop/melvin-e-edwards/nuremberg-mississippi/paperback/product-dy7jznq.html">Paperback on Lulu</a><a class="quiet" href="https://libro.fm/audiobooks/9798240171932">Audiobook on Libro.fm</a></div>
+      <div class="quotes">
+        <blockquote>“A deeply original examination of justice in America.”<cite>Sarah Bird, novelist</cite></blockquote>
+        <blockquote>“Perfectly captures my own experience of growing up in Jim Crow Mississippi.”<cite>Dr. Alan E. Godwin, psychologist, author of Ties That Blind</cite></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band honours" id="honours">
+  <div class="wrap">
+    <h2>On the record</h2>
+    <p>“If you only have time to read one more book this year, it must be Nuremberg, Mississippi!” Readers’ Favorite, five stars.</p>
+    <div class="seals">
+      <figure><img src="img/literary-titan.png" alt="Literary Titan Gold Book Award seal" width="260" height="266" loading="lazy">Literary Titan Gold Book Award</figure>
+      <figure><img src="img/readers-favorite.png" alt="Readers' Favorite five stars seal" width="260" height="260" loading="lazy">Readers’ Favorite, five stars</figure>
+      <figure><img src="img/podcast-award.png" alt="American Writing Awards Podcast of the Year 2026 winner seal" width="260" height="260" loading="lazy">Podcast of the Year 2026, American Writing Awards</figure>
+    </div>
+  </div>
+</section>
+
+<section class="band podcast" id="podcast">
+  <div class="wrap grid">
+    <div>
+      <h2>Stories from Real Life</h2>
+      <hr class="rule">
+      <p>The podcast, and the 2026 Podcast of the Year at the American Writing Awards.</p>
+      <a class="btn" href="https://mediawelldonellc.com">Latest episode</a>
+    </div>
+    <div>
+      <h3 style="font-size:1.6rem;margin-bottom:.8rem">Where the book has been</h3>
+      <p>Nuremberg, Mississippi went on tour in Europe, to places tied to its themes of justice, law and public reckoning.</p>
+      <ul class="places">
+        <li>Nuremberg</li><li>London</li><li>Amsterdam</li><li>Innsbruck</li><li>Heidelberg</li><li>Lucerne</li><li>Venice</li><li>Rome</li><li>Paris</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band imprint" id="imprint">
+  <div class="wrap grid">
+    <img src="img/baker-battery.jpg" alt="Cover of Baker Battery Goes to War by Patrick W. Naughton Jr., with an America 250 seal" width="600" height="754" loading="lazy">
+    <div>
+      <h2>Media Well Done</h2>
+      <hr class="rule">
+      <p>My imprint is publishing Baker Battery Goes to War by Patrick W. Naughton Jr.: a firsthand WWII story, nearly lost to history, with lost writings and original soldier sketches from an artillery unit.</p>
+      <div class="row"><a class="btn dark" href="https://www.barnesandnoble.com/w/baker-battery-goes-to-war-patrick-w-naughton-jr/1151325193?ean=9798996933013">Pre-order at Barnes &amp; Noble</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band close">
+  <div class="wrap">
+    <p class="big">The court is in session</p>
+    <div class="row"><a class="btn" href="https://www.lulu.com/spotlight/mediawelldone">All my books on Lulu</a><a class="btn dark" href="https://www.instagram.com/edwards21228/">@edwards21228</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Melvin E. Edwards. Not affiliated, not live. The covers, seals and words belong to their owners.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero');
+  const box = hero.querySelector('.cover'), cam = hero.querySelector('.cam'), open = hero.querySelector('.open'), end = hero.querySelector('.end');
+  const c01 = v => Math.min(1, Math.max(0, v));
+  const ease = t => t * t * (3 - 2 * t);
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const memo = new Map();
+  const set = (el, k, v) => { let m = memo.get(el); if (!m) memo.set(el, m = {}); if (m[k] !== v) { m[k] = v; el.style[k] = v; } };
+  // Camera stops, as fractions of the cover: the COLORED sign, across the empty bench to the WHITE sign, then the whole cover.
+  const K = [{ x: .21, y: .18, s: 2.8 }, { x: .8, y: .2, s: 2.8 }, { x: .5, y: .5, s: 1 }];
+  let W = 0;
+  const measure = () => { W = box.offsetWidth; };
+  const draw = p => {
+    const a = ease(c01((p - .06) / .36)), b = ease(c01((p - .44) / .34));
+    const x = b > 0 ? lerp(K[1].x, K[2].x, b) : lerp(K[0].x, K[1].x, a);
+    const y = b > 0 ? lerp(K[1].y, K[2].y, b) : lerp(K[0].y, K[1].y, a);
+    const s = b > 0 ? lerp(K[1].s, K[2].s, b) : lerp(K[0].s, K[1].s, a);
+    let tx = W / 2 - x * W * s, ty = W / 2 - y * W * s;
+    tx = Math.min(0, Math.max(W - W * s, tx)); ty = Math.min(0, Math.max(W - W * s, ty));
+    set(cam, 'transform', `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px) scale(${s.toFixed(4)})`);
+    set(open, 'opacity', (1 - c01((p - .5) / .14)).toFixed(2));
+    const e = ease(c01((p - .76) / .2));
+    set(end, 'opacity', e.toFixed(3));
+    set(end, 'transform', `translateY(${((1 - e) * 1.4).toFixed(2)}rem)`);
+    set(end, 'visibility', e > 0 ? 'visible' : 'hidden');
+  };
+  measure();
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.classList.remove('js'); draw(1); open.style.opacity = 0; return; }
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const run = hero.offsetHeight - innerHeight;
+    draw(run > 0 ? c01(-hero.getBoundingClientRect().top / run) : 1);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', () => { measure(); update(); });
+  update();
+})();
+</script>
+</body>
+</html>

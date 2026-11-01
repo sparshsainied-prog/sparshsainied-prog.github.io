@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Logan D. Irons | Embers of the Empire</title>
+<meta name="description" content="Epic dark fantasy and historical fantasy from Logan D. Irons: Embers of the Empire and The Oaths of Blood Saga.">
+<meta property="og:title" content="A homepage for Logan D. Irons, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Logan D. Irons and Embers of the Empire, made by Sparsh Saini. Not his official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/logandirons/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23101a22'/><path d='M4 22c6-6 10 2 16-4s8-2 8-2v10H4z' fill='%233fbf8f'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --storm: #101a22;
+  --storm-2: #0a1117;
+  --slate: #26394a;
+  --wyrm: #3fbf8f;
+  --wyrm-2: #1f6b54;
+  --silver: #e6e9ea;
+  --mist: #a9b8c2;
+  --cloak: #7a2320;
+  --ember: #e0703a;
+  --display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --text: "Spectral", Georgia, serif;
+  --gutter: clamp(1rem, 5vw, 4rem);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--storm); color: var(--silver); font-family: var(--text); font-size: 1.12rem; line-height: 1.65; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.wrap { max-width: 70rem; margin: 0 auto; padding: 0 var(--gutter); }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; line-height: 1.1; color: #fff; }
+p { margin: 0 0 1rem; }
+:focus-visible { outline: 2px solid var(--wyrm); outline-offset: 3px; }
+/* buttons in the title's silver: engraved plate with a dark rim */
+.btn { display: inline-block; padding: .7rem 1.3rem .65rem; background: linear-gradient(#f4f5f5, #b9c1c5); color: #111a20; font-family: var(--display); font-weight: 600; font-size: .98rem; letter-spacing: .08em; text-decoration: none; line-height: 1.2;
+  border: 1px solid #5b6a73; box-shadow: inset 0 1px 0 #fff, 0 .3rem 0 #0a1117; }
+.btn:hover, .btn:focus-visible { background: linear-gradient(#ffffff, #d4dadd); }
+.quiet { font-style: italic; text-underline-offset: .22em; text-decoration-thickness: 1px; color: var(--mist); }
+.quiet:hover { color: #fff; }
+.row { display: flex; flex-wrap: wrap; gap: .9rem 1.4rem; align-items: center; }
+
+.top { position: absolute; z-index: 20; top: 0; left: 0; right: 0; }
+.made { margin: 0; padding: .45rem var(--gutter); background: var(--storm-2); color: var(--mist); font-size: .9rem; line-height: 1.35; text-align: center; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .75rem var(--gutter); }
+.mark { font-family: var(--display); font-size: 1.2rem; letter-spacing: .1em; text-decoration: none; color: #fff; }
+.bar nav { display: flex; gap: 1.3rem; font-family: var(--display); font-size: .9rem; letter-spacing: .06em; }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover, .bar nav a:focus-visible { color: var(--wyrm); }
+
+/* Hero: you are aboard the longship. The view rolls and heaves on the swell, the spray breaks over the lens, then the sea settles and the cover sits level. */
+.hero { position: relative; height: 100svh; min-height: 40rem; }
+.js .hero { height: 380svh; }
+.stage { position: sticky; top: 0; height: 100svh; min-height: 40rem; overflow: hidden;
+  display: grid; grid-template-columns: auto minmax(0, 30rem); justify-content: center; align-items: center; gap: clamp(2rem, 6vw, 6rem);
+  padding: 6.4rem var(--gutter) 2rem; background: radial-gradient(ellipse 55% 60% at 35% 50%, #1f3342, var(--storm) 72%); }
+.cover { position: relative; height: min(80svh, 52rem); aspect-ratio: 1024 / 1536; overflow: hidden; box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, .55); }
+.sea { position: absolute; inset: 0; width: 100%; height: 100%; transform-origin: 46% 52%; will-change: transform; }
+.spray { position: absolute; left: -30%; bottom: -12%; width: 150%; opacity: 0; will-change: transform, opacity; }
+.words { position: relative; min-height: 18rem; width: min(30rem, 38vw); }
+.say { font-family: var(--display); font-size: clamp(1.8rem, 3.2vw, 2.8rem); line-height: 1.2; color: #fff; margin: 0; text-wrap: balance; }
+.say em { font-style: normal; color: var(--wyrm); }
+.js .say, .js .end { position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%; will-change: transform, opacity; }
+.js .say { opacity: 0; }
+.js .s1 { opacity: 1; }
+.end .kicker { font-family: var(--display); letter-spacing: .14em; font-size: .9rem; color: var(--wyrm); margin-bottom: .4rem; }
+.end h1 { font-size: clamp(2.3rem, 4.2vw, 3.4rem); margin-bottom: .8rem; }
+.js .end { visibility: hidden; opacity: 0; }
+
+/* Calm sections */
+.band { padding: clamp(4rem, 9vw, 7rem) 0; }
+h2 { font-size: clamp(2rem, 4.4vw, 3.3rem); margin-bottom: 1.2rem; }
+.book { background: var(--slate); }
+.book .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.book .lede { font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.5; }
+.book blockquote { margin: 1.6rem 0; padding: 1rem 1.2rem; border-left: 3px solid var(--wyrm); background: rgba(10, 17, 23, .35); font-style: italic; }
+.book blockquote cite { display: block; font-style: normal; font-family: var(--display); font-size: .85rem; letter-spacing: .1em; color: var(--wyrm); margin-top: .5rem; }
+.book img { box-shadow: 0 1.4rem 2.6rem rgba(0, 0, 0, .5); }
+
+.saga { background: linear-gradient(#1a0f0c, #2a1610); color: #f1e4da; }
+.saga .intro { max-width: 44rem; margin-bottom: 2.6rem; }
+.saga h2 { color: #fff; }
+.shelf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(.8rem, 2vw, 1.6rem); }
+.shelf a { display: block; text-decoration: none; }
+.shelf img { box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, .5); }
+.shelf span { display: block; margin-top: .6rem; font-size: .95rem; line-height: 1.3; }
+.shelf a:hover span { color: var(--ember); text-decoration: underline; }
+.saga .row { margin-top: 2.2rem; }
+.saga .btn { background: linear-gradient(#f2c9a8, #c98a5c); border-color: #5a2d1a; color: #1a0f0c; }
+
+.awards .grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.ledger { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(230, 233, 234, .25); }
+.ledger li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; padding: .9rem 0; border-bottom: 1px solid rgba(230, 233, 234, .25); }
+.ledger b { font-family: var(--display); font-weight: 600; color: var(--wyrm); font-size: .95rem; letter-spacing: .06em; }
+
+.about { background: var(--storm-2); }
+.about .grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.about img { box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5); }
+.about .were { font-family: var(--display); font-size: clamp(1.3rem, 2.4vw, 1.8rem); line-height: 1.3; color: #fff; margin-top: 1.4rem; }
+
+.brigade { text-align: center; background: radial-gradient(ellipse 60% 90% at 50% 100%, var(--wyrm-2), var(--storm) 70%); }
+.brigade p.big { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.2; color: #fff; max-width: 44rem; margin: 0 auto 1rem; }
+.brigade .row { justify-content: center; margin-top: 1.4rem; }
+footer { padding: 2.2rem 0 2.6rem; background: var(--storm-2); color: var(--mist); font-size: .98rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; }
+footer p { margin: 0; }
+
+@media (max-width: 820px) {
+  body { font-size: 1.06rem; }
+  .made { font-size: .82rem; }
+  .bar { padding-top: .55rem; padding-bottom: .55rem; }
+  .mark { font-size: 1.05rem; }
+  .bar nav .wide { display: none; }
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); justify-items: center; align-content: start; gap: 1rem; padding-top: 5.8rem; padding-bottom: 1rem; }
+  .cover { height: min(58svh, 32rem); }
+  .words { width: 100%; height: 100%; min-height: 0; text-align: center; }
+  .js .say, .js .end { top: 0; translate: none; }
+  .say { font-size: clamp(1.35rem, 6vw, 1.75rem); }
+  .end h1 { font-size: 1.8rem; margin-bottom: .3rem; }
+  .end p { font-size: 1rem; margin-bottom: .8rem; line-height: 1.45; }
+  .end .row { justify-content: center; }
+  .book .grid, .awards .grid, .about .grid { grid-template-columns: minmax(0, 1fr); }
+  .book img { max-width: 16rem; order: -1; }
+  .shelf { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .about img { max-width: 14rem; }
+}
+</style>
+<style>:where(img){height:auto}</style>
+</head>
+<body>
+<div class="top" id="top">
+  <p class="made">A homepage idea made by Sparsh Saini for Logan D. Irons. Not their official site.</p>
+  <div class="bar">
+    <a class="mark" href="#top">Logan D. Irons</a>
+    <nav aria-label="Main">
+      <a class="wide" href="#embers">Embers</a>
+      <a href="#saga">The saga</a>
+      <a class="wide" href="#about">About</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero" aria-label="Embers of the Empire by Logan D. Irons">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <img class="sea" src="img/plate.jpg" alt="" width="1024" height="1536" fetchpriority="high">
+      <img class="spray" src="img/spray.webp" alt="" width="760" height="420">
+    </div>
+    <div class="words">
+      <p class="say s1">The Lothlian Empire <em>collapsed in a week.</em></p>
+      <p class="say s2">Beyond the ruins, the ancient horrors that destroyed it <em>are stirring again.</em></p>
+      <div class="end">
+        <p class="kicker">Out now</p>
+        <h1>Embers of the Empire</h1>
+        <p>A horse lord, a sword-maiden and a disgraced imperial knight, on the burning frontier of the Reaves. In ebook, paperback, hardcover and audiobook.</p>
+        <div class="row"><a class="btn" href="https://www.amazon.com/Embers-Empire-Logan-D-Irons-ebook/dp/B0H7XSVVVX">Order Embers</a><a class="quiet" href="https://logandirons.com/shop/">Signed hardcover special edition</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band book" id="embers">
+  <div class="wrap grid">
+    <div>
+      <h2>Embers of the Empire</h2>
+      <p class="lede">The Lothlian Empire collapsed in a week. Now, on the burning frontier of the Reaves, three battered souls are drawn toward the war that will decide what rises from its ashes.</p>
+      <p>A ruthless horse lord fighting to preserve his people, a sword-maiden trapped between duty and freedom, and a disgraced imperial knight searching for one last chance at redemption. Warring clans, northern raiders, and the monstrous Wyrm Lords. Survival will demand a terrible price.</p>
+      <blockquote>A ruthless, character-driven story with multiple intriguing POVs, unforgettable clashes, horrifying monsters and so much more.<cite>FanFiAddict</cite></blockquote>
+      <div class="row"><a class="btn" href="https://www.amazon.com/Embers-Empire-Logan-D-Irons-ebook/dp/B0H7XSVVVX">Order on Amazon</a><a class="quiet" href="https://logandirons.com/shop/">Hardcover special edition from Logan’s shop</a></div>
+    </div>
+    <img src="img/c-embers.jpg" alt="Cover of Embers of the Empire: a sword-maiden on a longship's prow faces a green sea wyrm in a storm" width="560" height="840" loading="lazy">
+  </div>
+</section>
+
+<section class="band saga" id="saga">
+  <div class="wrap">
+    <div class="intro">
+      <h2>The Oaths of Blood Saga</h2>
+      <p>Gritty historical fantasy: real battles and real empires, with something far more primeval underneath. From Norman mercenaries to Constantinople on the eve of the Fourth Crusade, and on to Hastings.</p>
+    </div>
+    <ul class="shelf">
+      <li><a href="https://www.amazon.com/dp/B0CT44MNQF"><img src="img/c-oaths.jpg" alt="Cover of Oaths of Blood" width="560" height="810" loading="lazy"><span>Oaths of Blood</span></a></li>
+      <li><a href="https://www.amazon.com/Sands-Bone-Oaths-Blood-Saga-ebook/dp/B0D365P3JR/"><img src="img/c-sands.jpg" alt="Cover of Sands of Bone" width="560" height="811" loading="lazy"><span>Sands of Bone</span></a></li>
+      <li><a href="https://www.amazon.com/Pass-Empires-Oaths-Blood-Saga-ebook/dp/B0F3RQB9KD"><img src="img/c-pass.jpg" alt="Cover of Pass of Empires" width="560" height="894" loading="lazy"><span>Pass of Empires</span></a></li>
+      <li><a href="https://www.amazon.com/gp/product/B0F3KQWDTK"><img src="img/c-wolves.jpg" alt="Cover of City of Wolves" width="560" height="810" loading="lazy"><span>City of Wolves</span></a></li>
+      <li><a href="https://logandirons.com/shop/"><img src="img/c-bridge.jpg" alt="Cover of Bridge of Kings" width="560" height="894" loading="lazy"><span>Bridge of Kings</span></a></li>
+      <li><a href="https://www.amazon.com/Wolves-Hastings-Logan-D-Irons-ebook/dp/B0FNNHHYK3"><img src="img/c-hastings.jpg" alt="Cover of Wolves of Hastings" width="560" height="893" loading="lazy"><span>Wolves of Hastings</span></a></li>
+    </ul>
+    <div class="row"><a class="btn" href="https://logandirons.com/shop/">All the saga, from Logan’s shop</a><a class="quiet" href="https://www.amazon.com/stores/Logan-D.-Irons/author/B0CT64TSK9">Amazon author page</a></div>
+  </div>
+</section>
+
+<section class="band awards" id="awards">
+  <div class="wrap grid">
+    <div>
+      <h2>On the mead hall wall</h2>
+      <p>“Irons has masterly control of his narrative.” Historical Novel Society</p>
+    </div>
+    <ul class="ledger">
+      <li><b>2026</b><div>1st place, Chaucer Award, pre-1750 historical fiction, Chanticleer International Book Awards, for City of Wolves</div></li>
+      <li><b>2026</b><div>Bronze medal, Mythology Fiction, Readers’ Favorite, for Wolves of Hastings</div></li>
+      <li><b>2025</b><div>1st place, Chaucer Award, for Sands of Bone</div></li>
+      <li><b>2025</b><div>Gold medal, Readers’ Favorite, for Sands of Bone</div></li>
+      <li><b>2024</b><div>Historical Fantasy Award, The Coffee Pot Book Club</div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band about" id="about">
+  <div class="wrap grid">
+    <div>
+      <img src="img/c-logan.jpg" alt="Logan D. Irons in a fur-collared cloak, holding a longsword point down" width="560" height="820" loading="lazy">
+      <p class="were">He’s convinced his nieces he’s a werewolf.</p>
+    </div>
+    <div>
+      <h2>About Logan</h2>
+      <p>Logan has travelled to more than 50 countries for work and pleasure. He lifted in Arnold’s childhood gym in Austria, asked his wife to marry him in an abandoned castle in Ireland, bartered for jewellery in a Kuwaiti souk, sang German songs quite poorly at Oktoberfest, and burned a Viking ship at Hogmanay in Edinburgh.</p>
+      <p>George R.R. Martin, Steven Pressfield, Bernard Cornwell and Robert Jordan fill his shelves and shape his books. He lives in Virginia, which has enough history to keep him busy until the end of time, with his wife, children, and a dog named Ronin the Barbarian. When there is free time, he throws axes, usually at targets.</p>
+      <div class="row"><a class="quiet" href="https://www.instagram.com/logandirons/">Instagram</a><a class="quiet" href="https://www.facebook.com/profile.php?id=61556101928851">Facebook</a><a class="quiet" href="https://logandirons.com/news-2/">News</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band brigade">
+  <div class="wrap">
+    <p class="big">Join the Irons Brigade</p>
+    <p>Subscribe to the newsletter and get a free ebook.</p>
+    <div class="row"><a class="btn" href="https://logandirons.com/subscribe/">Get the free ebook</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Logan D. Irons. Not affiliated, not live. The covers, photo and words are his.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero');
+  const $ = s => hero.querySelector(s);
+  const sea = $('.sea'), spray = $('.spray'), s1 = $('.s1'), s2 = $('.s2'), end = $('.end');
+  const c01 = v => Math.min(1, Math.max(0, v));
+  const ease = t => t * t * (3 - 2 * t);
+  const last = new Map();
+  const set = (el, k, v) => { const key = el.className + k; if (last.get(key) !== v) { last.set(key, v); el.style[k] = v; } };
+  const fade = (el, a, b, c, d, p) => { const v = c01((p - a) / (b - a)) * (1 - c01((p - c) / (d - c))); set(el, 'opacity', v.toFixed(2)); set(el, 'transform', `translateY(${((1 - v) * (p < c ? 1 : -1)).toFixed(2)}rem)`); };
+  const draw = p => {
+    // Swell: three big rolls that die away as the sea settles.
+    const calm = ease(c01(p / .74)), amp = 1 - calm;
+    const ph = p * Math.PI * 2 * 2.6;
+    const roll = 9 * amp * Math.sin(ph);
+    const heave = 5 * amp * Math.sin(ph + 1.3);
+    const rad = Math.abs(roll) * Math.PI / 180;
+    const need = Math.cos(rad) + 1.5 * Math.sin(rad) + Math.abs(heave) / 50;
+    const zoom = 1.55 - .55 * ease(c01(p / .8));
+    const s = Math.max(zoom, need);
+    set(sea, 'transform', `translateY(${heave.toFixed(2)}%) rotate(${roll.toFixed(2)}deg) scale(${s.toFixed(4)})`);
+    // Spray breaks over the lens on each crest, then thins out.
+    const crest = Math.max(0, Math.sin(ph + 1.3)) * amp;
+    set(spray, 'opacity', (crest * .85).toFixed(2));
+    set(spray, 'transform', `translate(${(-6 * Math.sin(ph)).toFixed(1)}%, ${(30 - 34 * crest).toFixed(1)}%) rotate(${(-roll * 1.6).toFixed(2)}deg)`);
+    fade(s1, -1, 0, .22, .3, p);
+    fade(s2, .32, .4, .6, .68, p);
+    const k = ease(c01((p - .76) / .16));
+    set(end, 'opacity', k.toFixed(2));
+    set(end, 'transform', `translateY(${((1 - k) * 1.4).toFixed(2)}rem)`);
+    set(end, 'visibility', k > 0 ? 'visible' : 'hidden');
+  };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.remove('js');
+    s1.style.display = s2.style.display = 'none'; spray.style.display = 'none';
+    return;
+  }
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const run = hero.offsetHeight - innerHeight;
+    draw(run > 0 ? c01(-hero.getBoundingClientRect().top / run) : 1);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
+</body>
+</html>

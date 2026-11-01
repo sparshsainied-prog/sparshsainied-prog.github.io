@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lorisa D. Wiedenheft | Charly's Volcano and The Oasis</title>
+<meta name="description" content="Heartfelt, hopeful middle grade verse novels from Lorisa D. Wiedenheft: The Oasis and its sequel, Charly's Volcano.">
+<meta property="og:title" content="A homepage for Lorisa D. Wiedenheft, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Lorisa D. Wiedenheft and Charly's Volcano, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/lorisadwiedenheft/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23263130'/><path d='M6 26a10 10 0 0 1 20 0M10 26a6 6 0 0 1 12 0M14 26a2 2 0 0 1 4 0' fill='none' stroke='%23cfe3dd' stroke-width='2'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --ground: #263130;
+  --ground-2: #1c2524;
+  --mint: #cfe3dd;
+  --mint-2: #9dbdb5;
+  --sky: #dbe8e6;
+  --grass: #5f9a5c;
+  --leaf: #3f7d63;
+  --brick: #c4693b;
+  --brick-2: #9c4f2a;
+  --oasis: #e8eccb;
+  --oasis-ink: #29402f;
+  --ink: #1f2a29;
+  --display: "Chewy", "Comic Sans MS", system-ui, sans-serif;
+  --text: "Nunito", system-ui, sans-serif;
+  --gutter: clamp(1rem, 5vw, 4rem);
+  --scallop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Cg fill='none' stroke='%23cfe3dd' stroke-width='1.6'%3E%3Cpath d='M2 24a22 22 0 0 1 44 0M8 24a16 16 0 0 1 32 0M14 24a10 10 0 0 1 20 0M20 24a4 4 0 0 1 8 0'/%3E%3Cpath d='M-22 12a22 22 0 0 1 44 0M-16 12a16 16 0 0 1 32 0M-10 12a10 10 0 0 1 20 0M26 12a22 22 0 0 1 44 0M32 12a16 16 0 0 1 32 0M38 12a10 10 0 0 1 20 0'/%3E%3C/g%3E%3C/svg%3E");
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--mint); font-family: var(--text); font-size: 1.1rem; line-height: 1.65; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.wrap { max-width: 70rem; margin: 0 auto; padding: 0 var(--gutter); }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; line-height: 1.05; letter-spacing: .01em; }
+p { margin: 0 0 1rem; }
+:focus-visible { outline: 3px solid var(--brick); outline-offset: 3px; }
+/* buttons drawn by hand, like the cover's lettering */
+.btn { display: inline-block; padding: .6rem 1.25rem .65rem; background: var(--mint); color: var(--ground); font-family: var(--display); font-size: 1.25rem; line-height: 1.2; text-decoration: none;
+  border: 2.5px solid var(--ground); border-radius: 18px 7px 16px 9px / 9px 15px 8px 17px; box-shadow: 3px 3px 0 var(--ground-2); }
+.btn:hover, .btn:focus-visible { background: #fff; }
+.quiet { font-weight: 800; text-underline-offset: .25em; text-decoration-thickness: 2px; }
+.row { display: flex; flex-wrap: wrap; gap: .9rem 1.4rem; align-items: center; }
+
+.top { position: absolute; z-index: 20; top: 0; left: 0; right: 0; }
+.made { margin: 0; padding: .45rem var(--gutter); background: var(--ground-2); color: var(--mint-2); font-size: .88rem; line-height: 1.35; text-align: center; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem var(--gutter); }
+.mark { font-family: var(--display); font-size: 1.45rem; text-decoration: none; color: #fff; }
+.bar nav { display: flex; gap: 1.3rem; font-weight: 800; font-size: 1rem; }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover, .bar nav a:focus-visible { color: #fff; text-decoration: underline; }
+
+/* Hero: the cover's title erupts out of the dark grass under Charly */
+.hero { position: relative; height: 100svh; min-height: 40rem; }
+.js .hero { height: 380svh; }
+.stage { position: sticky; top: 0; height: 100svh; min-height: 40rem; overflow: hidden;
+  display: grid; grid-template-columns: minmax(0, 30rem) auto; justify-content: center; align-items: center; gap: clamp(2rem, 6vw, 6rem);
+  padding: 6.4rem var(--gutter) 2rem; background: radial-gradient(ellipse 60% 55% at 70% 45%, #314140, var(--ground) 70%); }
+.cover { position: relative; height: min(80svh, 52rem); aspect-ratio: 1133 / 1800; overflow: hidden; border-radius: 3px; box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, .45); background: var(--ground); }
+.cam { position: absolute; inset: 0; transform-origin: 53% 33%; will-change: transform; }
+.cam > img { position: absolute; }
+.plate { inset: 0; width: 100%; height: 100%; }
+.lt { will-change: transform, opacity; }
+.words { position: relative; min-height: 18rem; width: min(30rem, 38vw); }
+.say { font-family: var(--display); font-size: clamp(2.1rem, 4vw, 3.4rem); line-height: 1.08; color: #fff; margin: 0; text-wrap: balance; }
+.say em { font-style: normal; color: var(--brick); }
+.js .say, .js .end { position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%; will-change: transform, opacity; }
+.end h1 { font-size: clamp(2.4rem, 4.6vw, 3.6rem); color: #fff; margin-bottom: .6rem; }
+.end p { color: var(--mint); margin-bottom: 1.3rem; }
+.js .end { visibility: hidden; opacity: 0; }
+
+/* Calm sections */
+.band { padding: clamp(4rem, 9vw, 7rem) 0; position: relative; }
+h2 { font-size: clamp(2.3rem, 5vw, 3.8rem); margin-bottom: 1.1rem; }
+.edge::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 24px; background: var(--scallop) repeat-x; background-size: 48px 24px; opacity: .55; }
+
+.oasis { background: var(--oasis); color: var(--oasis-ink); }
+.oasis .grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(2.5rem, 6vw, 6rem); align-items: center; }
+.oasis img { box-shadow: 0 1.4rem 2.6rem rgba(41, 64, 47, .35); border-radius: 3px; }
+.oasis .kicker { font-family: var(--display); font-size: 1.5rem; color: var(--leaf); margin-bottom: .4rem; }
+.oasis .lede { font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.5; }
+.oasis .btn { background: var(--leaf); color: #fff; border-color: var(--oasis-ink); box-shadow: 3px 3px 0 var(--oasis-ink); }
+.oasis .btn:hover { background: var(--oasis-ink); }
+.prizes { list-style: none; padding: 0; margin: 1.6rem 0; display: grid; gap: .7rem; }
+.prizes li { padding: .7rem 1rem; border: 2px solid rgba(41, 64, 47, .3); border-radius: 14px 6px 12px 8px / 8px 12px 6px 14px; font-weight: 700; }
+.shops { font-size: .98rem; }
+
+.volcano { background: var(--sky); color: var(--ink); }
+.volcano .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(2.5rem, 6vw, 6rem); align-items: center; }
+.volcano .big { font-family: var(--display); font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.15; color: var(--ground); }
+.volcano img { box-shadow: 0 1.4rem 2.6rem rgba(31, 42, 41, .35); border-radius: 3px; }
+.volcano .btn { background: var(--ground); color: var(--mint); }
+.volcano .btn:hover { background: var(--brick-2); color: #fff; }
+
+.events { background: var(--brick); color: #fff8ef; }
+.events .grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.events h2 { color: #fff; }
+.dates { list-style: none; padding: 0; margin: 0; border-top: 2px solid rgba(255, 248, 239, .4); }
+.dates li { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 1.2rem; padding: 1.15rem 0; border-bottom: 2px solid rgba(255, 248, 239, .4); }
+.dates b { font-family: var(--display); font-weight: 400; font-size: 2.3rem; line-height: .95; }
+.dates b small { display: block; font-family: var(--text); font-weight: 800; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-top: .3rem; }
+.dates strong { display: block; font-size: 1.15rem; }
+.dates span { font-size: .98rem; opacity: .92; }
+.visits { margin-top: 1.8rem; }
+.events .btn { background: #fff8ef; color: var(--brick-2); border-color: var(--brick-2); box-shadow: 3px 3px 0 var(--brick-2); }
+
+.poems { background: var(--ground); }
+.poems .grid { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; max-width: 52rem; }
+.poems img { border-radius: 3px; }
+.poems h2 { font-size: clamp(2rem, 4vw, 3rem); color: #fff; }
+
+.about { background: var(--ground-2); }
+.about .grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.about img { border-radius: 46% 54% 50% 50% / 52% 48% 52% 48%; border: 4px solid var(--mint); }
+.about h2 { color: #fff; }
+.about .hills { font-family: var(--display); font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; color: var(--mint); margin-top: 1.4rem; }
+
+.close { text-align: center; background: var(--ground); }
+.close p.big { font-family: var(--display); font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1.1; color: #fff; max-width: 40rem; margin: 0 auto 1.6rem; }
+footer { padding: 2.2rem 0 2.6rem; background: var(--ground-2); color: var(--mint-2); font-size: .95rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; }
+footer p { margin: 0; }
+
+@media (max-width: 820px) {
+  body { font-size: 1.05rem; }
+  .made { font-size: .8rem; }
+  .bar { padding-top: .5rem; padding-bottom: .5rem; }
+  .mark { font-size: 1.25rem; }
+  .bar nav .wide { display: none; }
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); justify-items: center; align-content: start; gap: 1rem; padding-top: 5.8rem; padding-bottom: 1rem; }
+  .cover { height: min(56svh, 30rem); grid-row: 1; }
+  .words { grid-row: 2; width: 100%; height: 100%; min-height: 0; text-align: center; }
+  .js .say, .js .end { top: 0; translate: none; }
+  .say { font-size: clamp(1.7rem, 7.4vw, 2.2rem); }
+  .end h1 { font-size: 2rem; margin-bottom: .3rem; }
+  .end p { font-size: .98rem; margin-bottom: .8rem; line-height: 1.45; }
+  .end .row { justify-content: center; }
+  .btn { font-size: 1.1rem; }
+  .oasis .grid, .volcano .grid, .events .grid, .about .grid { grid-template-columns: minmax(0, 1fr); }
+  .oasis img, .volcano img { max-width: 15rem; }
+  .volcano img { order: -1; }
+  .about img { max-width: 13rem; }
+  .poems .grid { grid-template-columns: 7rem minmax(0, 1fr); }
+}
+@media (max-height: 760px) and (min-width: 821px) { .say { font-size: 2.6rem; } }
+</style>
+<style>:where(img){height:auto}</style>
+</head>
+<body>
+<div class="top" id="top">
+  <p class="made">A homepage idea made by Sparsh Saini for Lorisa D. Wiedenheft. Not their official site.</p>
+  <div class="bar">
+    <a class="mark" href="#top">Lorisa D. Wiedenheft</a>
+    <nav aria-label="Main">
+      <a class="wide" href="#oasis">Books</a>
+      <a href="#events">Events</a>
+      <a class="wide" href="#about">About</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero" aria-label="Charly's Volcano by Lorisa D. Wiedenheft">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="plate" src="img/plate.webp" alt="" width="1133" height="1800" fetchpriority="high">
+        <img class="lt" src="img/t1-0.png" alt="" width="147" height="171" style="left:8.826%;top:70.556%;width:12.974%">
+        <img class="lt" src="img/t1-1.png" alt="" width="135" height="175" style="left:22.330%;top:70.556%;width:11.915%">
+        <img class="lt" src="img/t1-2.png" alt="" width="121" height="173" style="left:34.687%;top:70.667%;width:10.680%">
+        <img class="lt" src="img/t1-3.png" alt="" width="125" height="181" style="left:45.984%;top:70.333%;width:11.033%">
+        <img class="lt" src="img/t1-4.png" alt="" width="215" height="178" style="left:57.723%;top:70.389%;width:18.976%">
+        <img class="lt" src="img/t1-5.png" alt="" width="144" height="187" style="left:77.229%;top:70.111%;width:12.710%">
+        <img class="lt" src="img/t2-6.png" alt="" width="134" height="176" style="left:8.914%;top:80.778%;width:11.827%">
+        <img class="lt" src="img/t2-7.png" alt="" width="148" height="183" style="left:20.653%;top:80.833%;width:13.063%">
+        <img class="lt" src="img/t2-8.png" alt="" width="232" height="186" style="left:34.510%;top:80.556%;width:20.477%">
+        <img class="lt" src="img/t2-9.png" alt="" width="102" height="181" style="left:55.340%;top:80.722%;width:9.003%">
+        <img class="lt" src="img/t2-10.png" alt="" width="127" height="188" style="left:65.225%;top:80.500%;width:11.209%">
+        <img class="lt" src="img/t2-11.png" alt="" width="153" height="190" style="left:76.787%;top:80.167%;width:13.504%">
+      </div>
+    </div>
+    <div class="words">
+      <p class="say s1">Friendships are changing. <em>Bullies are circling.</em></p>
+      <p class="say s2">Charly’s emotions feel like a volcano that’s <em>ready to explode.</em></p>
+      <div class="end">
+        <h1>Charly’s Volcano</h1>
+        <p>The sequel to The Oasis. A coming-of-age story in verse about courage, healing, and finding your place in the world.</p>
+        <div class="row"><a class="btn" href="https://bookshop.org/p/books/charly-s-volcano-lorisa-d-wiedenheft/bbf05b07124bacb8?ean=9798951247001">Get Charly’s Volcano</a><a class="quiet" href="#oasis">Start with The Oasis</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band oasis edge" id="oasis">
+  <div class="wrap grid">
+    <img src="img/oasis.webp" alt="Cover of The Oasis: a girl and her brother on a wooden bench under green trees, looking at a small house" width="625" height="1000" loading="lazy">
+    <div>
+      <p class="kicker">Book one, a novel in verse</p>
+      <h2>The Oasis</h2>
+      <p class="lede">It is the summer of 1992 in small-town North Carolina. Ten-year-old Charly Harding has had a rough life.</p>
+      <p>Her parents died when she was five, and she and her little brother Matty moved three hours away to live with Granny. Then their double-wide trailer burns to the ground, and the three of them move into a dingy motel called The Oasis, which ain’t no oasis. With her birthday looming, Charly tries to stay positive and thankful, and leans on close friends for help.</p>
+      <ul class="prizes">
+        <li>Silver medal, The Wishing Shelf Book Awards, 2026</li>
+        <li>First place, ACFW KidLit Contest, Published Middle Grade Fiction</li>
+      </ul>
+      <div class="row"><a class="btn" href="https://www.orangehatpublishing.com/product/the-oasis/">Get The Oasis</a></div>
+      <p class="shops" style="margin-top:1rem">Also at <a href="https://bookshop.org/book/9781645387855">Bookshop</a>, <a href="https://www.barnesandnoble.com/s/9781645387855">Barnes &amp; Noble</a> and <a href="https://www.amazon.com/dp/1645387852">Amazon</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band volcano" id="volcano">
+  <div class="wrap grid">
+    <div>
+      <h2>Charly’s Volcano</h2>
+      <p class="big">Will she lose everything that matters to her?</p>
+      <p>Friendships are changing. Bullies are circling. Charly’s emotions feel like a volcano that’s ready to explode. A relatable coming-of-age story about courage, healing, and finding one’s place in the world, out now from Yellow Birch Press.</p>
+      <div class="row"><a class="btn" href="https://bookshop.org/p/books/charly-s-volcano-lorisa-d-wiedenheft/bbf05b07124bacb8?ean=9798951247001">Get it from Bookshop</a></div>
+      <p class="shops" style="margin-top:1rem">Also at <a href="https://www.barnesandnoble.com/w/charlys-volcano-lorisa-d-wiedenheft/1151472946?ean=9798951247001">Barnes &amp; Noble</a> and <a href="https://a.co/d/0h7FAzob">Amazon</a>.</p>
+    </div>
+    <img src="img/volcano.webp" alt="Cover of Charly's Volcano: Charly hides her face behind a tree while children play basketball and cheer outside a brick school" width="1133" height="1800" loading="lazy">
+  </div>
+</section>
+
+<section class="band events edge" id="events">
+  <div class="wrap grid">
+    <div>
+      <h2>Come and find me</h2>
+      <p>I’ll be signing both Charly books around Wisconsin this winter. Come and say hello.</p>
+    </div>
+    <div>
+      <ul class="dates">
+        <li><b>7<small>Nov</small></b><div><strong>SE Wisconsin Festival of Books</strong><span>Waukesha. Saturday 7 November.</span></div></li>
+        <li><b>5<small>Dec</small></b><div><strong>Author meet and greet, WordHaven Bookhouse</strong><span>Sheboygan. Saturday 5 December, 12 to 3pm.</span></div></li>
+        <li><b>12<small>Dec</small></b><div><strong>Author meet and greet, Literatus &amp; Co.</strong><span>Watertown. Saturday 12 December, 10am to 1pm.</span></div></li>
+      </ul>
+      <div class="visits row"><a class="btn" href="https://lorisadwiedenheft.com/author-visits">Book a school or library visit</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band poems" id="poems">
+  <div class="wrap grid">
+    <img src="img/reflections.webp" alt="Cover of Reflections: a face drawn in a few black lines on soft blue" width="972" height="1500" loading="lazy">
+    <div>
+      <h2>Reflections</h2>
+      <p>Before Charly, there were poems: about family, childhood, relationships, and growing up in the hills of West Virginia in the middle of the natural world.</p>
+      <a class="quiet" href="https://lorisadwiedenheft.com/books/reflections-a-collection-of-poetry-by-lorisa-d-wiedenheft-lorisa-d-wiedenheft/B09YTZ71V9">Find Reflections</a>
+    </div>
+  </div>
+</section>
+
+<section class="band about" id="about">
+  <div class="wrap grid">
+    <div>
+      <img src="img/lorisa.webp" alt="Lorisa D. Wiedenheft smiling on a cream sofa" width="750" height="750" loading="lazy">
+      <p class="hills">From the heart of the Appalachian mountains to Wisconsin.</p>
+    </div>
+    <div>
+      <h2>Hi, I’m Lorisa.</h2>
+      <p>I write heartfelt, hopeful stories about finding strength through life’s challenges.</p>
+      <p>I grew up in West Virginia. I have a B.A. in Special Education and an M.Ed. as a Reading Specialist, and my background is working with children and adults with developmental disabilities. When I became a mother I stepped away from that work for a while, and found that my real dream was to be a writer.</p>
+      <p>My first books were poetry, Love Complications and then Reflections. After years of learning, writing, critiquing and editing, The Oasis came out with Orange Hat Publishing in May 2025, and Charly’s story carries on in Charly’s Volcano.</p>
+      <p>I live in Wisconsin, and I love my daily matcha, embroidery, long walks, and any chance to be near water.</p>
+      <div class="row"><a class="quiet" href="https://www.instagram.com/lorisadwiedenheft">Instagram</a><a class="quiet" href="https://substack.com/@lorisadwiedenheft">Substack</a><a class="quiet" href="https://www.facebook.com/lorisadwiedenheft">Facebook</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band close edge">
+  <div class="wrap">
+    <p class="big">Heartfelt, hopeful stories about finding strength through life’s challenges.</p>
+    <div class="row" style="justify-content:center"><a class="btn" href="#oasis">Start with The Oasis</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Lorisa D. Wiedenheft. Not affiliated, not live. The covers, photo and words are hers.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero');
+  const cam = hero.querySelector('.cam'), s1 = hero.querySelector('.s1'), s2 = hero.querySelector('.s2'), end = hero.querySelector('.end');
+  const lts = [...hero.querySelectorAll('.lt')];
+  const c01 = v => Math.min(1, Math.max(0, v));
+  const ease = t => t * t * (3 - 2 * t);
+  // Volcano order: bottom line first, from the middle outward.
+  const meta = lts.map(el => { const l = parseFloat(el.style.left), w = parseFloat(el.style.width), top = parseFloat(el.style.top);
+    const cx = l + w / 2; return { el, d: Math.abs(cx - 50) / 50 * .34 + (top < 75 ? .22 : 0), spin: (cx - 50) * .5 }; });
+  const last = new Map();
+  const set = (el, k, v) => { const key = el.className + k; if (last.get(key) !== v) { last.set(key, v); el.style[k] = v; } };
+  const fade = (el, a, b, c, d, p) => { const v = c01((p - a) / (b - a)) * (1 - c01((p - c) / (d - c))); set(el, 'opacity', v.toFixed(2)); set(el, 'transform', `translateY(${((1 - v) * (p < c ? 1 : -1)).toFixed(2)}rem)`); };
+  const draw = p => {
+    // Pull back from Charly's hidden face to the whole cover.
+    const z = ease(c01(p / .42));
+    // Pressure builds: the cover trembles before the title breaks out.
+    const r = c01((p - .36) / .16) * (1 - c01((p - .6) / .1));
+    const jx = Math.sin(p * 900) * 3 * r, jy = Math.cos(p * 1300) * 2 * r;
+    cam.style.transform = `translate(${jx.toFixed(2)}px, ${jy.toFixed(2)}px) scale(${(2.3 - 1.3 * z).toFixed(4)})`;
+    // The letters erupt from under the grass, over-fly, and drop into their printed places.
+    for (const m of meta) {
+      const t = c01((p - .44 - m.d * .5) / .2);
+      let y, rot;
+      if (t < .55) { const u = 1 - Math.pow(1 - t / .55, 2); y = 170 - 230 * u; rot = m.spin * (1 - u) * .6; }
+      else { const u = (t - .55) / .45; y = -60 * Math.cos(u * Math.PI * .5) * (1 - u) + Math.sin(u * Math.PI * 2.2) * -8 * (1 - u); rot = 0; if (u === 1) y = 0; }
+      const tf = `translateY(${y.toFixed(1)}%) rotate(${rot.toFixed(1)}deg)`, op = c01(t / .12).toFixed(2);
+      if (tf !== m.tf) { m.el.style.transform = m.tf = tf; }
+      if (op !== m.op) { m.el.style.opacity = m.op = op; }
+    }
+    fade(s1, -1, 0, .2, .3, p);
+    fade(s2, .3, .38, .58, .66, p);
+    const e = ease(c01((p - .76) / .16));
+    set(end, 'opacity', e.toFixed(2));
+    set(end, 'transform', `translateY(${((1 - e) * 1.4).toFixed(2)}rem)`);
+    set(end, 'visibility', e > 0 ? 'visible' : 'hidden');
+  };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.remove('js');
+    s1.style.display = s2.style.display = 'none';
+    cam.style.transform = 'none'; return;
+  }
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const run = hero.offsetHeight - innerHeight;
+    draw(run > 0 ? c01(-hero.getBoundingClientRect().top / run) : 1);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
+</body>
+</html>
