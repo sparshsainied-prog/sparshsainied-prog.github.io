@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sue Michalowski | Brave New Game</title>
+<meta name="description" content="Brave New Game, a middle-grade basketball novel by S.K. Michalowski, with school visits for grades 5 to 9.">
+<meta property="og:title" content="A homepage for Sue Michalowski, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Sue Michalowski and Brave New Game, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/suemichalowski/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2316192e'/><path d='M5 7h7v8h7M5 25h7v-10M19 11h8v8h-8z' stroke='%23f7c765' stroke-width='2.4' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root { --navy:#16192e; --court:#b27a35; --maple:#e7c48c; --orange:#e8642a; --gold:#f7c765; --glass:#3f5f66; --pack:#463522; --cream:#f5edde; --ink:#1a1712;
+  --display:"Archivo Black","Arial Black",sans-serif; --text:"Bitter",Georgia,serif; --gutter:clamp(1rem,5vw,4rem); }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--navy); color:var(--cream); font-family:var(--text); font-size:1.1rem; line-height:1.6; overflow-x:hidden; }
+img { display:block; max-width:100%; height:auto; }
+a { color:inherit; }
+:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+h1,h2,h3 { font-family:var(--display); font-weight:400; margin:0; line-height:1.06; text-transform:uppercase; }
+p { margin:0 0 1rem; }
+.wrap { max-width:70rem; margin:0 auto; padding:0 var(--gutter); }
+.made { position:absolute; z-index:20; top:0; left:0; right:0; margin:0; padding:.45rem var(--gutter); background:#0c0e1b; color:var(--maple); font-size:.86rem; line-height:1.35; text-align:center; }
+
+/* buttons: the brass name plate on Charlie's backpack */
+.btn { display:inline-block; padding:.6rem 1.15rem; background:var(--ink); color:var(--gold); font-family:var(--display); font-size:.95rem; letter-spacing:.03em; text-transform:uppercase; text-decoration:none; line-height:1.25; border:2px solid var(--gold); border-radius:.3rem; box-shadow:inset 0 0 0 2px var(--ink), inset 0 0 0 3px rgba(247,199,101,.5); }
+.btn:hover,.btn:focus-visible { background:var(--gold); color:var(--ink); }
+.quiet { font-weight:600; text-underline-offset:.2em; }
+.row { display:flex; flex-wrap:wrap; gap:.9rem 1.3rem; align-items:center; }
+
+/* Hero: up from Charlie's name on his bag to the bracket on the backboard, which plays itself out to the final. */
+.hero { position:relative; height:100svh; min-height:40rem; }
+.js .hero { height:430svh; }
+.stage { position:sticky; top:0; height:100svh; min-height:40rem; overflow:hidden; display:grid; grid-template-columns:auto minmax(0,30rem); justify-content:center; align-items:center; gap:clamp(2rem,6vw,6rem); padding:3rem var(--gutter) 2rem; background:var(--navy); }
+.cover { position:relative; height:min(84svh,54rem); aspect-ratio:1698/2622; overflow:hidden; box-shadow:0 1.2rem 2.8rem rgba(0,0,0,.6); }
+.cam { position:absolute; inset:0; transform-origin:0 0; will-change:transform; }
+.cam > img { position:absolute; will-change:transform,opacity; max-width:none; }
+.plate { inset:0; width:100%; height:100%; }
+.real { position:absolute; inset:0; width:100%; height:100%; opacity:0; will-change:opacity; }
+.words { position:relative; z-index:2; min-height:18rem; width:min(30rem,38vw); }
+.say { font-family:var(--display); text-transform:uppercase; font-size:clamp(1.6rem,2.8vw,2.4rem); line-height:1.12; margin:0; color:var(--gold); text-wrap:balance; }
+.js .say,.js .end { position:absolute; left:0; right:0; top:50%; translate:0 -50%; will-change:transform,opacity; }
+.js .say { opacity:0; } .js .s1 { opacity:1; }
+.end .kicker { color:var(--gold); font-style:italic; margin-bottom:.25rem; }
+.end h1 { font-size:clamp(2.4rem,4.4vw,3.6rem); color:var(--orange); margin-bottom:.7rem; }
+.js .end { visibility:hidden; opacity:0; }
+
+/* The bracket as the contents button */
+.brk { position:fixed; z-index:30; left:1rem; bottom:1rem; }
+.brkbtn { display:block; width:4rem; height:3.4rem; padding:.35rem; background:var(--ink); border:2px solid var(--gold); border-radius:.3rem; cursor:pointer; }
+.brkbtn svg { display:block; width:100%; height:100%; }
+.brk ul { position:absolute; left:0; bottom:4rem; margin:0; padding:.7rem 1rem .7rem 1.2rem; min-width:13rem; list-style:none; background:var(--ink); border:2px solid var(--gold); border-radius:.3rem; }
+.brk li { border-left:2px solid var(--gold); padding:.25rem 0 .25rem .7rem; }
+.brk a { font-weight:600; text-decoration:none; }
+.brk a:hover { color:var(--gold); }
+
+/* Calm */
+.band { padding:clamp(4rem,9vw,7rem) 0; }
+h2 { font-size:clamp(1.9rem,4.2vw,3.1rem); margin-bottom:1.1rem; }
+.story { background:var(--pack); }
+.story .grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr); gap:clamp(2rem,6vw,5rem); align-items:center; }
+.story h2 { color:var(--gold); }
+.story .lede { font-size:clamp(1.25rem,2.2vw,1.55rem); line-height:1.4; }
+
+.calls { background:var(--maple); color:var(--ink); }
+.calls h2 { color:var(--ink); }
+.call { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr); gap:.4rem 2rem; padding:1.1rem 0; border-top:3px solid var(--ink); align-items:baseline; margin:0; }
+.call q { quotes:none; font-size:clamp(1.15rem,2.2vw,1.45rem); line-height:1.35; font-weight:600; }
+.call cite { font-style:normal; font-size:.95rem; }
+.call cite b { display:block; font-family:var(--display); font-weight:400; text-transform:uppercase; font-size:.95rem; }
+
+.visits { background:var(--orange); color:var(--ink); }
+.visits h2 { color:var(--ink); }
+.visits .tri { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(1rem,3vw,2.2rem); margin:1.6rem 0 2rem; }
+.visits h3 { font-size:1.1rem; margin-bottom:.4rem; line-height:1.15; }
+.visits .tri p { margin:0; font-size:1.02rem; }
+.visits .btn { background:var(--ink); }
+.visits .btn:hover { background:var(--navy); color:var(--gold); }
+
+.sue .grid { display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); gap:clamp(2rem,6vw,5rem); align-items:center; }
+.sue img { border-radius:.3rem; }
+
+.final { background:var(--glass); text-align:center; }
+.box { display:inline-block; max-width:38rem; padding:clamp(1.4rem,4vw,2.4rem); border:3px solid var(--gold); position:relative; }
+.box::after { content:""; position:absolute; left:50%; top:100%; width:3px; height:clamp(2rem,6vw,4rem); background:var(--gold); }
+.final { padding-bottom:calc(clamp(4rem,9vw,7rem) + 2rem); }
+.box h2 { color:var(--gold); }
+.box a.mail { overflow-wrap:anywhere; font-weight:600; }
+footer { padding:2.2rem 0 5.4rem; background:#0c0e1b; color:var(--maple); font-size:.96rem; }
+footer .wrap { display:flex; flex-wrap:wrap; gap:.8rem 2rem; justify-content:space-between; }
+footer p { margin:0; }
+
+@media (max-width:820px) {
+  body { font-size:1.04rem; }
+  .made { font-size:.8rem; }
+  .stage { grid-template-columns:minmax(0,1fr); grid-template-rows:auto minmax(0,1fr); justify-items:center; align-content:start; gap:1rem; padding-top:3.6rem; padding-bottom:1rem; }
+  .cover { height:min(56svh,32rem); overflow:visible; box-shadow:none; }
+  .stage::after { content:""; position:absolute; z-index:1; inset:58% 0 0; background:linear-gradient(transparent,var(--navy) 22%); pointer-events:none; }
+  .real { box-shadow:0 1rem 2rem rgba(0,0,0,.6); }
+  .words { width:100%; height:100%; min-height:0; text-align:center; }
+  .js .say,.js .end { top:0; translate:none; }
+  .say { font-size:clamp(1.25rem,5.6vw,1.6rem); }
+  .end .kicker { margin:0; font-size:.94rem; }
+  .end h1 { font-size:1.75rem; margin-bottom:.3rem; }
+  .end p { font-size:.94rem; line-height:1.38; margin-bottom:.7rem; }
+  .end .row { justify-content:center; }
+  .story .grid,.sue .grid,.visits .tri,.call { grid-template-columns:minmax(0,1fr); }
+  .story img { max-width:15rem; }
+}
+</style>
+</head>
+<body>
+<p class="made" id="top">A homepage idea made by Sparsh Saini for Sue Michalowski. Not their official site.</p>
+<nav class="brk" aria-label="Contents">
+  <button class="brkbtn" aria-expanded="false" aria-controls="brkmenu" aria-label="Contents"><svg viewBox="0 0 48 32" fill="none" stroke="#f7c765" stroke-width="2.4"><path d="M2 5h10v9h10M2 23h10v-9M46 5H36v9H26M46 23H36v-9"/><path d="M24 14v-4"/><rect x="19" y="2" width="10" height="8"/></svg></button>
+  <ul id="brkmenu" hidden>
+    <li><a href="#story">The story</a></li>
+    <li><a href="#calls">What they’re saying</a></li>
+    <li><a href="#visits">School visits</a></li>
+    <li><a href="#sue">Sue</a></li>
+    <li><a href="#signed">Signed copies</a></li>
+  </ul>
+</nav>
+<main>
+<section class="hero" aria-label="Brave New Game by S.K. Michalowski">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="plate" src="img/plate.jpg" alt="" width="1200" height="1853" fetchpriority="high">
+        <img class="rd" src="img/b0.webp" alt="" width="668" height="334" style="left:22.333%;top:24.771%;width:55.667%;opacity:0">
+        <img class="rd" src="img/b1.webp" alt="" width="593" height="334" style="left:25.500%;top:24.771%;width:49.417%;opacity:0">
+        <img class="rd" src="img/b2.webp" alt="" width="497" height="326" style="left:29.500%;top:25.148%;width:41.417%;opacity:0">
+        <img class="rd" src="img/b3.webp" alt="" width="367" height="323" style="left:34.917%;top:25.364%;width:30.583%;opacity:0">
+        <img class="rd" src="img/b4.webp" alt="" width="256" height="155" style="left:39.500%;top:24.393%;width:21.333%;opacity:0">
+        <img class="rd" src="img/b5.webp" alt="" width="138" height="154" style="left:43.667%;top:24.393%;width:11.500%;opacity:0">
+        <img class="fig" src="img/charlie.webp" alt="" width="705" height="1033" style="left:27.333%;top:44.253%;width:58.750%">
+      </div>
+      <img class="real" src="img/cover.jpg" alt="" width="1200" height="1853">
+    </div>
+    <div class="words">
+      <p class="say s1">Charlie Gold is thirteen, six foot two and more mathlete than athlete.</p>
+      <p class="say s2">One brawl, one viral video. So he starts crunching the numbers.</p>
+      <div class="end">
+        <p class="kicker">Let the games begin.</p>
+        <h1>Brave New Game</h1>
+        <p>Charlie wants to be a basketball star like his late father. When that crashes, his number-crunching might get an underdog college team, and him, back on track.</p>
+        <div class="row"><a class="btn" href="https://bookshop.org/p/books/brave-new-game/2554115e273311dc?ean=9798901742969">Bookshop.org</a><a class="quiet" href="https://www.amazon.com/dp/B0HHBZTG3Y">Amazon</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band story" id="story">
+  <div class="wrap grid">
+    <div>
+      <h2>For the kids who love the game from the bench</h2>
+      <p class="lede">I’ve been a teacher and school librarian for 16 years, and sports books are how a lot of the boys in my classroom started reading.</p>
+      <p>Charlie uses calculus to tutor the team’s star player and statistics to scout recruits. He’s lovable, and he also makes poor decisions, lies and cheats. Teens make mistakes.</p>
+    </div>
+    <img src="img/c-book.jpg" alt="Cover of Brave New Game: a boy with a backpack and a basketball faces a tournament bracket on a backboard" width="640" height="988" loading="lazy">
+  </div>
+</section>
+
+<section class="band calls" id="calls">
+  <div class="wrap">
+    <h2>From the sidelines</h2>
+    <blockquote class="call"><q>Pure gold.</q><cite><b>Seth Davis</b>College basketball analyst, CBS Sports</cite></blockquote>
+    <blockquote class="call"><q>Basketball is an art form: part ballet, part chess.</q><cite><b>Eric Davis</b>University of Houston, Final Four team captain, 1982 Phi Slama Jama</cite></blockquote>
+    <blockquote class="call"><q>Authentic family dynamics and character-building grit enliven this engaging coming-of-age tale.</q><cite><b>Kirkus Reviews</b></cite></blockquote>
+  </div>
+</section>
+
+<section class="band visits" id="visits">
+  <div class="wrap">
+    <h2>Book me for your school</h2>
+    <p>Grades 5 to 9. Every visit comes with a book signing.</p>
+    <div class="tri">
+      <div><h3>The big room</h3><p>A presentation in the library, gym or theatre, 40 to 60 minutes, with books signed in advance.</p></div>
+      <div><h3>Gym class</h3><p>A custom lesson plan that mixes writing exercises with physical activity, up to an hour.</p></div>
+      <div><h3>ELA class</h3><p>A smaller session for a single English language arts group.</p></div>
+    </div>
+    <a class="btn" href="mailto:michalowskiwriter@gmail.com?subject=Author%20Visit%20Request">Ask about a visit</a>
+  </div>
+</section>
+
+<section class="band sue" id="sue">
+  <div class="wrap grid">
+    <img src="img/sue.jpg" alt="Sue Michalowski on a lakefront path with a curly-haired dog, a city skyline behind her" width="720" height="960" loading="lazy">
+    <div>
+      <h2>Hi, I’m Sue</h2>
+      <p>My son has had a mind for numbers and stats since he was five. Now that love has turned into a career. My nephew and my son both work in college sports, and their world is where Charlie’s came from.</p>
+      <div class="row"><a class="quiet" href="https://literarytitan.com/2026/10/10/that-love-has-turned-into-a-career/">Read my Literary Titan interview</a><a class="quiet" href="https://www.instagram.com/skmichalowski/">Instagram</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band final" id="signed">
+  <div class="wrap">
+    <div class="box">
+      <h2>A signed copy</h2>
+      <p>Email me with the subject “Ordering a signed copy” and I’ll sort it out.</p>
+      <a class="btn" href="mailto:michalowskiwriter@gmail.com?subject=Ordering%20a%20signed%20copy">Order a signed copy</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Sue Michalowski. Not affiliated, not live. The cover, photo and words are hers.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const btn=document.querySelector('.brkbtn'),menu=document.getElementById('brkmenu');
+  const toggle=o=>{menu.hidden=!o;btn.setAttribute('aria-expanded',o);};
+  btn.addEventListener('click',()=>toggle(menu.hidden));
+  menu.addEventListener('click',()=>toggle(false));
+  const hero=document.querySelector('.hero');const $=s=>hero.querySelector(s);
+  const cam=$('.cam'),fig=$('.fig'),real=$('.real'),s1=$('.s1'),s2=$('.s2'),end=$('.end'),box=$('.cover');
+  const rounds=[...hero.querySelectorAll('.rd')];
+  const c01=v=>Math.min(1,Math.max(0,v)),ease=t=>t*t*(3-2*t);
+  const last=new Map();
+  const set=(el,k,v)=>{let m=last.get(el);if(!m){m={};last.set(el,m);}if(m[k]!==v){m[k]=v;el.style[k]=v;}};
+  const fade=(el,a,b,c,d,p)=>{const v=c01((p-a)/(b-a))*(1-c01((p-c)/(d-c)));set(el,'opacity',v.toFixed(2));set(el,'transform',`translateY(${((1-v)*(p<c?1:-1)).toFixed(2)}rem)`);};
+  // each round is called: a hard flash, a dip, then on
+  const call=t=>t<=0?0:t<.3?1:t<.5?.45:1;
+  let bw=1,bh=1,zA=2.2,zB=1.7;
+  const measure=()=>{bw=box.offsetWidth;bh=box.offsetHeight;const phone=innerWidth<=820;zA=phone?2.3:2.05;zB=phone?1.45:1.5;};
+  const lerp=(a,b,t)=>a+(b-a)*t;
+  const view=(z,fx,fy)=>{ // put cover point (fx,fy) at the middle of the box, keep the box covered on desktop
+    let tx=bw/2-fx*bw*z,ty=bh/2-fy*bh*z;
+    tx=Math.min(0,Math.max(bw-bw*z,tx));ty=Math.min(0,Math.max(bh-bh*z,ty));
+    return{tx,ty,z};};
+  const draw=p=>{
+    const a=view(zA,.5,.655),b=view(zB,.5,.335),e=view(1,.5,.5);
+    const up=ease(c01((p-.03)/.27)),back=ease(c01((p-.66)/.16));
+    const v={tx:lerp(lerp(a.tx,b.tx,up),e.tx,back),ty:lerp(lerp(a.ty,b.ty,up),e.ty,back),z:lerp(lerp(a.z,b.z,up),e.z,back)};
+    set(cam,'transform',`translate3d(${v.tx.toFixed(1)}px,${v.ty.toFixed(1)}px,0) scale(${v.z.toFixed(4)})`);
+    // Charlie stands nearer the lens: he drops out of the shot faster, and comes back as the view pulls out
+    set(fig,'transform',`translate3d(0,${((up-back)*.045*bh).toFixed(1)}px,0)`);
+    rounds.forEach((r,i)=>{const at=i<5?.3+i*.058:.6;set(r,'opacity',call(c01((p-at)/.05)).toFixed(2));});
+    set(real,'opacity',ease(c01((p-.8)/.08)).toFixed(2));
+    fade(s1,-1,0,.2,.26,p); fade(s2,.34,.4,.6,.66,p);
+    const en=ease(c01((p-.8)/.1));
+    set(end,'opacity',en.toFixed(2)); set(end,'transform',`translateY(${((1-en)*1.4).toFixed(2)}rem)`); set(end,'visibility',en>0?'visible':'hidden');
+  };
+  measure();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.documentElement.classList.remove('js');
+    s1.style.display=s2.style.display='none'; draw(1); end.style.transform='none'; return;
+  }
+  let ticking=false;
+  const update=()=>{ticking=false;const run=hero.offsetHeight-innerHeight;draw(run>0?c01(-hero.getBoundingClientRect().top/run):1);};
+  addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  addEventListener('resize',()=>{measure();update();}); update();
+})();
+</script>
+</body>
+</html>

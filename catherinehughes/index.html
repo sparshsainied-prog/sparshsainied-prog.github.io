@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Catherine Hughes | Thorn of Plimouth</title>
+<meta name="description" content="Historical fiction by Catherine Hughes: Thorn of Plimouth, Therein Lies the Pearl and In Silence Cries the Heart.">
+<meta property="og:title" content="A homepage for Catherine Hughes, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Catherine Hughes and Thorn of Plimouth, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/catherinehughes/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23140c0a'/><path d='M4 28C12 22 18 16 28 4M12 22l-5-4M18 16l6 3' stroke='%237a1a22' stroke-width='3' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root { --night:#140c0a; --earth:#2a1b14; --sky:#b9ab94; --sun:#e9bd8c; --wine:#7f1a23; --blood:#4d0e12; --cream:#f1e4d0; --ash:#c9bba6; --loch:#26332f; --sea:#39454a;
+  --display:"Cinzel","Trajan Pro",Georgia,serif; --text:"Libre Caslon Text",Georgia,serif; --gutter:clamp(1rem,5vw,4rem); }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--night); color:var(--cream); font-family:var(--text); font-size:1.08rem; line-height:1.65; overflow-x:hidden; }
+img { display:block; max-width:100%; height:auto; }
+a { color:inherit; }
+:focus-visible { outline:2px solid var(--sun); outline-offset:3px; }
+h1,h2,h3 { font-family:var(--display); font-weight:500; margin:0; line-height:1.14; }
+p { margin:0 0 1rem; }
+.wrap { max-width:68rem; margin:0 auto; padding:0 var(--gutter); }
+.made { position:absolute; z-index:20; top:0; left:0; right:0; margin:0; padding:.45rem var(--gutter); background:#0a0605; color:var(--ash); font-size:.84rem; line-height:1.35; text-align:center; }
+
+/* buttons: the title's embossed wine, square-shouldered like its letters */
+.btn { display:inline-block; padding:.62rem 1.25rem .55rem; background:var(--wine); color:var(--cream); font-family:var(--display); font-weight:700; font-size:.95rem; letter-spacing:.06em; text-decoration:none; line-height:1.25; box-shadow:inset 0 1px 0 rgba(255,220,200,.35), inset 0 -2px 0 rgba(0,0,0,.45), 0 .3rem .7rem rgba(0,0,0,.45); }
+.btn:hover,.btn:focus-visible { background:var(--blood); }
+.quiet { text-underline-offset:.22em; color:var(--sun); }
+.row { display:flex; flex-wrap:wrap; gap:.9rem 1.5rem; align-items:center; }
+
+/* Hero: at the water's edge nothing has happened yet. Thorns close in from the corners, the red comes up the path. */
+.hero { position:relative; height:100svh; min-height:40rem; }
+.js .hero { height:400svh; }
+.stage { position:sticky; top:0; height:100svh; min-height:40rem; overflow:hidden; display:grid; grid-template-columns:auto minmax(0,30rem); justify-content:center; align-items:center; gap:clamp(2rem,6vw,6rem); padding:3rem var(--gutter) 2rem; background:var(--night); }
+.cover { position:relative; height:min(84svh,54rem); aspect-ratio:2/3; }
+.cam { position:absolute; inset:0; transform-origin:50% 62%; will-change:transform; }
+.cam > img { position:absolute; will-change:transform,opacity; max-width:none; }
+.plate { inset:0; width:100%; height:100%; }
+.fadeb { position:absolute; left:-1px; right:-1px; bottom:-1px; height:16%; background:linear-gradient(transparent,var(--night)); }
+.real { position:absolute; inset:0; width:100%; height:100%; opacity:0; will-change:opacity; box-shadow:0 1.2rem 2.8rem rgba(0,0,0,.7); }
+.words { position:relative; z-index:2; min-height:18rem; width:min(30rem,38vw); }
+.say { font-family:var(--display); font-size:clamp(1.7rem,2.9vw,2.5rem); line-height:1.2; margin:0; color:var(--cream); text-wrap:balance; text-shadow:0 .1rem .9rem rgba(0,0,0,.85); }
+.js .say,.js .end { position:absolute; left:0; right:0; top:50%; translate:0 -50%; will-change:transform,opacity; }
+.js .say { opacity:0; } .js .s1 { opacity:1; }
+.end .kicker { color:var(--sun); margin-bottom:.3rem; font-style:italic; }
+.end h1 { font-size:clamp(2.3rem,4.2vw,3.5rem); color:var(--cream); margin-bottom:.7rem; }
+.js .end { visibility:hidden; opacity:0; }
+
+/* The cover's thorn corner holds the contents */
+.thorn { position:fixed; z-index:30; top:.7rem; right:.7rem; width:3.3rem; height:4.1rem; padding:.35rem 0 .2rem; background:var(--sky); border:0; cursor:pointer; color:var(--blood); box-shadow:inset 0 1px 0 rgba(255,255,255,.4), 0 .3rem .7rem rgba(0,0,0,.5); }
+.thorn img { height:2.3rem; width:auto; margin:0 auto; pointer-events:none; }
+.thorn span { display:block; font:700 .62rem/1 var(--display); letter-spacing:.06em; margin-top:.15rem; }
+.menu { position:fixed; z-index:29; top:0; right:0; margin:0; padding:5.4rem 2rem 1.6rem 1.6rem; list-style:none; background:var(--night); border-left:2px solid var(--wine); border-bottom:2px solid var(--wine); }
+.menu li + li { margin-top:.55rem; }
+.menu a { text-decoration:none; font-family:var(--display); font-size:1.02rem; }
+.menu a:hover { color:var(--sun); }
+@media (max-width:820px) { .thorn { top:3.2rem; } .menu { padding-top:8rem; } }
+
+/* Calm */
+.band { padding:clamp(4rem,9vw,7rem) 0; }
+h2 { font-size:clamp(1.9rem,4vw,3rem); margin-bottom:1.1rem; }
+.why { background:var(--earth); }
+.why .grid { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:clamp(2rem,6vw,5rem); align-items:start; }
+.why .big { font-family:var(--display); font-size:clamp(1.6rem,3.3vw,2.5rem); line-height:1.22; color:var(--sun); margin:0 0 .7rem; }
+.why cite { font-style:italic; color:var(--ash); font-size:.98rem; }
+
+.book { display:grid; grid-template-columns:minmax(0,17rem) minmax(0,1fr); gap:clamp(2rem,6vw,5rem); align-items:center; }
+.book img { box-shadow:0 1rem 2.2rem rgba(0,0,0,.55); }
+.pearl { background:var(--sea); }
+.pearl .book { grid-template-columns:minmax(0,1fr) minmax(0,17rem); }
+.pearl .medals { margin:0 0 1.2rem; padding:0; list-style:none; color:var(--sun); font-family:var(--display); font-size:1rem; }
+.castle { background:var(--loch); }
+.tag { font-style:italic; color:var(--sun); font-size:1.15rem; }
+
+/* The close: a summer newsletter, printed at the library and delivered by hand */
+.note { background:var(--sky); color:#20150f; }
+.sheet { max-width:40rem; padding:clamp(1.4rem,4vw,2.6rem); background:#efe5d2; rotate:-1deg; box-shadow:0 .9rem 2rem rgba(40,25,15,.4); }
+.sheet h2 { color:var(--blood); font-size:clamp(1.6rem,3.4vw,2.3rem); }
+.sheet a { color:var(--blood); font-weight:400; text-underline-offset:.2em; overflow-wrap:anywhere; }
+footer { padding:2.2rem 0 2.6rem; background:#0a0605; color:var(--ash); font-size:.95rem; }
+footer .wrap { display:flex; flex-wrap:wrap; gap:.8rem 2rem; justify-content:space-between; }
+footer p { margin:0; }
+
+@media (max-width:820px) {
+  body { font-size:1.02rem; }
+  .made { font-size:.8rem; }
+  .stage { grid-template-columns:minmax(0,1fr); grid-template-rows:auto minmax(0,1fr); justify-items:center; align-content:start; gap:1rem; padding-top:3.6rem; padding-bottom:1rem; }
+  .cover { height:min(56svh,32rem); }
+  .words { width:100%; height:100%; min-height:0; text-align:center; }
+  .js .say,.js .end { top:0; translate:none; }
+  .say { font-size:clamp(1.3rem,5.8vw,1.65rem); }
+  .end .kicker { margin:0; font-size:.92rem; }
+  .end h1 { font-size:1.65rem; margin-bottom:.35rem; }
+  .end p { font-size:.93rem; line-height:1.4; margin-bottom:.7rem; }
+  .end .row { justify-content:center; }
+  .why .grid,.book,.pearl .book { grid-template-columns:minmax(0,1fr); }
+  .book img { max-width:14rem; }
+  .pearl .book img { order:-1; }
+}
+</style>
+</head>
+<body>
+<p class="made" id="top">A homepage idea made by Sparsh Saini for Catherine Hughes. Not their official site.</p>
+<button class="thorn" aria-expanded="false" aria-controls="menu"><img src="img/mono.webp" alt="" width="92" height="145"><span>Books</span></button>
+<ul class="menu" id="menu" hidden>
+  <li><a href="#why">Thorn of Plimouth</a></li>
+  <li><a href="#pearl">Therein Lies the Pearl</a></li>
+  <li><a href="#castle">In Silence Cries the Heart</a></li>
+  <li><a href="#note">Write to me</a></li>
+</ul>
+<main>
+<section class="hero" aria-label="Thorn of Plimouth by Catherine Hughes">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="plate" src="img/plate.jpg" alt="" width="864" height="1296" fetchpriority="high">
+        <img class="red r0" src="img/red0.webp" alt="" width="864" height="536" style="left:0;top:58.642%;width:100%">
+        <img class="red r1" src="img/red1.webp" alt="" width="864" height="536" style="left:0;top:58.642%;width:100%">
+        <img class="red r2" src="img/red2.webp" alt="" width="864" height="536" style="left:0;top:58.642%;width:100%">
+        <img class="red r3" src="img/red3.webp" alt="" width="864" height="536" style="left:0;top:58.642%;width:100%">
+        <img class="red r4" src="img/red4.webp" alt="" width="864" height="536" style="left:0;top:58.642%;width:100%">
+        <div class="fadeb"></div>
+        <img class="ttl" src="img/title.webp" alt="" width="725" height="445" style="left:8.102%;top:8.102%;width:83.912%">
+        <img class="tn tl" src="img/t-tl.webp" alt="" width="432" height="230" style="left:0;top:0;width:50%;transform-origin:0 0">
+        <img class="tn tr" src="img/t-tr.webp" alt="" width="432" height="230" style="left:50%;top:0;width:50%;transform-origin:100% 0">
+        <img class="tn bl" src="img/t-bl.webp" alt="" width="432" height="446" style="left:0;top:65.586%;width:50%;transform-origin:0 100%">
+        <img class="tn br" src="img/t-br.webp" alt="" width="432" height="446" style="left:50%;top:65.586%;width:50%;transform-origin:100% 100%">
+      </div>
+      <img class="real" src="img/cover.jpg" alt="" width="864" height="1296">
+    </div>
+    <div class="words">
+      <p class="say s1">Plimoth, 1621. The Fortune has anchored off Cape Cod.</p>
+      <p class="say s2">When fear takes root, innocence is the first sacrifice.</p>
+      <div class="end">
+        <p class="kicker">Shadows in the wilderness. Witchery in New England.</p>
+        <h1>Thorn of Plimouth</h1>
+        <p>Rachel Haverford, a young healer, is accused of witchcraft. Her one ally is a Pokanoket warrior, and their forbidden love could cost them everything.</p>
+        <div class="row"><a class="btn" href="https://www.amazon.com/Thorn-Plimouth-Catherine-Hughes/dp/B0HJ9Y7BCS">Get it on Amazon</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band why" id="why">
+  <div class="wrap grid">
+    <div>
+      <p class="big">Neighbors turned against one another, families were split apart.</p>
+      <cite>From my Literary Titan interview, on the pandemic behind this book</cite>
+    </div>
+    <div>
+      <h2>Not only brave and faithful</h2>
+      <p>I wanted the settlers on the page as they were, hindered by suspicion and doubt, through a harsh winter and hunger. I read Nathaniel Philbrick’s Mayflower and David Silverman’s This Land is Their Land, and I wanted Keme’s side told with fairness and sensitivity.</p>
+      <p>Rachel’s Welsh background and her devotion to her mother’s memory are where her independent spirit comes from.</p>
+      <p>The opening earned an Honorable Mention in the Historical Novel Society’s First Chapters competition.</p>
+      <div class="row"><a class="quiet" href="https://literarytitan.com/2026/10/31/fairness-and-sensitivity/">Read the interview</a><a class="quiet" href="https://www.goodreads.com/book/show/258650549-thorn-of-plimouth">Goodreads</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band pearl" id="pearl">
+  <div class="wrap book">
+    <div>
+      <h2>Therein Lies the Pearl</h2>
+      <p>The years before and after the Norman Conquest. Celia and Margaret, a Norman girl and a Saxon princess on opposite sides of the Channel, each looking for someone they can trust.</p>
+      <ul class="medals"><li>2026 PenCraft Gold Medal, Historical Fiction</li><li>International Firebird Book Award, Historical Fiction</li></ul>
+      <div class="row"><a class="btn" href="https://www.amazon.com/Therein-Lies-Pearl-Catherine-Hughes/dp/1964700671">Amazon</a><a class="quiet" href="https://www.barnesandnoble.com/w/therein-lies-the-pearl-catherine-hughes/1148926679?ean=9781964700670">Barnes &amp; Noble</a></div>
+    </div>
+    <img src="img/c-pearl.jpg" alt="Cover of Therein Lies the Pearl" loading="lazy" width="300" height="450">
+  </div>
+</section>
+
+<section class="band castle" id="castle">
+  <div class="wrap book">
+    <img src="img/c-silence.jpg" alt="Cover of In Silence Cries the Heart" loading="lazy" width="300" height="450">
+    <div>
+      <h2>In Silence Cries the Heart</h2>
+      <p class="tag">Based on a true story of Urquhart Castle.</p>
+      <p>A trip to Urquhart Castle, on the banks of Loch Ness, is what brought me back to storytelling.</p>
+      <div class="row"><a class="btn" href="https://www.amazon.com/Silence-Cries-Heart-Catherine-Hughes/dp/1649797362">Amazon</a><a class="quiet" href="https://www.barnesandnoble.com/w/in-silence-cries-the-heart-catherine-hughes/1144066263">Barnes &amp; Noble</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band note" id="note">
+  <div class="wrap">
+    <div class="sheet">
+      <h2>The kid with the book</h2>
+      <p>I grew up with a book in my hands, in the Bronx and then on Long Island. One summer there I published a neighbourhood newsletter, printed it at the library and delivered it by hand. I stopped when autumn came.</p>
+      <p>These days it’s easier to reach me. Write to <a href="mailto:catherinehughesauthor@gmail.com">catherinehughesauthor@gmail.com</a>, or find me on <a href="https://www.instagram.com/cathyhughes22/">Instagram</a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Catherine Hughes. Not affiliated, not live. The covers and words are hers.</p>
+    <p><a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const btn=document.querySelector('.thorn'),menu=document.getElementById('menu');
+  const toggle=o=>{menu.hidden=!o;btn.setAttribute('aria-expanded',o);};
+  btn.addEventListener('click',()=>toggle(menu.hidden));
+  menu.addEventListener('click',()=>toggle(false));
+  const hero=document.querySelector('.hero');const $=s=>hero.querySelector(s);
+  const cam=$('.cam'),ttl=$('.ttl'),real=$('.real'),s1=$('.s1'),s2=$('.s2'),end=$('.end'),box=$('.cover');
+  const reds=[...hero.querySelectorAll('.red')];
+  const thorns=[['.tl',-46,-60,-14,.3],['.tr',46,-60,12,.36],['.bl',-34,54,12,.2],['.br',34,54,-12,.26]].map(([s,x,y,r,at])=>({el:$(s),x,y,r,at}));
+  const c01=v=>Math.min(1,Math.max(0,v)),ease=t=>t*t*(3-2*t);
+  const last=new Map();
+  const set=(el,k,v)=>{let m=last.get(el);if(!m){m={};last.set(el,m);}if(m[k]!==v){m[k]=v;el.style[k]=v;}};
+  const fade=(el,a,b,c,d,p)=>{const v=c01((p-a)/(b-a))*(1-c01((p-c)/(d-c)));set(el,'opacity',v.toFixed(2));set(el,'transform',`translateY(${((1-v)*(p<c?1:-1)).toFixed(2)}rem)`);};
+  // thorns grow in stops and starts: a creep, not a slide
+  const creep=t=>{const u=c01(t);return ease(u)+Math.sin(u*Math.PI*5)*.022*(1-u);};
+  let zoom=2.2;
+  const measure=()=>{zoom=innerWidth>820?1.45:2.25;};
+  const draw=p=>{
+    const z=ease(c01((p-.03)/.62));
+    set(cam,'transform',`scale(${(zoom-(zoom-1)*z).toFixed(4)})`);
+    reds.forEach((r,i)=>set(r,'opacity',ease(c01((p-(.2+i*.075))/.1)).toFixed(2)));
+    for(const t of thorns){const k=creep((p-t.at)/.36);set(t.el,'transform',`translate3d(${((1-k)*t.x).toFixed(1)}%,${((1-k)*t.y).toFixed(1)}%,0) rotate(${((1-k)*t.r).toFixed(2)}deg)`);}
+    const tt=ease(c01((p-.55)/.13));
+    set(ttl,'opacity',tt.toFixed(2)); set(ttl,'transform',`translateY(${((1-tt)*-3).toFixed(2)}%)`);
+    set(real,'opacity',ease(c01((p-.7)/.09)).toFixed(2));
+    fade(s1,-1,0,.18,.24,p); fade(s2,.3,.37,.58,.65,p);
+    const e=ease(c01((p-.76)/.12));
+    set(end,'opacity',e.toFixed(2)); set(end,'transform',`translateY(${((1-e)*1.4).toFixed(2)}rem)`); set(end,'visibility',e>0?'visible':'hidden');
+  };
+  measure();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.documentElement.classList.remove('js');
+    s1.style.display=s2.style.display='none'; draw(1); end.style.transform='none'; return;
+  }
+  let ticking=false;
+  const update=()=>{ticking=false;const run=hero.offsetHeight-innerHeight;draw(run>0?c01(-hero.getBoundingClientRect().top/run):1);};
+  addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  addEventListener('resize',()=>{measure();update();}); update();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Taylor Woodland | Mallory and Among the Palace Flowers</title>
+<meta name="description" content="Signed copies of Mallory, Among the Palace Flowers and Ikigai from indie author and publisher Taylor Woodland.">
+<meta property="og:title" content="A homepage for Taylor Woodland, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Taylor Woodland and Mallory, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/taylorwoodland/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%236fd6e4'/><circle cx='16' cy='16' r='9' fill='%23fff' stroke='%23e8596b' stroke-width='3'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root { --mist:#bdb3b6; --teal:#6fd6e4; --deep:#2c4a52; --wine:#651c2c; --ink:#1b1a24; --orb:#e8596b; --lilac:#e9dcef;
+  --night:#23211a; --olive:#37351d; --gold:#f2c63c; --pink:#ef6aa4;
+  --display:"Cinzel Decorative","Trajan Pro",Georgia,serif; --text:"Alegreya",Georgia,serif; --gutter:clamp(1rem,5vw,4rem); }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--ink); color:var(--lilac); font-family:var(--text); font-size:1.2rem; line-height:1.55; overflow-x:hidden; }
+img { display:block; max-width:100%; height:auto; }
+a { color:inherit; }
+:focus-visible { outline:2px solid var(--orb); outline-offset:3px; }
+h1,h2,h3 { font-family:var(--display); font-weight:400; margin:0; line-height:1.12; }
+p { margin:0 0 1rem; }
+.wrap { max-width:70rem; margin:0 auto; padding:0 var(--gutter); }
+.made { position:absolute; z-index:20; top:0; left:0; right:0; margin:0; padding:.45rem var(--gutter); background:var(--ink); color:var(--lilac); font-size:.92rem; line-height:1.35; text-align:center; }
+
+/* buttons: the cover's name line, ink with a white breath, or the Palace cover's ringed track */
+.btn { display:inline-block; padding:.62rem 1.3rem; background:var(--wine); color:#fff; font-weight:700; text-decoration:none; line-height:1.25; border-radius:2rem; box-shadow:0 0 0 2px #fff, 0 0 0 3px var(--wine); }
+.btn:hover,.btn:focus-visible { background:var(--ink); }
+.ring { display:inline-block; padding:.55rem 1.2rem; color:var(--gold); text-decoration:none; font-weight:700; border-radius:2rem; border:1px solid var(--gold); box-shadow:0 0 0 3px var(--olive), 0 0 0 4px var(--gold); }
+.ring:hover,.ring:focus-visible { background:var(--gold); color:var(--night); }
+.quiet { font-weight:700; text-underline-offset:.2em; }
+
+/* Hero: gravity lets go. Rubble and Mallory lift off the ground, the light wakes in her hand. */
+.hero { position:relative; height:100svh; min-height:40rem; }
+.js .hero { height:380svh; }
+.stage { position:sticky; top:0; height:100svh; min-height:40rem; overflow:hidden; display:grid; grid-template-columns:auto minmax(0,30rem); justify-content:center; align-items:center; gap:clamp(2rem,6vw,6rem); padding:3.4rem var(--gutter) 2rem;
+  background:linear-gradient(#bdb3b6, #aab9bd 34%, #76ccd8 62%, #6cd6ea); color:var(--ink); }
+.cover { position:relative; height:min(84svh,54rem); aspect-ratio:2/3; }
+.cam { position:absolute; inset:0; transform-origin:50% 88%; will-change:transform; }
+.cam > img { position:absolute; will-change:transform; max-width:none; }
+.real { position:absolute; inset:0; width:100%; height:100%; opacity:0; will-change:opacity; box-shadow:0 1.4rem 2.6rem rgba(27,26,36,.45); }
+.words { position:relative; min-height:18rem; width:min(30rem,38vw); }
+.say { font-family:var(--display); font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.18; margin:0; color:var(--wine); text-wrap:balance; }
+.js .say,.js .end { position:absolute; left:0; right:0; top:50%; translate:0 -50%; will-change:transform,opacity; }
+.js .say { opacity:0; } .js .s1 { opacity:1; }
+.end .kicker { font-weight:700; margin-bottom:.2rem; }
+.end h1 { font-size:clamp(2.6rem,5vw,4.2rem); color:var(--wine); margin-bottom:.6rem; }
+.js .end { visibility:hidden; opacity:0; }
+.row { display:flex; flex-wrap:wrap; gap:.9rem 1.5rem; align-items:center; }
+
+/* The orb as the contents button */
+.orbnav { position:fixed; z-index:30; right:1rem; bottom:1rem; }
+.orbbtn { width:3.4rem; height:3.4rem; border-radius:50%; border:3px solid var(--orb); background:#fff; color:var(--wine); font:700 .78rem/1 var(--text); cursor:pointer; box-shadow:0 0 .9rem .15rem rgba(160,120,220,.55); }
+.orbnav ul { position:absolute; right:0; bottom:4.1rem; margin:0; padding:.9rem 1.2rem; min-width:13rem; list-style:none; background:var(--ink); border:1px solid var(--orb); border-radius:.4rem; }
+.orbnav li + li { margin-top:.5rem; }
+.orbnav a { text-decoration:none; font-weight:500; display:block; padding:.15rem 0; }
+.orbnav a:hover { color:var(--teal); }
+
+/* Calm: the author's row */
+.band { padding:clamp(4rem,9vw,7rem) 0; }
+h2 { font-size:clamp(2rem,4.4vw,3.3rem); margin-bottom:1.1rem; }
+.mallory { background:var(--deep); color:#eaf7f8; }
+.mallory .grid { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); gap:clamp(2rem,6vw,5rem); align-items:center; }
+.mallory .line { font-size:clamp(1.4rem,2.4vw,1.8rem); line-height:1.35; }
+.price { font-family:var(--display); font-size:1.6rem; }
+
+.palace { background:var(--olive); color:#f6edcd; }
+.palace h2 { color:var(--gold); }
+.palace h2 b { font-weight:400; color:var(--pink); }
+.palace .intro { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(2rem,6vw,5rem); align-items:end; margin-bottom:2.6rem; }
+.palace blockquote { margin:0; font-style:italic; font-size:clamp(1.3rem,2.2vw,1.6rem); line-height:1.35; }
+.palace blockquote cite { display:block; font-style:normal; font-size:1rem; margin-top:.4rem; color:var(--gold); }
+.vols { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(.8rem,2.5vw,2rem); }
+.vols a { display:block; text-decoration:none; }
+.vols img { box-shadow:0 .9rem 1.8rem rgba(0,0,0,.45); }
+.vols span { display:flex; justify-content:space-between; gap:.5rem; margin-top:.7rem; font-weight:700; flex-wrap:wrap; }
+.vols a:hover span { color:var(--gold); }
+
+.ikigai { background:#e9e5da; color:var(--ink); }
+.ikigai .grid { display:grid; grid-template-columns:minmax(0,18rem) minmax(0,1fr); gap:clamp(2rem,6vw,5rem); align-items:center; }
+.ikigai .btn { box-shadow:none; background:var(--ink); }
+.ikigai .btn:hover { background:var(--wine); }
+
+.press { background:var(--ink); }
+.press .grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(2rem,6vw,5rem); align-items:start; }
+.panels { list-style:none; margin:0; padding:0; border-top:1px solid var(--orb); }
+.panels li { padding:.9rem 0; border-bottom:1px solid var(--orb); }
+.panels b { display:block; font-family:var(--display); font-weight:400; font-size:1.25rem; line-height:1.25; }
+.panels span { color:var(--teal); }
+.close { background:linear-gradient(#aab9bd,#6fd6e4); color:var(--ink); }
+.close h2 { color:var(--wine); }
+.close .when { font-family:var(--display); font-size:clamp(2.8rem,9vw,6.4rem); line-height:1; color:var(--wine); margin:.3rem 0 1rem; }
+footer { padding:2.2rem 0 5.6rem; background:var(--ink); color:var(--lilac); font-size:1rem; }
+footer .wrap { display:flex; flex-wrap:wrap; gap:.8rem 2rem; justify-content:space-between; }
+footer p { margin:0; }
+
+@media (max-width:820px) {
+  body { font-size:1.12rem; }
+  .made { font-size:.84rem; }
+  .stage { grid-template-columns:minmax(0,1fr); grid-template-rows:auto minmax(0,1fr); justify-items:center; align-content:start; gap:.9rem; padding-top:3.6rem; padding-bottom:1rem; }
+  .cover { height:min(56svh,32rem); }
+  .words { width:100%; height:100%; min-height:0; text-align:center; }
+  .js .end { top:0; translate:none; }
+  .js .say { top:calc(-56svh - .9rem + .5rem); translate:none; }
+  .say { font-size:clamp(1.4rem,6.2vw,1.8rem); }
+  .end h1 { font-size:2.1rem; margin-bottom:.2rem; }
+  .end .kicker { font-size:1rem; margin:0; }
+  .end p { font-size:1.02rem; line-height:1.35; margin-bottom:.7rem; }
+  .end .row { justify-content:center; }
+  .mallory .grid,.palace .intro,.ikigai .grid,.press .grid { grid-template-columns:minmax(0,1fr); }
+  .mallory img,.ikigai img { max-width:15rem; }
+  .vols span { font-size:.95rem; }
+}
+</style>
+</head>
+<body>
+<p class="made" id="top">A homepage idea made by Sparsh Saini for Taylor Woodland. Not their official site.</p>
+<nav class="orbnav" aria-label="Contents">
+  <button class="orbbtn" aria-expanded="false" aria-controls="orbmenu">Menu</button>
+  <ul id="orbmenu" hidden>
+    <li><a href="#mallory">Mallory</a></li>
+    <li><a href="#palace">Among the Palace Flowers</a></li>
+    <li><a href="#ikigai">Ikigai</a></li>
+    <li><a href="#press">Fae Cafe and panels</a></li>
+    <li><a href="#next">Imaginarium 2027</a></li>
+  </ul>
+</nav>
+<main>
+<section class="hero" aria-label="Mallory by Taylor Woodland">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="snow sb" src="img/snowB.webp" alt="" width="1200" height="1800" style="left:0;top:0;width:100%">
+        <img class="rk" data-cy="0.569" src="img/r0.webp" alt="" width="409" height="330" style="left:0.000%;top:47.778%;width:34.083%">
+        <img class="rk" data-cy="0.626" src="img/r1.webp" alt="" width="353" height="463" style="left:19.583%;top:49.722%;width:29.417%">
+        <img class="rk" data-cy="0.749" src="img/r2.webp" alt="" width="281" height="355" style="left:0.000%;top:65.000%;width:23.417%">
+        <img class="rk" data-cy="0.578" src="img/r3.webp" alt="" width="452" height="362" style="left:62.333%;top:47.778%;width:37.667%">
+        <img class="rk" data-cy="0.686" src="img/r4.webp" alt="" width="280" height="459" style="left:76.667%;top:55.889%;width:23.333%">
+        <img class="rk" data-cy="0.680" src="img/r5.webp" alt="" width="351" height="276" style="left:48.667%;top:60.333%;width:29.250%">
+        <img class="rk" data-cy="0.818" src="img/r7.webp" alt="" width="298" height="418" style="left:38.917%;top:70.167%;width:24.833%">
+        <img class="fig" src="img/fig.webp" alt="" width="720" height="920" style="left:19.167%;top:33.333%;width:60%">
+        <img class="orb" src="img/orb.webp" alt="" width="160" height="160" style="left:14.667%;top:35%;width:13.333%">
+        <img class="snow sa" src="img/snowA.webp" alt="" width="1200" height="1800" style="left:0;top:0;width:100%">
+        <img class="rk" data-cy="0.811" src="img/r6.webp" alt="" width="323" height="359" style="left:14.083%;top:71.167%;width:26.917%">
+        <img class="rk" data-cy="0.806" src="img/r8.webp" alt="" width="329" height="341" style="left:62.750%;top:71.167%;width:27.417%">
+        <img class="rk" data-cy="0.903" src="img/r9.webp" alt="" width="311" height="344" style="left:0.000%;top:80.778%;width:25.917%">
+        <img class="rk" data-cy="0.929" src="img/r10.webp" alt="" width="367" height="252" style="left:23.250%;top:85.889%;width:30.583%">
+        <img class="rk" data-cy="0.931" src="img/r11.webp" alt="" width="348" height="244" style="left:54.333%;top:86.333%;width:29.000%">
+        <img class="rk" data-cy="0.894" src="img/r12.webp" alt="" width="236" height="376" style="left:80.333%;top:79.000%;width:19.667%">
+        <img class="ttl" src="img/title.webp" alt="" width="1100" height="310" style="left:4.167%;top:12.778%;width:91.667%">
+      </div>
+      <img class="real" src="img/cover.jpg" alt="" width="1000" height="1500">
+    </div>
+    <div class="words">
+      <p class="say s1">Mallory was seven when a group of men murdered her family.</p>
+      <p class="say s2">Eleven years later the case is unsolved, and she still wants revenge.</p>
+      <div class="end">
+        <p class="kicker">Clan Haven, book 1</p>
+        <h1>Mallory</h1>
+        <p>A chance meeting with a living doll unlocks a strange power that might lead her to the killers. If the Nighters don’t kill her first.</p>
+        <div class="row"><a class="btn" href="https://www.taylorwoodland.com/product-page/mallory-signed-copy">Get a signed copy, $20</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band mallory" id="mallory">
+  <div class="wrap grid">
+    <div>
+      <h2>The police didn’t believe her</h2>
+      <p class="line">At seven she told them about the strange things she saw that night. Eleven years on, nobody has been caught.</p>
+      <p>I’ve loved books since I was a kid, for the worlds full of magic, mystery, battles, heartbreak and love. Mallory is book one of Clan Haven.</p>
+      <p class="price">$20, signed</p>
+      <a class="quiet" href="https://www.taylorwoodland.com/product-page/mallory-signed-copy">Order Mallory from my shop</a>
+    </div>
+    <img src="img/c-m.jpg" alt="Cover of Mallory: a girl floats above broken rock with a glowing orb over her open hand" width="640" height="960" loading="lazy">
+  </div>
+</section>
+
+<section class="band palace" id="palace">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <h2>Among the Palace <b>Flowers</b></h2>
+        <p>Mei’s family’s fabric business has collapsed. She enters Fúyú Palace as the lowest-ranking maid in the Dandelion Palace, with no money, no influence and only her wits to climb with.</p>
+      </div>
+      <blockquote>There are always snakes hiding in every flower bed waiting to bite.<cite>From the blurb of volume 3</cite></blockquote>
+    </div>
+    <ul class="vols">
+      <li><a href="https://www.taylorwoodland.com/product-page/among-the-palace-flowers-vol-1-signed-copy"><img src="img/c-v1.jpg" alt="Among the Palace Flowers, volume 1" width="640" height="1024" loading="lazy"><span><i>Vol. 1</i> $10 signed</span></a></li>
+      <li><a href="https://www.taylorwoodland.com/product-page/among-the-palace-flowers-vol-2-signed-copy"><img src="img/c-v2.jpg" alt="Among the Palace Flowers, volume 2" width="640" height="1024" loading="lazy"><span><i>Vol. 2</i> $10 signed</span></a></li>
+      <li><a href="https://www.taylorwoodland.com/product-page/among-the-palace-flowers-vol-3-signed-copy"><img src="img/c-v3.jpg" alt="Among the Palace Flowers, volume 3" width="640" height="1024" loading="lazy"><span><i>Vol. 3</i> $10 signed</span></a></li>
+    </ul>
+    <p style="margin:2.2rem 0 0"><a class="ring" href="https://www.taylorwoodland.com/shop">See the whole shop</a></p>
+  </div>
+</section>
+
+<section class="band ikigai" id="ikigai">
+  <div class="wrap grid">
+    <img src="img/c-ik.jpg" alt="Cover of Ikigai: Ichirou's Journey" width="560" height="840" loading="lazy">
+    <div>
+      <h2>Ikigai: Ichirou’s Journey</h2>
+      <p>Day in and day out it’s work, work, and more work. Ichirou takes up cycling in Tokyo to cope, then rides for the countryside and breaks down in a small, remote town, where an innkeeper called Sasaki and the other locals change how he thinks about work, life and love.</p>
+      <a class="btn" href="https://www.taylorwoodland.com/product-page/signed-copy-of-ikigai">Get a signed copy, $16</a>
+    </div>
+  </div>
+</section>
+
+<section class="band press" id="press">
+  <div class="wrap grid">
+    <div>
+      <h2>Fae Cafe Publishing</h2>
+      <p>I run a small press, and I’ve spent over six years building its team. Five books of mine so far, in more than one genre and for more than one age group.</p>
+      <p>When I’m not doing that I’m reading, watching anime with my husband, or playing with my two talking parrots, Koko and Kiyo.</p>
+    </div>
+    <div>
+      <ul class="panels">
+        <li><b>So, You Want to Be a Writer?</b><span>Panel, Northern KY Anime-Fest, 27 September 2026</span></li>
+        <li><b>The Do’s and Dont’s of Self-Publishing</b><span>Panel, Northern KY Anime-Fest, 27 September 2026</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band close" id="next">
+  <div class="wrap">
+    <h2>Next panel room</h2>
+    <p class="when">23 to 25 July 2027</p>
+    <p>Imaginarium 2027, Crowne Plaza Hotel, Louisville, Kentucky. I’m an official panelist.</p>
+    <a class="btn" href="https://www.entertheimaginarium.com/2026/10/13/imaginarium-2027-proudly-welcomes-author-and-publisher-taylor-woodland-as-an-official-panelist/">Read the announcement</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>A mockup made by Sparsh Saini for Taylor Woodland. Not affiliated, not live. The covers and words are hers.</p>
+    <p><a class="quiet" href="https://www.instagram.com/taylor.woodland.965/">Instagram</a> &nbsp; <a class="quiet" href="#top">Back to top</a></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const btn = document.querySelector('.orbbtn'), menu = document.getElementById('orbmenu');
+  const toggle = o => { menu.hidden = !o; btn.setAttribute('aria-expanded', o); };
+  btn.addEventListener('click', () => toggle(menu.hidden));
+  menu.addEventListener('click', () => toggle(false));
+  const hero = document.querySelector('.hero');
+  const $ = s => hero.querySelector(s);
+  const cam=$('.cam'),fig=$('.fig'),orb=$('.orb'),ttl=$('.ttl'),real=$('.real'),sa=$('.sa'),sb=$('.sb'),s1=$('.s1'),s2=$('.s2'),end=$('.end'),box=$('.cover');
+  const c01=v=>Math.min(1,Math.max(0,v)), ease=t=>t*t*(3-2*t);
+  // a slow lift with a small float past its mark, like something with no weight
+  const lift=t=>{const u=c01(t);return 1-Math.pow(1-u,3)+Math.sin(u*Math.PI)*.07;};
+  const last=new Map();
+  const set=(el,k,v)=>{let m=last.get(el);if(!m){m={};last.set(el,m);}if(m[k]!==v){m[k]=v;el.style[k]=v;}};
+  const fade=(el,a,b,c,d,p)=>{const v=c01((p-a)/(b-a))*(1-c01((p-c)/(d-c)));set(el,'opacity',v.toFixed(2));set(el,'transform',`translateY(${((1-v)*(p<c?1:-1)).toFixed(2)}rem)`);};
+  // every rock starts piled on the ground: the higher it hangs on the cover, the further it has to come
+  const P=[...hero.querySelectorAll('.rk')].map((el,i)=>{const cy=+el.dataset.cy;return{el,drop:(1.02-cy)*100,delay:.06+((i*5)%13)/13*.3,rot:(i%2?-1:1)*(8+(i*7)%17)};});
+  let hh=box.offsetHeight/100;
+  // on tall screens, start with the ground on the floor of the screen
+    let floorGap=0;
+  const draw=p=>{
+    for(const r of P){const k=lift((p-r.delay)/.34);
+      set(r.el,'transform',`translate3d(0,${((1-k)*r.drop*hh).toFixed(1)}px,0) rotate(${((1-k)*r.rot).toFixed(1)}deg)`);}
+    const f=ease(c01((p-.1)/.5));
+    set(fig,'transform',`translate3d(0,${((1-f)*38*hh).toFixed(1)}px,0)`);
+    // the light wakes in her palm, then floats up off it to where the cover prints it
+    const w=ease(c01((p-.42)/.2));
+    set(orb,'transform',`translate3d(${((1-w)*1.3*hh).toFixed(1)}px,${((1-f)*38*hh+(1-w)*7*hh).toFixed(1)}px,0) scale(${(.22+.78*w).toFixed(3)})`);
+    set(orb,'opacity',c01((p-.3)/.1).toFixed(2));
+    set(sa,'transform',`translate3d(0,${((1-ease(c01(p/.75)))*34*hh).toFixed(1)}px,0)`);
+    set(sb,'transform',`translate3d(0,${((1-ease(c01(p/.75)))*16*hh).toFixed(1)}px,0)`);
+    set(sa,'opacity',c01((p-.08)/.2).toFixed(2)); set(sb,'opacity',c01((p-.04)/.2).toFixed(2));
+    const t=ease(c01((p-.54)/.12));
+    set(ttl,'opacity',t.toFixed(2)); set(ttl,'transform',`translate3d(0,${((1-t)*-3*hh).toFixed(1)}px,0)`);
+    const cz=ease(c01((p-.02)/.68));set(cam,'transform',`translate3d(0,${((1-cz)*floorGap).toFixed(1)}px,0) scale(${(1.5-.5*cz).toFixed(4)})`);
+    set(real,'opacity',ease(c01((p-.68)/.1)).toFixed(2));
+    fade(s1,-1,0,.2,.27,p); fade(s2,.28,.35,.5,.56,p);
+    const e=ease(c01((p-.78)/.12));
+    set(end,'opacity',e.toFixed(2)); set(end,'transform',`translateY(${((1-e)*1.4).toFixed(2)}rem)`); set(end,'visibility',e>0?'visible':'hidden');
+  };
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.documentElement.classList.remove('js');
+    s1.style.display=s2.style.display='none'; draw(1); end.style.transform='none'; return;
+  }
+  let ticking=false;
+  const update=()=>{ticking=false;const run=hero.offsetHeight-innerHeight;draw(run>0?c01(-hero.getBoundingClientRect().top/run):1);};
+  addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  const measure=()=>{hh=box.offsetHeight/100;const st=$('.stage').getBoundingClientRect();floorGap=Math.max(0,st.bottom-box.getBoundingClientRect().bottom)*.5;};
+  addEventListener('resize',()=>{measure();update();}); measure(); update();
+})();
+</script>
+</body>
+</html>

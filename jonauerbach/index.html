@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Jon Auerbach | Guild of Tokens and Blood of Atlantis</title>
+<meta name="description" content="Urban fantasy and comics from Jon Auerbach: the NYC Questing Guild novels and Blood of Atlantis.">
+<meta property="og:title" content="A homepage for Jon Auerbach, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Jon Auerbach and Guild of Tokens, made by Sparsh Saini. Not his official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/jonauerbach/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23142836'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23f2c744' stroke-width='5'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--night:#10222f;--dusk:#1c3a4d;--band:#2b1c3a;--gold:#f2c744;--foil:#c9962c;--mint:#a9e6cf;--ink:#e9eff0;--soft:#a5bac2;--lilac:#efe3f1;--comic:#b52a2a;
+--display:"Almendra SC","Cinzel",Georgia,serif;--text:"Spectral",Georgia,serif;--gutter:clamp(1rem,5vw,4rem)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--ink);font-family:var(--text);font-size:1.13rem;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}a{color:inherit}
+.wrap{max-width:68rem;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05}
+p{margin:0 0 1rem}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* buttons: the rule either side of the cover's OF, a bar with arrowheads */
+.btn{display:inline-block;padding:.6rem 1.7rem;background:var(--gold);color:#22160a;font-family:var(--display);font-size:1.16rem;line-height:1.2;text-decoration:none;
+clip-path:polygon(.8rem 0,calc(100% - .8rem) 0,100% 50%,calc(100% - .8rem) 100%,.8rem 100%,0 50%)}
+.btn:hover,.btn:focus-visible{background:#fff1b8}
+.quiet{color:var(--gold);text-underline-offset:.2em;text-decoration-thickness:1px}
+.row{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center}
+.top{position:absolute;z-index:20;top:0;left:0;right:0}
+.made{margin:0;padding:.42rem var(--gutter);background:#0a1620;color:var(--soft);font-size:.88rem;line-height:1.35;text-align:center}
+/* Hero: one token goes up from Jen's feet and lands as the O in TOKENS. */
+.hero{position:relative;height:100svh;min-height:40rem}.js .hero{height:360svh}
+.stage{position:sticky;top:0;height:100svh;min-height:40rem;overflow:hidden;display:grid;grid-template-columns:minmax(0,30rem) auto;justify-content:center;align-items:center;gap:clamp(2rem,6vw,6rem);padding:3.2rem var(--gutter) 1.6rem;background:var(--night) url(img/bg.jpg) center/cover}
+.cover{position:relative;height:min(84svh,54rem);aspect-ratio:960/1536;overflow:hidden;box-shadow:.6rem 1.4rem 3rem rgba(4,10,16,.7)}
+.cam{position:absolute;inset:0;transform-origin:50% 81%;will-change:transform}
+.cam img{position:absolute}.cam img.plate{inset:0;width:100%;height:100%}
+.gold{will-change:opacity}.flip{will-change:transform,opacity}.k{will-change:transform}
+.flash{position:absolute;left:28.3%;top:33.3%;width:50%;aspect-ratio:1;margin:-25% 0 0 -25%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,240,170,.95),rgba(242,199,68,.4) 45%,rgba(242,199,68,0));opacity:0;will-change:transform,opacity}
+.words{position:relative;min-height:19rem;width:min(30rem,36vw)}
+.say{font-family:var(--display);font-size:clamp(1.9rem,3.2vw,2.9rem);line-height:1.12;color:#fff;margin:0;text-wrap:balance}
+.say em{font-style:normal;color:var(--gold)}
+.js .say,.js .end{position:absolute;left:0;right:0;top:50%;translate:0 -50%;will-change:transform,opacity}
+.js .say{opacity:0}.js .s1{opacity:1}.js .end{visibility:hidden;opacity:0}
+.mark{font-family:var(--display);letter-spacing:.14em;color:var(--mint);font-size:1.02rem;margin-bottom:.5rem}
+.end h1{font-size:clamp(2.7rem,5vw,4.2rem);color:var(--gold);margin-bottom:.8rem}
+/* The quest log */
+section{scroll-margin-top:1rem}.band{padding:clamp(3.6rem,8vw,6.5rem) 0}
+h2{font-size:clamp(2.2rem,5vw,3.8rem);color:#fff;margin-bottom:.5rem}
+.rule{display:block;height:7px;width:min(26rem,70%);margin:0 0 1.6rem;background:linear-gradient(var(--gold),var(--gold)) center/100% 1px no-repeat;position:relative}
+.rule::after{content:"";position:absolute;right:0;top:0;width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.log{background:linear-gradient(180deg,var(--night),var(--dusk))}
+.quest{display:grid;grid-template-columns:clamp(9rem,24vw,19rem) minmax(0,1fr);gap:clamp(1.4rem,5vw,4rem);align-items:center;padding:clamp(2rem,5vw,3.4rem) 0;border-top:1px solid rgba(242,199,68,.3)}
+.quest.flipped{grid-template-columns:minmax(0,1fr) clamp(9rem,24vw,19rem)}.quest.flipped img{order:2}
+.quest img{box-shadow:.4rem .8rem 1.6rem rgba(0,0,0,.5)}
+.quest h3{font-size:clamp(1.9rem,3.4vw,2.8rem);color:var(--gold);margin-bottom:.5rem}
+.reward{font-style:italic;color:var(--mint)}
+.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.4rem,4vw,3rem);padding-top:clamp(2rem,5vw,3rem);border-top:1px solid rgba(242,199,68,.3)}
+.side>div{display:grid;grid-template-columns:6.4rem minmax(0,1fr);gap:1.1rem;align-items:start}
+.side h3{font-size:1.5rem;color:#fff;margin-bottom:.3rem}.side p{font-size:1.02rem}
+/* Comic band: in the comic's own colours, flat and printed */
+.atl{background:var(--lilac);color:#2a1630}
+.atl h2{color:var(--comic)}.atl .rule{background-image:linear-gradient(var(--comic),var(--comic))}.atl .rule::after{background:var(--comic)}
+.atl .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.pair{position:relative;padding:0 18% 12% 0}.pair img{box-shadow:.35rem .35rem 0 #2a1630}.pair img+img{position:absolute;right:0;bottom:0;width:62%;rotate:3deg}
+.atl .quiet{color:var(--comic)}.atl .btn{background:var(--comic);color:#fff4e4}.atl .btn:hover,.atl .btn:focus-visible{background:#2a1630}
+.credit{font-size:1rem;color:#5b3f60}
+/* About */
+.about{background:var(--band)}.about .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,5rem);align-items:start}
+.about .big{font-family:var(--display);font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.12;color:#d8c7e6;margin:0}
+/* Close: free */
+.close{background:var(--dusk);text-align:center;border-top:1px solid var(--foil)}
+.close .big{font-family:var(--display);font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.02;color:var(--gold);margin:0 0 1rem}
+.close .row{justify-content:center}
+footer{padding:2rem 0 5.6rem;background:#0a1620;color:var(--soft);font-size:.98rem}footer p{margin:0}
+/* The token purse: counts the quests you've reached, opens the log */
+.purse{position:fixed;z-index:30;right:1rem;bottom:1rem;width:4.5rem;height:4.5rem;padding:0;border:0;background:#0d1b26 url(img/o.webp) center/90% no-repeat;border-radius:50%;color:#fff;font-family:var(--display);font-size:1.15rem;cursor:pointer;opacity:0;transform:translateY(1rem);transition:opacity .25s,transform .25s;pointer-events:none;box-shadow:0 .4rem 1rem rgba(0,0,0,.5)}
+.purse.on{opacity:1;transform:none;pointer-events:auto}
+.sheet{position:fixed;z-index:29;right:1rem;bottom:6.1rem;width:min(19rem,calc(100vw - 2rem));background:#0d1b26;border:1px solid var(--foil);padding:.8rem 1.1rem;display:none}
+.sheet.open{display:block}.sheet p{margin:0 0 .4rem;font-family:var(--display);color:var(--gold);font-size:1.15rem}
+.sheet a{display:block;padding:.42rem 0;text-decoration:none;border-top:1px solid rgba(242,199,68,.25)}.sheet a.done::before{content:"";display:inline-block;width:.55rem;height:.55rem;margin-right:.5rem;border-radius:50%;background:var(--gold)}
+.sheet a:hover,.sheet a:focus-visible{color:var(--gold)}
+@media (max-width:820px){
+body{font-size:1.06rem}.made{font-size:.8rem}
+.stage{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);gap:.9rem;padding:2.3rem 0 .9rem;justify-items:center;align-content:start}
+.cover{height:auto;width:min(88%,40svh)}
+.words{order:2;width:100%;height:100%;min-height:0;padding:0 var(--gutter);text-align:center}
+.js .say,.js .end{top:0;left:var(--gutter);right:var(--gutter);translate:none}
+.say{font-size:clamp(1.35rem,5.8vw,1.75rem)}.mark{font-size:.92rem;margin-bottom:.1rem}.end h1{font-size:2.05rem;margin-bottom:.2rem}.end p{font-size:.98rem;line-height:1.35;margin-bottom:.55rem}.end .row{justify-content:center}.btn{font-size:1.08rem;padding:.5rem 1.5rem}
+.quest,.quest.flipped{grid-template-columns:7.6rem minmax(0,1fr);align-items:start}.quest.flipped img{order:0}
+.side,.atl .grid,.about .grid{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="top" id="top"><p class="made">A homepage idea made by Sparsh Saini for Jon Auerbach. Not their official site.</p></div>
+<main>
+<section class="hero" aria-label="Guild of Tokens by Jon Auerbach">
+  <div class="stage">
+    <div class="words">
+      <p class="say s1">All Jen Jacobs has achieved in life is <em>loneliness.</em></p>
+      <p class="say s2">The quests are real, the rewards are real, and <em>the dangers are unimaginable.</em></p>
+      <div class="end">
+        <p class="mark">NYC Questing Guild, book one</p>
+        <h1>Guild of Tokens</h1>
+        <p>A real-life game of epic quests on the streets of New York, run by a centuries-old Guild. Urban fantasy, vampire-free.</p>
+        <div class="row"><a class="btn" href="https://jonauerbach.substack.com/p/guild-of-tokens-ch-1">Read it free</a><a class="quiet" href="https://www.amazon.com/Guild-Tokens-Jon-Auerbach/dp/1074564022/">Get the paperback</a></div>
+      </div>
+    </div>
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="plate" src="img/plate.jpg" alt="" width="960" height="1536" fetchpriority="high">
+        <img class="gold" src="img/title.webp" alt="" width="900" height="488" style="left:2.917%;top:12.63%;width:93.75%">
+        <div class="flash"></div>
+        <img class="flip ring" src="img/o.webp" alt="" width="178" height="170" style="left:18.854%;top:27.799%;width:18.542%">
+        <img class="flip disc" src="img/disc.webp" alt="" width="163" height="147" style="left:19.896%;top:28.581%;width:16.979%">
+        <img class="k" src="img/k0.webp" alt="" width="109" height="116" style="left:19.479%;top:71.68%;width:11.354%">
+        <img class="k" src="img/k1.webp" alt="" width="37" height="44" style="left:34.792%;top:74.284%;width:3.854%">
+        <img class="k" src="img/k2.webp" alt="" width="65" height="32" style="left:13.021%;top:79.297%;width:6.771%">
+        <img class="k" src="img/k3.webp" alt="" width="37" height="61" style="left:0%;top:80.99%;width:3.854%">
+        <img class="k" src="img/k4.webp" alt="" width="54" height="66" style="left:21.667%;top:83.594%;width:5.625%">
+        <img class="k" src="img/k5.webp" alt="" width="22" height="18" style="left:39.375%;top:77.018%;width:2.292%">
+        <img class="k" src="img/k6.webp" alt="" width="28" height="29" style="left:49.375%;top:81.901%;width:2.917%">
+        <img class="k" src="img/k7.webp" alt="" width="49" height="48" style="left:57.083%;top:78.971%;width:5.104%">
+        <img class="k" src="img/k8.webp" alt="" width="60" height="64" style="left:71.25%;top:76.563%;width:6.25%">
+        <img class="k" src="img/k9.webp" alt="" width="34" height="48" style="left:79.167%;top:69.661%;width:3.542%">
+        <img class="k" src="img/k10.webp" alt="" width="26" height="24" style="left:69.167%;top:72.917%;width:2.708%">
+        <img class="k" src="img/k11.webp" alt="" width="16" height="20" style="left:67.5%;top:78.906%;width:1.667%">
+        <img class="k" src="img/k12.webp" alt="" width="33" height="42" style="left:52.708%;top:87.5%;width:3.438%">
+        <img class="k" src="img/k13.webp" alt="" width="48" height="33" style="left:85.729%;top:93.359%;width:5%">
+        <img class="k" src="img/k14.webp" alt="" width="29" height="27" style="left:59.271%;top:96.029%;width:3.021%">
+        <img class="k" src="img/k15.webp" alt="" width="25" height="15" style="left:24.583%;top:97.982%;width:2.604%">
+        <img class="k" src="img/k16.webp" alt="" width="14" height="18" style="left:41.354%;top:98.307%;width:1.458%">
+        <img class="k" src="img/k17.webp" alt="" width="58" height="35" style="left:58.333%;top:97.721%;width:6.042%">
+        <img class="k" src="img/k18.webp" alt="" width="16" height="10" style="left:77.708%;top:73.698%;width:1.667%">
+        <img class="k" src="img/k19.webp" alt="" width="13" height="11" style="left:63.75%;top:72.07%;width:1.354%">
+        <img class="k" src="img/k20.webp" alt="" width="15" height="11" style="left:46.146%;top:88.346%;width:1.563%">
+        <img class="k" src="img/k21.webp" alt="" width="16" height="13" style="left:46.979%;top:90.82%;width:1.667%">
+        <img class="k" src="img/k22.webp" alt="" width="13" height="11" style="left:66.458%;top:81.706%;width:1.354%">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band log" id="guild" data-q="The Guild">
+  <div class="wrap">
+    <h2>The quests so far</h2><span class="rule"></span>
+    <article class="quest">
+      <img src="img/c-got.jpg" alt="Cover of Guild of Tokens: Jen in a red jacket among falling gold tokens under a stone arch" width="640" height="1024" loading="lazy">
+      <div>
+        <h3>Guild of Tokens</h3>
+        <p>Jen Jacobs stumbles across a real-life game of epic quests on the streets of New York and jumps at the chance for some excitement and gold tokens. Then a harrowing quest pairs her with Beatrice Taylor, who has her sights set on the Guild itself.</p>
+        <p class="reward">Little does she know that the items she strives to collect hold a darker purpose.</p>
+        <div class="row"><a class="btn" href="https://jonauerbach.substack.com/p/guild-of-tokens-ch-1">Chapter one</a><a class="quiet" href="https://www.amazon.com/Guild-Tokens-Jon-Auerbach/dp/1074564022/">Paperback</a><a class="quiet" href="https://www.audible.com.au/author/Jon-Auerbach/B00P6K9YQA">Audiobook</a></div>
+      </div>
+    </article>
+    <article class="quest flipped">
+      <img src="img/c-gom.jpg" alt="Cover of Guild of Magic: Jen on a New York street at dusk with tokens in the air" width="560" height="896" loading="lazy">
+      <div>
+        <h3>Guild of Magic</h3>
+        <p>Book two of the NYC Questing Guild.</p>
+        <p class="reward">Joining the Guild was only the beginning. Now Jen’s next quest could spell life or death.</p>
+        <div class="row"><a class="btn" href="https://jonauerbach.substack.com/p/guild-of-magic-ch-1">Chapter one</a></div>
+      </div>
+    </article>
+    <div class="side">
+      <div><img src="img/c-origins.jpg" alt="Cover of Guild of Tokens: Origins" width="400" height="640" loading="lazy"><div><h3>Origins</h3><p>The audiobook prequel: how Beatrice became the driven alchemist Jen meets.</p><a class="quiet" href="https://www.audible.com.au/author/Jon-Auerbach/B00P6K9YQA">On Audible</a></div></div>
+      <div><img src="img/c-trainee.jpg" alt="Cover of Guild of Tokens: Trainee" width="400" height="640" loading="lazy"><div><h3>Trainee</h3><p>A free short story when you join the monthly newsletter.</p><a class="quiet" href="https://www.jonauerbach.com/">Get the story</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band atl" id="atlantis" data-q="Blood of Atlantis">
+  <div class="wrap grid">
+    <div class="pair">
+      <img src="img/c-boa1.jpg" alt="Cover of Blood of Atlantis issue 1: Beatrice with a tiny glowing city in her hand" width="620" height="941" loading="lazy">
+      <img src="img/c-boa4.jpg" alt="Cover of Blood of Atlantis issue 4: Beatrice crouched at a stone doorway, reflected upside down" width="620" height="945" loading="lazy">
+    </div>
+    <div>
+      <h2>Blood of Atlantis</h2><span class="rule"></span>
+      <p>Magic is real. That’s a fact Beatrice Stallard has known for more than a decade. It isn’t the magic of storybooks: no wands, no spells, no incantations. The big quest is Atlantis, the fabled lost city, and she’ll cross New York City and beyond to find its secrets.</p>
+      <p class="credit">My comic series, with art and main covers by Francine Delgado.</p>
+      <p>Issue 4 funded on its first day on Kickstarter this October, with catch-up tiers for anyone starting late.</p>
+      <div class="row"><a class="btn" href="https://www.kickstarter.com/projects/jaauerbach/atlantis4">The issue 4 campaign</a><a class="quiet" href="https://jonauerbach.substack.com/p/blood-of-atlantis-4-kickstarter">What’s new in it</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band about" id="about" data-q="Jon">
+  <div class="wrap grid">
+    <p class="big">My kids call their copy of The Hobbit “the Bilbo book”.</p>
+    <div>
+      <h2>Hi, I’m Jon</h2><span class="rule"></span>
+      <p>I write comics and epic urban fantasy books, and I’m from New York. It started when I was six, when my parents bought me the 1977 animated Hobbit. Star Trek: The Next Generation and my dad’s paperbacks of Foundation and I, Robot did the rest.</p>
+      <div class="row"><a class="quiet" href="https://jonauerbach.substack.com/">ARC Worlds on Substack</a><a class="quiet" href="https://www.instagram.com/jaauerbach_author">Instagram</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band close" id="free" data-q="Free books">
+  <div class="wrap">
+    <p class="big">Books one and two are free to read.</p>
+    <p>Both are on ARC Worlds, chapter by chapter. No tokens needed.</p>
+    <div class="row"><a class="btn" href="https://jonauerbach.substack.com/p/guild-of-tokens-ch-1">Start the first quest</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><p>A mockup made by Sparsh Saini for Jon Auerbach. Not affiliated, not live. The covers and words are his.</p></div></footer>
+<div class="sheet" id="sheet"><p>Quest log</p></div>
+<button class="purse" id="purse" aria-label="Open the quest log" aria-expanded="false" aria-controls="sheet">0/4</button>
+<script>
+(()=>{
+const hero=document.querySelector('.hero'),$=s=>hero.querySelector(s),$$=s=>[...hero.querySelectorAll(s)];
+const cam=$('.cam'),gold=$('.gold'),ring=$('.ring'),disc=$('.disc'),flash=$('.flash'),s1=$('.s1'),s2=$('.s2'),end=$('.end'),cover=$('.cover');
+const c01=v=>Math.min(1,Math.max(0,v)),ease=t=>t*t*(3-2*t);
+const cache=new Map();const set=(el,k,v)=>{let m=cache.get(el);if(!m)cache.set(el,m={});if(m[k]!==v){m[k]=v;el.style[k]=v}};
+const fade=(el,a,b,c,d,p)=>{const v=c01((p-a)/(b-a))*(1-c01((p-c)/(d-c)));set(el,'opacity',v.toFixed(2));set(el,'transform','translateY('+((1-v)*(p<c?1:-1)).toFixed(2)+'rem)')};
+// Each printed token gets a fall, in an order that looks thrown rather than ruled.
+const ks=$$('.k').map((el,i)=>({el,at:.56+((i*7)%23)/23*.2,sp:(i%2?1:-1)*(120+((i*37)%140)),h:1.05+((i*13)%10)/20}));
+let W=1,H=1;const size=()=>{W=cover.offsetWidth;H=cover.offsetHeight};
+const FX=.5-.283,FY=.8-.3333; // from the O to Jen's feet, as fractions of the cover
+const draw=p=>{
+ set(cam,'transform','scale('+(2.35-1.35*ease(c01((p-.05)/.5))).toFixed(4)+')');
+ const t=c01((p-.07)/.43),e=ease(t);
+ const fx=FX*(1-e)+Math.sin(e*Math.PI)*.1,fy=FY*(1-e);
+ const spin=Math.cos(e*Math.PI*10),sc=.34+.66*e;
+ const sx=sc*Math.max(.06,Math.abs(spin))*(spin<0?-1:1);
+ const tf='translate('+(fx*W).toFixed(1)+'px,'+(fy*H).toFixed(1)+'px) scale('+sx.toFixed(3)+','+sc.toFixed(3)+')';
+ const seen=c01((p-.06)/.03);
+ set(ring,'transform',tf);set(disc,'transform',tf);
+ set(ring,'opacity',seen.toFixed(2));set(disc,'opacity',(seen*(1-c01((p-.5)/.05))).toFixed(2));
+ const hit=c01((p-.5)/.12);
+ set(gold,'opacity',ease(c01((p-.5)/.07)).toFixed(2));
+ set(flash,'opacity',(hit>0&&hit<1?(1-hit)*.95:0).toFixed(2));
+ set(flash,'transform','scale('+(.25+hit*1.5).toFixed(3)+')');
+ for(const k of ks){const q=c01((p-k.at)/.1);
+  if(q>=1){set(k.el,'transform','none');set(k.el,'visibility','visible');continue}
+  if(q<=0){set(k.el,'visibility','hidden');continue}
+  const b=q<.8?q/.8:1,fall=(1-b*b)*H*k.h,bounce=q>=.8?Math.sin((q-.8)/.2*Math.PI)*H*.012:0;
+  set(k.el,'visibility','visible');set(k.el,'transform','translateY('+(-fall-bounce).toFixed(1)+'px) rotate('+((1-b)*k.sp).toFixed(0)+'deg)')}
+ fade(s1,-1,0,.2,.27,p);fade(s2,.28,.35,.5,.56,p);
+ const n=ease(c01((p-.72)/.14));set(end,'opacity',n.toFixed(2));set(end,'transform','translateY('+((1-n)*1.2).toFixed(2)+'rem)');set(end,'visibility',n>0?'visible':'hidden');
+};
+// Quest log
+const purse=document.getElementById('purse'),sheet=document.getElementById('sheet'),qs=[...document.querySelectorAll('[data-q]')],links=qs.map(s=>{const a=document.createElement('a');a.href='#'+s.id;a.textContent=s.dataset.q;sheet.append(a);return a});
+const reached=new Set();const io=new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting){const i=qs.indexOf(e.target);reached.add(i);links[i].classList.add('done')}purse.textContent=reached.size+'/'+qs.length},{rootMargin:'0px 0px -35% 0px'});qs.forEach(s=>io.observe(s));
+purse.onclick=()=>{const o=sheet.classList.toggle('open');purse.setAttribute('aria-expanded',o)};links.forEach(a=>a.onclick=()=>{sheet.classList.remove('open');purse.setAttribute('aria-expanded',false)});
+const dock=()=>purse.classList.toggle('on',hero.getBoundingClientRect().bottom<innerHeight*.6);
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.remove('js');s1.style.display=s2.style.display='none';size();draw(1);end.style.transform='none';addEventListener('scroll',dock,{passive:true});dock();return}
+let tick=false;const up=()=>{tick=false;const run=hero.offsetHeight-innerHeight;draw(run>0?c01(-hero.getBoundingClientRect().top/run):1);dock()};
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(up)}},{passive:true});addEventListener('resize',()=>{size();up()});size();up();
+})();
+</script>
+</body>
+</html>

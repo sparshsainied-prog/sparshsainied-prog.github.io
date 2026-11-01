@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Georgina Makalani | The Hidden Princess and her worlds</title>
+<meta name="description" content="Fantasy and sci-fi with soul from Georgina Makalani: The Magics of Rei-Een and her other series, sold direct.">
+<meta property="og:title" content="A homepage for Georgina Makalani, made by Sparsh Saini">
+<meta property="og:description" content="A homepage idea for Georgina Makalani and The Hidden Princess, made by Sparsh Saini. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/georginamakalani/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23202340'/><path d='M3 17C10 16 14 12 16 6c2 6 6 10 13 11-3 1-5 1-7 1v8H10v-8c-2 0-4 0-7-1z' fill='%23d9dbe2'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --night: #1c1f3a;
+  --smoke: #2b2e4e;
+  --dusk: #474b78;
+  --lilac: #cfcaea;
+  --mist: #eef0f8;
+  --silk: #e266b6;
+  --silver: #d6d8de;
+  --ink: #e8e9f2;
+  --soft: #b4b6d0;
+  --display: "Cinzel Decorative", "Trajan Pro", Georgia, serif;
+  --text: "EB Garamond", Georgia, serif;
+  --gutter: clamp(1rem, 5vw, 4rem);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--night); color: var(--ink); font-family: var(--text); font-size: 1.22rem; line-height: 1.5; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; line-height: 1.08; }
+p { margin: 0 0 1rem; }
+:focus-visible { outline: 2px solid var(--silk); outline-offset: 3px; }
+.wrap { max-width: 72rem; margin: 0 auto; padding: 0 var(--gutter); }
+/* Buttons are silver lettering on a sliver of the cover's silk. */
+.btn { display: inline-block; padding: .6rem 1.3rem .65rem; background: linear-gradient(100deg, #c94fa3, var(--silk) 45%, #c5a2dd); color: #1c1f3a; font-weight: 600; text-decoration: none; line-height: 1.2; border-radius: 2px 14px 2px 14px; }
+.btn:hover, .btn:focus-visible { background: var(--mist); }
+.quiet { font-weight: 600; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.quiet:hover { color: var(--silk); }
+.row { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; align-items: center; }
+
+.made { position: absolute; z-index: 30; top: 0; left: 0; right: 0; margin: 0; padding: .42rem var(--gutter); background: #11132a; color: var(--soft); font-size: .95rem; line-height: 1.3; text-align: center; }
+
+/* Contents button: one upturned eave from the cover's roofs. */
+.eave { position: fixed; z-index: 40; right: .9rem; bottom: .9rem; width: 7.4rem; padding: 0; border: 0; background: none; color: var(--night); cursor: pointer; font: 600 1rem var(--text); opacity: 0; pointer-events: none; transition: opacity .25s; }
+.eave.on { opacity: 1; pointer-events: auto; }
+.eave svg { display: block; width: 100%; height: auto; }
+.eave span { position: absolute; left: 0; right: 0; bottom: .42rem; text-align: center; color: var(--night); }
+.sheet { position: fixed; z-index: 50; inset: 0; background: var(--smoke); padding: 4.5rem var(--gutter) 2rem; display: none; overflow: auto; }
+.sheet.on { display: block; }
+.sheet ul { list-style: none; margin: 0; padding: 0; max-width: 40rem; }
+.sheet li { border-bottom: 1px solid rgba(214, 216, 222, .3); }
+.sheet li a { display: block; padding: .8rem 0; font-family: var(--display); font-size: 1.5rem; text-decoration: none; color: var(--silver); }
+.sheet button { position: absolute; top: 1.1rem; right: var(--gutter); background: none; border: 1px solid var(--silver); color: var(--silver); font: 600 1rem var(--text); padding: .35rem .9rem; cursor: pointer; }
+
+/* Hero: the street's two rows of eaves are shut across the lens, and they draw back until she stands in the gap. */
+.hero { position: relative; height: 100svh; min-height: 40rem; }
+.js .hero { height: 340svh; }
+.stage { position: sticky; top: 0; height: 100svh; min-height: 40rem; overflow: hidden; background: linear-gradient(180deg, #3a3e68, var(--night) 75%);
+  display: grid; grid-template-columns: auto minmax(0, 30rem); justify-content: center; align-items: center; gap: clamp(2rem, 5vw, 5rem); padding: 3.4rem var(--gutter) 1.5rem; }
+.cover { position: relative; height: min(84svh, 50rem); aspect-ratio: 1; }
+.cam { position: absolute; inset: 0; transform-origin: 46% 26%; will-change: transform; }
+.cam > img { position: absolute; }
+.plate { inset: 0; width: 100%; height: 100%; }
+.w { inset: 0; width: 100%; height: 100%; will-change: transform, opacity; }
+.wl, .nl { transform-origin: 0 42%; }
+.wr, .nr { transform-origin: 100% 42%; }
+.smoke { left: -70%; top: 40%; width: 240%; max-width: none; will-change: transform, opacity; }
+.palm { left: 17%; top: 9%; width: 16%; opacity: 0; transform-origin: 50% 66%; will-change: transform, opacity; }
+.words { position: relative; width: min(30rem, 38vw); height: 22rem; }
+.say { font-family: var(--display); font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.16; color: #fff; margin: 0; text-wrap: balance; }
+.js .say, .js .end { position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%; will-change: transform, opacity; }
+.js .say { opacity: 0; }
+.js .s1 { opacity: 1; }
+.scrim { display: none; }
+.end .kicker { color: var(--lilac); font-style: italic; margin-bottom: .3rem; font-size: 1.25rem; }
+.end h1 { font-size: clamp(2.3rem, 4vw, 3.5rem); color: #fff; margin-bottom: .7rem; }
+.js .end { visibility: hidden; opacity: 0; }
+
+/* Shop sections */
+.band { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+h2 { font-size: clamp(1.9rem, 4vw, 3.1rem); color: #fff; margin-bottom: 1rem; }
+.reieen { background: var(--smoke); }
+.reieen .grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.lede { font-size: clamp(1.35rem, 2.2vw, 1.6rem); line-height: 1.4; }
+.trio { list-style: none; margin: 0 0 1.2rem; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.6rem, 1.5vw, 1.1rem); }
+.trio span { display: block; margin-top: .4rem; line-height: 1.2; font-size: 1.05rem; }
+.trio b { display: block; font-weight: 600; }
+.trio a { text-decoration: none; }
+.trio a:hover b { color: var(--silk); }
+.prices { margin: 0 0 1.4rem; border-top: 1px solid rgba(214, 216, 222, .35); }
+.prices div { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid rgba(214, 216, 222, .35); }
+.prices dt { margin: 0; } .prices dd { margin: 0; font-variant-numeric: tabular-nums lining-nums; font-weight: 600; white-space: nowrap; }
+
+.worlds { background: var(--mist); color: #24274a; }
+.worlds h2 { color: #24274a; }
+.worlds .sub { max-width: 40rem; margin-bottom: 2.2rem; }
+.shelf { list-style: none; margin: 0; padding: 0; border-top: 2px solid #24274a; }
+.shelf li { display: grid; grid-template-columns: 5.2rem minmax(0, 15rem) minmax(0, 1fr) auto; gap: clamp(.9rem, 2.4vw, 2rem); align-items: center; padding: .9rem 0; border-bottom: 1px solid rgba(36, 39, 74, .3); }
+.shelf h3 { font-size: 1.22rem; line-height: 1.15; font-weight: 700; }
+.shelf h3 small { display: block; font-family: var(--text); font-weight: 400; font-size: 1.02rem; margin-top: .2rem; }
+.shelf p { margin: 0; font-size: 1.14rem; line-height: 1.34; }
+.shelf .buy { font-weight: 600; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; color: #7c1f63; text-underline-offset: .2em; }
+
+.about { background: var(--night); }
+.about .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.about .tag { font-family: var(--display); font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.12; color: var(--lilac); margin: 0; }
+
+.free { background: linear-gradient(105deg, #7f2c70, #c04d9e 60%, #a98bd0); color: #fff; }
+.free .grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.free h2 { margin-bottom: .6rem; }
+.pair { display: flex; gap: 1rem; align-items: flex-start; }
+.pair img { width: clamp(7.5rem, 15vw, 12rem); box-shadow: 0 .8rem 1.6rem rgba(20, 10, 40, .45); }
+.free .btn { background: var(--night); color: #fff; }
+.free .btn:hover, .free .btn:focus-visible { background: #fff; color: var(--night); }
+footer { padding: 2rem 0 5rem; background: #11132a; color: var(--soft); font-size: 1.05rem; }
+footer p { margin: 0; }
+
+@media (max-width: 820px) {
+  body { font-size: 1.16rem; }
+  .made { font-size: .86rem; }
+  .stage { display: block; padding: 0; }
+  .cover { position: absolute; left: 0; top: 3.1rem; width: 100vw; height: 100vw; }
+  .words { position: absolute; left: var(--gutter); right: var(--gutter); top: calc(3.1rem + 100vw + .9rem); bottom: 1rem; width: auto; height: auto; text-align: left; }
+  .js .say { top: auto; bottom: 1.2rem; translate: none; font-size: 1.62rem; }
+  .js .end { top: 0; translate: none; }
+  .scrim { display: block; position: absolute; left: 0; right: 0; bottom: 0; height: 18rem; background: linear-gradient(0deg, rgba(17, 19, 42, .9), rgba(17, 19, 42, 0)); will-change: opacity; }
+  .end .kicker { font-size: 1.05rem; margin-bottom: 0; }
+  .end h1 { font-size: 1.9rem; margin-bottom: .35rem; }
+  .end p { font-size: 1.1rem; line-height: 1.32; margin-bottom: .6rem; }
+  .reieen .grid, .about .grid, .free .grid { grid-template-columns: minmax(0, 1fr); }
+  .shelf li { grid-template-columns: 4.4rem minmax(0, 1fr); align-items: start; }
+  .shelf p { grid-column: 2; }
+  .shelf .buy { grid-column: 2; }
+}
+</style>
+<style>:where(img){height:auto}</style>
+</head>
+<body>
+<p class="made" id="top">A homepage idea made by Sparsh Saini for Georgina Makalani. Not their official site.</p>
+
+<button class="eave" type="button" aria-haspopup="dialog" aria-expanded="false">
+  <svg viewBox="0 0 148 58" aria-hidden="true"><path d="M2 10c10 12 24 15 42 15h60c18 0 32-3 42-15-2 14-10 24-24 27v19H26V37C12 34 4 24 2 10z" fill="#d6d8de"/><path d="M2 10c10 12 24 15 42 15h60c18 0 32-3 42-15" fill="none" stroke="#474b78" stroke-width="2"/></svg>
+  <span>Contents</span>
+</button>
+<div class="sheet" role="dialog" aria-label="Contents">
+  <button type="button">Close</button>
+  <ul>
+    <li><a href="#reieen">The Magics of Rei-Een</a></li>
+    <li><a href="#worlds">The other worlds</a></li>
+    <li><a href="#about">Georgina</a></li>
+    <li><a href="#free">Two free stories</a></li>
+  </ul>
+</div>
+
+<main>
+<section class="hero" aria-label="The Hidden Princess by Georgina Makalani">
+  <div class="stage">
+    <div class="cover" aria-hidden="true">
+      <div class="cam">
+        <img class="plate" src="img/plate.jpg" alt="" width="1600" height="1600" fetchpriority="high">
+        <img class="palm" src="img/palm.webp" alt="" width="256" height="352">
+        <img class="w wl" src="img/wing-l.webp" alt="" width="1600" height="1600">
+        <img class="w wr" src="img/wing-r.webp" alt="" width="1600" height="1600">
+        <img class="w nl" src="img/near-l.webp" alt="" width="1000" height="1000">
+        <img class="w nr" src="img/near-r.webp" alt="" width="1000" height="1000">
+        <img class="smoke" src="img/smoke.webp" alt="" width="1000" height="640">
+      </div>
+    </div>
+    <div class="scrim"></div>
+    <div class="words">
+      <p class="say s1">In the Empire of Rei-Een, tradition is law, and magic means death.</p>
+      <p class="say s2">Lis has spent her life hidden.</p>
+      <div class="end">
+        <p class="kicker">The Magics of Rei-Een, book one</p>
+        <h1>The Hidden Princess</h1>
+        <p>Then the crown prince is murdered, and Lis is summoned for the Choosing of the Hidden Princess.</p>
+        <div class="row"><a class="btn" href="https://www.georginamakalaniauthor.com/products/the-hidden-princess">Get the ebook, $5.99</a><a class="quiet" href="#reieen">All three books</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band reieen" id="reieen">
+  <div class="wrap grid">
+    <div>
+      <h2>The Magics of Rei-Een</h2>
+      <p class="lede">The new crown prince has little interest in choosing a bride, especially one who must remain hidden. He wants to wipe out magic. Lis has been keeping hers a secret all her life.</p>
+      <ul class="trio">
+        <li><a href="https://www.georginamakalaniauthor.com/products/the-hidden-princess"><img src="img/c-hp1.jpg" alt="Cover of The Hidden Princess" width="800" height="800" loading="lazy"><span>Book one<b>The Hidden Princess</b></span></a></li>
+        <li><a href="https://www.georginamakalaniauthor.com/products/hidden-promises"><img src="img/c-hp2.jpg" alt="Cover of Hidden Promises" width="800" height="800" loading="lazy"><span>Book two<b>Hidden Promises</b></span></a></li>
+        <li><a href="https://www.georginamakalaniauthor.com/products/the-hidden-phoenix"><img src="img/c-hp3.jpg" alt="Cover of The Hidden Phoenix" width="800" height="800" loading="lazy"><span>Book three<b>The Hidden Phoenix</b></span></a></li>
+      </ul>
+    </div>
+    <div>
+      <dl class="prices">
+        <div><dt>Each ebook</dt><dd>$5.99</dd></div>
+        <div><dt>Each audiobook (AI narrated)</dt><dd>$5.99</dd></div>
+        <div><dt>All three ebooks, save 25%</dt><dd>$15.00</dd></div>
+      </dl>
+      <p>Prices in Australian dollars, straight from my own shop.</p>
+      <div class="row"><a class="btn" href="https://www.georginamakalaniauthor.com/products/the-magics-of-rei-een-ebook-bundle">Get all three</a><a class="quiet" href="https://www.georginamakalaniauthor.com/collections/the-magics-of-rei-een-ai-audiobooks">The audiobooks</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band worlds" id="worlds">
+  <div class="wrap">
+    <h2>The other worlds</h2>
+    <p class="sub">Every series as an ebook bundle. Pick the one whose first line gets you.</p>
+    <ul class="shelf">
+      <li><img src="img/c-raven.jpg" alt="Cover of Raven's Dawn" width="520" height="726" loading="lazy"><h3>The Raven Crown<small>3 books</small></h3><p>A dying king, a favoured daughter and a secret hidden in the shadows.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-raven-crown-ebook-bundle">Bundle $13.50</a></li>
+      <li><img src="img/c-burasal.jpg" alt="Cover of The Burning Prince" width="520" height="726" loading="lazy"><h3>The Flames of Burasal<small>3 books</small></h3><p>A witch on the run. Two brothers determined to help her.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-flames-of-burasal-ebook-bundle">Bundle $15.00</a></li>
+      <li><img src="img/c-oldra.jpg" alt="Cover of The Mark of Oldra" width="520" height="726" loading="lazy"><h3>The Mark of Oldra<small>2 books</small></h3><p>The snow calls her, but the shadows may claim her.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-mark-of-oldra-ebook-bundle">Bundle $10.00</a></li>
+      <li><img src="img/c-dragon.jpg" alt="Cover of The Empty Crown" width="520" height="726" loading="lazy"><h3>The Last Dragon Skin Chronicles<small>4 books</small></h3><p>Ana is running for her life, and she has dragged Captain Drayton along. Or did he drag her?</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-last-dragon-skin-chronicles-ebook-bundle">Bundle $18.00</a></li>
+      <li><img src="img/c-haven.jpg" alt="Cover of Silver and Salt" width="520" height="726" loading="lazy"><h3>Beneath the Fire Tree<small>4 books, Haven and Sunshine</small></h3><p>Even if he dies, he will live again.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/beneath-the-fire-tree-ebook-bundle">Bundle $18.00</a></li>
+      <li><img src="img/c-rohendra.jpg" alt="Cover of Rohendra Queen" width="520" height="726" loading="lazy"><h3>The Rohendra Complex<small>4 books, science fiction</small></h3><p>She survived a battle she cannot remember. Someone intends to keep it that way.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-rohendra-complex-ebook-bundle">Bundle $18.00</a></li>
+      <li><img src="img/c-spell.jpg" alt="Cover of The Broken Spell" width="520" height="811" loading="lazy"><h3>The Changeling and the Wolf<small>10 episodes</small></h3><p>Ella was the girl the forest chose to save. Wolfie was the one who found her.</p><a class="buy" href="https://www.georginamakalaniauthor.com/products/the-changeling-and-the-wolf-complete-series-e-book-bundle">Bundle $21.00</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band about" id="about">
+  <div class="wrap grid">
+    <p class="tag">Public servant by day, fantasy author by night.</p>
+    <div>
+      <h2>Hi, I’m Georgina</h2>
+      <p>I write fantasy and sci-fi with soul: stories about identity, connection and survival. All of it is in my own shop, ebooks and audio.</p>
+      <div class="row"><a class="quiet" href="https://www.georginamakalaniauthor.com/collections/all">Everything in the shop</a><a class="quiet" href="https://www.instagram.com/georginamakalani/">Instagram</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band free" id="free">
+  <div class="wrap grid">
+    <div>
+      <h2>Two stories, $0</h2>
+      <p>The Legend Begins opens The Legend of Iski Flare, ten fairy tale retellings. Above the Clouds opens The Changeling and the Wolf. Journey with them and discover just how dark a faery tale can be.</p>
+      <div class="row"><a class="btn" href="https://www.georginamakalaniauthor.com/products/the-legend-begins">The Legend Begins</a><a class="btn" href="https://www.georginamakalaniauthor.com/products/above-the-clouds">Above the Clouds</a></div>
+    </div>
+    <div class="pair">
+      <img src="img/c-iski.jpg" alt="Cover of The Legend Begins" width="520" height="726" loading="lazy">
+      <img src="img/c-clouds.jpg" alt="Cover of Above the Clouds" width="520" height="811" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><p>A mockup made by Sparsh Saini for Georgina Makalani. Not affiliated, not live. The covers and words are hers.</p></div>
+</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero'), $ = s => hero.querySelector(s);
+  const cam = $('.cam'), wl = $('.wl'), wr = $('.wr'), nl = $('.nl'), nr = $('.nr'), palm = $('.palm'), smoke = $('.smoke'), s1 = $('.s1'), s2 = $('.s2'), end = $('.end'), scrim = $('.scrim'), cover = $('.cover'), stage = $('.stage');
+  const eave = document.querySelector('.eave'), sheet = document.querySelector('.sheet');
+  const c01 = v => Math.min(1, Math.max(0, v)), ease = t => t * t * (3 - 2 * t);
+  const open = on => { sheet.classList.toggle('on', on); eave.setAttribute('aria-expanded', on); (on ? sheet.querySelector('button') : eave).focus(); };
+  eave.addEventListener('click', () => open(true));
+  sheet.addEventListener('click', e => { if (e.target.closest('button') || e.target.closest('a')) open(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('on')) open(false); });
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let zoom = 2, dx = 0, phone = false;
+  const measure = () => {
+    phone = innerWidth <= 820;
+    const r = stage.getBoundingClientRect(), c = cover.getBoundingClientRect();
+    // Start wide enough that the shut walls fill the whole stage on any screen.
+    zoom = Math.max(r.width, r.height) / c.width * 1.12;
+    dx = (r.left + r.width / 2) - (c.left + c.width * .46);
+  };
+  const last = new Map();
+  const set = (el, k, v) => { let m = last.get(el); if (!m) last.set(el, m = {}); if (m[k] !== v) { m[k] = v; el.style[k] = v; } };
+  const fade = (el, a, b, c, d, p) => { const v = c01((p - a) / (b - a)) * (1 - c01((p - c) / (d - c))); set(el, 'opacity', v.toFixed(2)); };
+  const draw = p => {
+    // Walls: from far past the lens to their printed place.
+    const t = ease(c01((p - .03) / .62)), k = 1 + 2.3 * (1 - t) ** 1.6;
+    set(wl, 'transform', `scale(${k.toFixed(4)})`);
+    set(wr, 'transform', `scale(${k.toFixed(4)})`);
+    const wo = (1 - c01((p - .64) / .06)).toFixed(2);
+    set(wl, 'opacity', wo); set(wr, 'opacity', wo);
+    // The near eaves leave first and faster, past the edges of the frame.
+    const n = ease(c01((p - .02) / .42)), nk = 2.9 + 1.4 * n, no = (1 - c01((p - .28) / .14)).toFixed(2);
+    set(nl, 'transform', `translateX(${(-92 * n).toFixed(2)}%) scale(${nk.toFixed(3)})`);
+    set(nr, 'transform', `translateX(${(92 * n).toFixed(2)}%) scale(${nk.toFixed(3)})`);
+    set(nl, 'opacity', no); set(nr, 'opacity', no);
+    // Camera eases back from her face, and the title comes into frame.
+    const c = ease(c01((p - .16) / .46)), s = zoom + (1 - zoom) * c;
+    set(cam, 'transform', `translateX(${(dx * (1 - c)).toFixed(1)}px) scale(${s.toFixed(4)})`);
+    // The cover's smoke holds the title back, then sinks away from it.
+    const sm0 = ease(c01((p - .34) / .3));
+    set(smoke, 'opacity', (1 - c01((p - .5) / .14)).toFixed(2));
+    set(smoke, 'transform', `translateY(${(sm0 * 34).toFixed(2)}%)`);
+    // The light at her fingers flares once she is found.
+    const g = c01((p - .5) / .18), pulse = g < .5 ? g * 2 : 1 - (g - .5) * .9;
+    set(palm, 'opacity', (g > 0 ? pulse : 0).toFixed(2));
+    set(palm, 'transform', `scale(${(1 + pulse * .9).toFixed(3)})`);
+    fade(s1, -1, 0, .18, .26, p);
+    fade(s2, .47, .52, .64, .69, p);
+    const e = ease(c01((p - .72) / .14));
+    set(end, 'opacity', e.toFixed(2)); set(end, 'visibility', e > 0 ? 'visible' : 'hidden');
+    set(end, 'transform', `translateY(${((1 - e) * 1.2).toFixed(2)}rem)`);
+    if (phone) set(scrim, 'opacity', (1 - c01((p - .5) / .15)).toFixed(2));
+    eave.classList.toggle('on', p > .86);
+  };
+  if (reduced) {
+    document.documentElement.classList.remove('js');
+    [s1, s2, wl, wr, nl, nr, palm, smoke, scrim].forEach(el => el.style.display = 'none');
+    eave.classList.add('on');
+    return;
+  }
+  let ticking = false;
+  const update = () => { ticking = false; const run = hero.offsetHeight - innerHeight; draw(run > 0 ? c01(-hero.getBoundingClientRect().top / run) : 1); };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', () => { cam.style.transform = 'none'; last.delete(cam); measure(); update(); });
+  measure(); update();
+})();
+</script>
+</body>
+</html>
