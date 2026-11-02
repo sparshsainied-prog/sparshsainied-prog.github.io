@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The House as Witness, poems by Veronica Tucker</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="A homepage idea made by Sparsh Saini for Veronica Tucker. Not her official site.">
+<meta property="og:title" content="The House as Witness, poems by Veronica Tucker">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Veronica Tucker. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/veronicatucker/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--wall:#f6eedb;--wall2:#e6decb;--shade:#cfc6b2;--ink:#3b2f24;--ink2:#6b5c4b;--red:#a22a17;--red2:#8a2212;--on:#fbf4e4}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--wall)}
+body{margin:0;font:400 20px/1.6 "EB Garamond",Georgia,serif;color:var(--ink);background:var(--wall);overflow-x:clip}
+::selection{background:var(--red);color:var(--on)}
+a{color:var(--red2);text-underline-offset:.18em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+img{display:block;max-width:100%;height:auto}
+.strip{position:absolute;z-index:30;top:0;left:0;right:0;padding:7px 14px;font-size:13.5px;line-height:1.35;text-align:center;color:var(--ink);background:rgba(246,238,219,.86)}
+
+.hero{position:relative;height:430vh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;contain:strict;background:var(--wall)}
+.art{position:absolute;top:0;left:50%;height:100%;aspect-ratio:850/1360;margin-left:calc(-50svh*850/1360)}
+.wide{position:absolute;left:-100%;top:0;width:300%;height:100%;max-width:none}
+#cam{position:absolute;inset:0;transform-origin:50% 45%;will-change:transform}
+#sa2,#sb2{opacity:0}
+.sh{position:absolute;left:-40%;top:-40%;width:180%;height:180%;max-width:none;transform-origin:44.4% 38.9%;will-change:transform,opacity}
+.wash{position:absolute;inset:0;opacity:0;will-change:opacity;pointer-events:none}
+#cool{background:#5e7186}#gold{background:#d9974a}
+.title{position:absolute;left:0;right:0;top:34.5%;margin:0;text-align:center;font-weight:400;color:var(--red);line-height:1.06;font-size:min(15.6vw,13.4svh);letter-spacing:-.005em}
+.title span{display:block}
+.by{position:absolute;left:0;right:0;top:calc(34.5% + min(15.6vw,13.4svh)*2.34);text-align:center;color:var(--red);font-size:min(5.3vw,4.2svh);line-height:1.2}
+.line{position:absolute;z-index:6;left:50%;top:70%;width:min(86vw,560px);margin-left:calc(min(86vw,560px)/-2);text-align:center;opacity:0;will-change:opacity;pointer-events:none}
+.line i{display:block;font-size:clamp(24px,3.5svh,32px);line-height:1.2;color:var(--ink)}
+.line small{display:block;font-size:15.5px;color:var(--ink);margin-top:5px}
+.say{position:absolute;z-index:6;left:50%;top:68%;width:min(86vw,560px);margin:0 0 0 calc(min(86vw,560px)/-2);text-align:center;font-style:italic;font-size:clamp(19px,2.6svh,23px);line-height:1.34;color:var(--ink);will-change:opacity}
+.go{position:absolute;z-index:7;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);display:flex;justify-content:center;gap:10px;flex-wrap:wrap;will-change:opacity}
+.btn{display:inline-block;padding:.45em 1em .5em;font-size:18px;line-height:1.2;text-decoration:none;color:var(--red2);border:1px solid var(--red);background:rgba(251,244,228,.7);transition:background .16s ease-out,color .16s ease-out,transform .12s ease-out;white-space:nowrap}
+.btn:hover{background:var(--red);color:var(--on)}
+.btn:active{transform:translateY(1px)}
+.btn.solid{background:var(--red);color:var(--on)}
+.btn.solid:hover{background:var(--red2)}
+@media(min-width:900px){.title{font-size:min(7.4vw,13.4svh);top:29%}.by{top:calc(29% + min(7.4vw,13.4svh)*2.34);font-size:min(2.4vw,3.6svh)}.say{top:64%}.line{top:66%}.go{bottom:7%}}
+
+section{padding:clamp(64px,10vw,132px) clamp(22px,7vw,104px)}
+h2{margin:0 0 .5em;font-weight:400;font-size:clamp(34px,5.4vw,60px);line-height:1.1;color:var(--red);text-wrap:balance}
+p{margin:0 0 1em;max-width:34em;text-wrap:pretty}
+.book{display:grid;gap:clamp(30px,6vw,84px);align-items:center;background:var(--wall)}
+.book img{width:min(66vw,340px);box-shadow:0 18px 40px -14px rgba(59,47,36,.55)}
+.buy{margin:1.5em 0 0;padding:0;list-style:none;border-top:1px solid var(--shade);max-width:26em}
+.buy li{border-bottom:1px solid var(--shade)}
+.buy a{display:flex;justify-content:space-between;gap:16px;padding:.5em 0;text-decoration:none}
+.buy a:hover span{text-decoration:underline}
+.buy em{color:var(--ink2);font-size:17px}
+.note{font-size:17px;color:var(--ink2)}
+.hall{position:relative;overflow:hidden;background:var(--wall2)}
+.hall .bg{position:absolute;left:0;top:-30%;width:100%;height:160%;object-fit:cover;max-width:none;opacity:.9}
+.hall>div{position:relative}
+.hall blockquote{margin:0;font-size:clamp(29px,5vw,58px);line-height:1.17;max-width:21em;color:var(--ink);text-wrap:pretty}
+.hall cite{display:block;font-style:normal;font-size:17px;margin-top:1.3em;color:var(--ink)}
+.hall .b2{margin-top:clamp(40px,7vw,84px);margin-left:auto;font-size:clamp(23px,3vw,34px);font-style:italic;line-height:1.26;max-width:17em}
+.rhymes{display:grid;gap:clamp(30px,6vw,84px);align-items:center;background:#dfe5e6}
+.rhymes h2{color:#22405f}.rhymes a{color:#22405f}
+.rhymes img{width:min(62vw,300px);box-shadow:0 16px 34px -14px rgba(34,64,95,.55)}
+.me{display:grid;gap:clamp(30px,6vw,84px);align-items:start;background:var(--wall)}
+.me img{width:100%;max-width:420px}
+.me .help{margin-top:1.8em;padding-top:1em;border-top:1px solid var(--shade);font-size:18px}
+.close{background:var(--red);color:var(--on)}
+.close h2{color:var(--on);font-size:clamp(40px,8vw,92px);max-width:12em}
+.close a{color:var(--on)}
+.close .btn{border-color:var(--on);background:transparent;margin:.3em .4em .3em 0}
+.close .btn:hover{background:var(--on);color:var(--red2)}
+footer{background:var(--red2);color:var(--on);padding:24px clamp(22px,7vw,104px) 96px;font-size:15.5px}
+footer p{margin:0;max-width:none}
+@media(min-width:900px){
+ .book{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}.book img{justify-self:end;width:100%;max-width:370px}
+ .rhymes{grid-template-columns:minmax(0,7fr) minmax(0,4fr)}.rhymes img{width:100%;max-width:320px}
+ .me{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+}
+
+/* the window button: one pane lights per room reached */
+.win{position:fixed;z-index:20;left:14px;bottom:14px;width:62px;padding:7px 7px 5px;background:var(--wall);border:1px solid var(--red);cursor:pointer;color:var(--red2);font:15px/1 "EB Garamond",serif;opacity:0;pointer-events:none;transition:opacity .2s ease-out,transform .12s ease-out}
+.win svg{display:block;width:100%;height:auto;margin-bottom:5px}
+.win rect{fill:var(--shade);transition:fill .3s ease-out}
+.win rect.on{fill:var(--red)}
+.win:active{transform:translateY(1px)}
+body.past .win{opacity:1;pointer-events:auto}
+.rooms{position:fixed;z-index:21;left:14px;bottom:100px;width:min(76vw,250px);padding:10px 16px 12px;background:var(--wall);border:1px solid var(--red);display:none}
+.rooms.open{display:block}
+.rooms a{display:block;padding:.3em 0;text-decoration:none}
+.rooms a:hover{text-decoration:underline}
+@media(prefers-reduced-motion:reduce){.hero{height:100vh;height:100svh}}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Veronica Tucker. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="stage">
+  <div class="art"><div id="cam"><img class="wide" src="img/wide.jpg" width="2550" height="1360" alt=""></div></div>
+  <h1 class="title"><span>The House</span><span>as Witness</span></h1>
+  <div class="by">Poems by Veronica Tucker</div>
+  <div class="art"><img class="sh" id="sa" src="img/sa.webp" alt=""><img class="sh" id="sb" src="img/sb.webp" alt=""><img class="sh" id="sa2" src="img/sa.webp" alt=""><img class="sh" id="sb2" src="img/sb.webp" alt=""></div>
+  <div class="wash" id="cool"></div><div class="wash" id="gold"></div>
+  <p class="line" id="l1"><i>Tea Cups Left in the Sink</i><small>a poem in this book</small></p>
+  <p class="line" id="l2"><i>Laundry Spinning Like Time</i><small>a poem in this book</small></p>
+  <p class="line" id="l3"><i>The Hallway Between Us</i><small>a poem in this book</small></p>
+  <p class="say" id="say">"I wanted to give the house a voice because, in a way, it had been there for all of it."</p>
+  <div class="go" id="go"><a class="btn solid" href="#book">The book</a><a class="btn" href="#me">Veronica</a></div>
+ </div>
+</header>
+
+<main>
+<section class="book" id="book" data-room>
+ <img src="img/cover.jpg" width="850" height="1360" alt="The cover of The House as Witness: red type on a cream wall crossed by the shadow of a window" loading="lazy">
+ <div>
+  <h2>The House as Witness</h2>
+  <p>Poems about memory, motherhood, healing and the places that hold us. A New Hampshire home, from construction and childhood through illness and inheritance.</p>
+  <ul class="buy">
+   <li><a href="https://a.co/d/0cwRHsx5"><span>Amazon</span><em>Paperback</em></a></li>
+   <li><a href="https://www.barnesandnoble.com/w/the-house-as-witness-veronica-tucker/1149649224?ean=9781969601019"><span>Barnes &amp; Noble</span><em>Paperback</em></a></li>
+   <li><a href="https://www.walmart.com/ip/The-House-as-Witness-Paperback-9781969601019/19705411934"><span>Walmart</span><em>Paperback</em></a></li>
+  </ul>
+  <p class="note" style="margin-top:1.1em">Quillkeepers Press, 2026.</p>
+ </div>
+</section>
+
+<section class="hall" id="hall" data-room>
+ <img class="bg" src="img/sa.webp" alt="" loading="lazy">
+ <div>
+  <blockquote>The same hallway could hold the sound of children running through it and, years later, the memory of someone who was no longer there.<cite>Veronica, <a href="https://literarytitan.com/2026/10/29/giving-the-house-a-voice/" style="color:inherit">talking to Literary Titan</a></cite></blockquote>
+  <p class="b2">Knowing what might happen medically doesn't make you any less of a daughter.</p>
+ </div>
+</section>
+
+<section class="rhymes" id="rhymes" data-room>
+ <div>
+  <h2>Home Is Here</h2>
+  <p>New Hampshire nursery rhymes, the other side of the same place: original poems for the magic of childhood through all four seasons and the little moments that make it home. Illustrated by Nicole Hogan.</p>
+  <p><a href="https://kelsaybooks.com/products/home-is-here-new-hampshire-nursery-rhymes">Kelsay Books</a> &nbsp; <a href="https://a.co/d/08Htgb4u">Amazon</a></p>
+ </div>
+ <img src="img/home-is-here.jpg" alt="The cover of Home Is Here: a fox, a rabbit and a bear beside a New Hampshire lake" loading="lazy">
+</section>
+
+<section class="me" id="me" data-room>
+ <img src="img/veronica.jpg" width="800" height="920" alt="Veronica Tucker at sunset on a balcony by the sea" loading="lazy">
+ <div>
+  <h2>Veronica</h2>
+  <p>Emergency medicine and addiction medicine physician, writer, mother of three, lifelong New Englander. She writes for the moments that do not fit into charts or case notes, and lives in New Hampshire, where the seasons shape her days.</p>
+  <p>Her work has appeared in The Offing, ONE ART, Rust &amp; Moth and elsewhere, with Pushcart Prize and Best of the Net nominations and a place in Best Microfiction 2026.</p>
+  <p><a href="https://www.veronicatuckerwrites.com/blog">From the writing desk</a> &nbsp; <a href="https://veronicatuckerwrites.substack.com">Substack</a></p>
+  <p class="help">If you or someone close to you needs them, Veronica keeps <a href="https://www.veronicatuckerwrites.com/resources-for-health-and-healing">resources for help and healing</a> and a page on <a href="https://www.veronicatuckerwrites.com/ending-stigma-in-addiction">ending stigma in addiction</a>.</p>
+ </div>
+</section>
+
+<section class="close" id="hello">
+ <h2>Tell me which line stuck with you.</h2>
+ <p>A question, a kindred thought or one line. Veronica reads every note.</p>
+ <a class="btn" href="mailto:veronica@veronicatuckerwrites.com">Write to Veronica</a><a class="btn" href="https://www.instagram.com/veronicatuckerwrites">Instagram</a>
+</section>
+</main>
+
+<footer><p>A mockup made by Sparsh Saini for Veronica Tucker. Not affiliated, not live.</p></footer>
+
+<button class="win" id="win" aria-expanded="false" aria-controls="rooms" aria-label="Rooms: open contents"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="20" height="20"/><rect x="26" y="2" width="20" height="20"/><rect x="2" y="26" width="20" height="20"/><rect x="26" y="26" width="20" height="20"/></svg>Rooms</button>
+<nav class="rooms" id="rooms" aria-label="Contents"><a href="#book">The book</a><a href="#hall">The hallway</a><a href="#rhymes">Home Is Here</a><a href="#me">Veronica</a><a href="#hello">Say hello</a></nav>
+
+<script>
+(function(){
+var win=document.getElementById('win'),rooms=document.getElementById('rooms'),hero=document.querySelector('.hero');
+win.onclick=function(){var o=rooms.classList.toggle('open');win.setAttribute('aria-expanded',o)};
+rooms.onclick=function(e){if(e.target.tagName==='A'){rooms.classList.remove('open');win.setAttribute('aria-expanded',false)}};
+new IntersectionObserver(function(e){document.body.classList.toggle('past',!e[0].isIntersecting)}).observe(hero);
+var panes=[].slice.call(win.querySelectorAll('rect')),rm=[].slice.call(document.querySelectorAll('[data-room]'));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)panes[rm.indexOf(e.target)].classList.add('on')})},{rootMargin:'-30% 0px -40% 0px'});rm.forEach(function(s){io.observe(s)});
+if(matchMedia('(prefers-reduced-motion: reduce)').matches||location.hash==='#still')return;
+var $=function(i){return document.getElementById(i)},cam=$('cam'),sa=$('sa'),sb=$('sb'),cool=$('cool'),gold=$('gold'),l1=$('l1'),l2=$('l2'),l3=$('l3'),say=$('say'),go=$('go'),sa2=$('sa2'),sb2=$('sb2');
+var ss=function(a,b,v){var t=Math.min(1,Math.max(0,(v-a)/(b-a)));return t*t*(3-2*t)};
+var bell=function(a,b,c,d,v){return ss(a,b,v)*(1-ss(c,d,v))};
+// the day has three rests, one per poem
+var K=[0,.12,.32,.42,.62,.72,.92,1];
+var kf=function(v,p){for(var i=1;i<K.length;i++)if(p<=K[i]){var t=(p-K[i-1])/(K[i]-K[i-1]);t=t*t*(3-2*t);return v[i-1]+(v[i]-v[i-1])*t}return v[v.length-1]};
+var aA=[-40,-40,-26,-26,-12,-12,0,0],aB=[-20,-20,-13,-13,-6,-6,0,0],xA=[.22,.22,.13,.13,.05,.05,0,0],xB=[-.16,-.16,-.1,-.1,-.04,-.04,0,0],yA=[-.1,-.1,-.05,-.05,-.02,-.02,0,0],sA=[1.34,1.34,1.17,1.17,1.06,1.06,1,1],sB=[1.2,1.2,1.1,1.1,1.04,1.04,1,1],oS=[.85,.85,1,1,1,1,1,1],oD=[.8,.8,1,1,1,1,0,0],cA=[.3,.3,.1,.1,0,0,0,0],gA=[0,0,0,0,.2,.2,0,0],zC=[1.05,1.05,1.03,1.03,1.01,1.01,1,1];
+var top0,end,AW,H,last=-1,raf=0;
+function size(){var st=document.querySelector('.stage');H=st.offsetHeight;AW=H*850/1360;top0=hero.offsetTop;end=hero.offsetHeight-H;draw(true)}
+function draw(f){raf=0;var p=Math.min(1,Math.max(0,(scrollY-top0)/end));if(!f&&p===last)return;last=p;
+ sa.style.transform='translate3d('+(kf(xA,p)*AW).toFixed(1)+'px,'+(kf(yA,p)*H).toFixed(1)+'px,0) rotate('+kf(aA,p).toFixed(2)+'deg) scale('+kf(sA,p).toFixed(4)+')';
+ sb.style.transform='translate3d('+(kf(xB,p)*AW).toFixed(1)+'px,0,0) rotate('+kf(aB,p).toFixed(2)+'deg) scale('+kf(sB,p).toFixed(4)+')';
+ var o=kf(oS,p).toFixed(3),o2=kf(oD,p);sa.style.opacity=o;sb.style.opacity=o;sa2.style.transform=sa.style.transform;sb2.style.transform=sb.style.transform;sa2.style.opacity=o2.toFixed(3);sb2.style.opacity=o2.toFixed(3);var v=o2<.004?'hidden':'visible';sa2.style.visibility=v;sb2.style.visibility=v;
+ cool.style.opacity=kf(cA,p).toFixed(3);gold.style.opacity=kf(gA,p).toFixed(3);cam.style.transform='scale('+kf(zC,p).toFixed(4)+')';
+ l1.style.opacity=bell(.02,.07,.2,.27,p);l2.style.opacity=bell(.3,.35,.44,.5,p);l3.style.opacity=bell(.56,.61,.72,.78,p);
+ say.style.opacity=ss(.86,.94,p);go.style.opacity=Math.max(1-ss(.01,.05,p),ss(.92,.98,p));go.style.pointerEvents=(p<.03||p>.94)?'auto':'none';
+}
+addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(function(){draw()})},{passive:true});
+addEventListener('resize',size);addEventListener('load',size);size();
+})();
+</script>
+</body>
+</html>
