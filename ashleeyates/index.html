@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ashlee Yates | The Bedtime Break-In</title>
+<meta name="description" content="A homepage idea for Ashlee Yates's picture books. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ashlee Yates | The Bedtime Break-In">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Ashlee Yates. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/ashleeyates/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--blue:#306db3;--dark:#14355f;--yel:#ffd400;--cream:#fbeeb4;--brass:#eda733;--aqua:#9cd3d7;--coral:#ef9a84;--ink:#1d2433;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--dark);color:#fff;font:400 21px/1.5 "Patrick Hand","Comic Sans MS",sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--cream);color:var(--ink);font:400 14px/1.15 "Patrick Hand",sans-serif;text-align:center}
+.disp{font-family:Chewy,"Comic Sans MS",cursive;font-weight:400;letter-spacing:.01em}
+
+.hero{position:relative;height:380vh;--sh:min(calc(100svh - 160px),calc(100vw * 1.4955))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--dark)}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);height:var(--sh);width:calc(var(--sh) * 0.6687);transform:translateX(-50%)}
+.rig{position:absolute;inset:0;transform-origin:91% 56.2%;will-change:transform}
+.rig img{position:absolute;pointer-events:none}
+.rig .door{left:0;top:0;width:100%}
+.rig .note{left:18.364%;top:27.356%;width:54.364%;will-change:transform;transform-origin:50% 50%}
+.dark{position:absolute;left:91%;top:56.2%;width:300vmax;height:300vmax;margin:-150vmax 0 0 -150vmax;background:radial-gradient(circle closest-side,rgba(8,20,44,0) 0,rgba(8,20,44,0) 4%,rgba(8,20,44,.96) 16%,rgba(8,20,44,.96) 100%);pointer-events:none;will-change:opacity}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 14px);padding:0 20px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 10px;font-size:19px;line-height:1.25}
+.cap .l,.cap .r{display:none}
+.btn{display:inline-block;padding:11px 22px 9px;border:3px solid var(--ink);border-radius:999px;background:var(--yel);color:var(--ink);text-decoration:none;font:400 20px/1 Chewy,cursive;letter-spacing:.02em;box-shadow:3px 4px 0 var(--ink)}
+.btn:hover,.btn:focus-visible{transform:translate(2px,2px);box-shadow:1px 2px 0 var(--ink)}
+.btn.alt{background:transparent;color:inherit;border-color:currentColor;box-shadow:3px 4px 0 currentColor}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:calc(var(--strip) + 6px);height:var(--sh);padding:0;pointer-events:none}
+ .cap .l,.cap .r{display:block}.cap .m{display:none}
+ .cap>*{position:absolute;pointer-events:auto;max-width:22vw;margin:0}
+ .cap .l{left:5vw;bottom:3vh;text-align:left;font-size:24px}
+ .cap .r{right:5vw;bottom:3vh}
+}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:13.5px}}
+
+.sec{padding:84px 22px;position:relative}
+.wrap{max-width:1040px;margin:0 auto}
+h2{margin:0 0 14px;font-size:clamp(40px,7vw,78px);line-height:1}
+.kick{margin:0 0 10px;font:400 22px/1 Chewy,cursive}
+.price{font-size:19px;margin:0 0 6px}
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
+
+#bedtime{background:var(--blue);color:#fff}
+#bedtime h2{color:var(--yel);text-shadow:3px 3px 0 var(--dark)}
+.b1{display:grid;gap:34px;align-items:start}
+.b1>img{width:min(340px,80%);box-shadow:8px 10px 0 var(--dark);border-radius:4px}
+.b1 .int{width:100%;margin-top:42px;border:6px solid var(--cream);border-radius:6px;transform:rotate(-1deg)}
+@media(min-width:780px){.b1{grid-template-columns:340px 1fr;gap:64px}.b1 .int{grid-column:1/-1}}
+#stink{background:var(--aqua);color:var(--ink);padding-top:0}
+#stink .banner{margin:0 -22px 54px}
+#stink .banner img{width:100%;max-width:1100px;margin:0 auto}
+#stink h2{color:#0a7b6c}
+#stink .btn.alt{color:var(--ink)}
+.st{max-width:36em}
+#paws{background:var(--coral);color:#3a1a16}
+#paws h2{color:#fff;text-shadow:3px 3px 0 #3a1a16}
+.b3{display:grid;gap:34px;align-items:start}
+.b3>img{width:min(340px,80%);box-shadow:-8px 10px 0 #3a1a16;border-radius:4px}
+@media(min-width:780px){.b3{grid-template-columns:1fr 340px;gap:64px}.b3>img{order:2}}
+#paws .btn.alt{color:#3a1a16}
+
+#ashlee{background:var(--cream);color:var(--ink)}
+#ashlee .tag{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:0 0 26px}
+#ashlee p{max-width:32em}
+#ashlee blockquote{margin:26px 0;padding:0 0 0 18px;border-left:6px solid var(--brass);font-size:23px;max-width:28em}
+#fair{background:var(--dark);color:#fff;text-align:left}
+#fair .date{font-size:clamp(52px,11vw,130px);line-height:.95;color:var(--yel);margin:0 0 20px}
+#fair p{max-width:30em}
+.close{background:var(--yel);color:var(--ink);text-align:center;padding:100px 22px 130px}
+.close .big{font-size:clamp(34px,7vw,80px);line-height:1;margin:0 0 20px}
+.close p{max-width:28em;margin:0 auto 26px}
+footer{padding:24px 22px 96px;text-align:center;font-size:16px;background:var(--dark);color:#fff}
+
+.note-nav{position:fixed;z-index:40;left:50%;bottom:14px;transform:translate(-50%,30px) rotate(-1.5deg);background:var(--cream);color:var(--ink);padding:9px 16px 7px;border-radius:3px;box-shadow:2px 3px 0 rgba(8,20,44,.55);display:flex;gap:6px 14px;align-items:baseline;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s;font-size:18px;line-height:1.1;white-space:nowrap}
+.note-nav.on{opacity:1;pointer-events:auto;transform:translate(-50%,0) rotate(-1.5deg)}
+.note-nav b{font:400 15px/1 Chewy,cursive;opacity:.7}
+.note-nav a{text-decoration:none;padding:3px 2px;border-bottom:2px solid transparent}
+.note-nav a.cur{border-bottom-color:var(--ink)}
+a:focus-visible{outline:3px solid var(--yel);outline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 200px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .note-nav{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Ashlee Yates. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" role="img" aria-label="The cover of The Bedtime Break-In by Ashlee Yates: a blue bedroom door with a handwritten BREAK-IN note taped on it and a brass knob">
+   <div class="rig" id="rig">
+    <img class="door" src="img/door.jpg" alt="" width="1100" height="1645">
+    <img class="note" id="note" src="img/note.webp" alt="" width="598" height="422">
+   </div>
+   <div class="dark" id="dark"></div>
+  </div>
+  <div class="cap" id="cap">
+   <p class="l">Two sneaky siblings. One fierce gatekeeper. Five daring attempts.</p>
+   <p class="r"><a class="btn" href="https://ashleeauthors.com/products/the-bedtime-break-in-childrens-book">Get the book</a></p>
+   <p class="m"><a class="btn" href="https://ashleeauthors.com/products/the-bedtime-break-in-childrens-book">Get the book</a></p>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="bedtime"><div class="wrap b1">
+ <img src="img/door.jpg" alt="Cover of The Bedtime Break-In: a blue door with a taped BREAK-IN note" width="1100" height="1645" loading="lazy">
+ <div>
+  <p class="kick">Ages 4 to 8</p>
+  <h2 class="disp">The Bedtime Break-In</h2>
+  <p>Two sneaky siblings. One fierce gatekeeper. Five daring attempts. Will they complete their bedtime mission?</p>
+  <p>A bedtime adventure for kids (and grown-ups) who know that sometimes going to sleep is the last thing on the to-do list. Two clever siblings scheme, sneak and strategise their way through a hilarious quest to delay lights out, just a little bit longer.</p>
+  <p class="price">$19.99 on her shop. Illustrated by Venelina Grabcheva.</p>
+  <div class="btns"><a class="btn" href="https://ashleeauthors.com/products/the-bedtime-break-in-childrens-book">Get The Bedtime Break-In</a></div>
+ </div>
+ <img class="int" src="img/bed-int.jpg" alt="A page from the book: two kids in cowboy hats swinging a lasso, with YEEEHAAW curling up the side" width="1100" height="687" loading="lazy">
+</div></section>
+
+<section class="sec" id="stink"><div class="banner"><img src="img/c-stink.jpg" alt="Cover of The Stink: an English bulldog drooling under green smelly swirls, a baseball and a toy elephant beside him" width="1100" height="850" loading="lazy"></div>
+ <div class="wrap st">
+  <p class="kick">Her first book</p>
+  <h2 class="disp">The Stink</h2>
+  <p>Our life is perfect until one day a new smell enters our home, PEE EWW! This playful children's book follows an English Bulldog as he navigates life with his new very stinky baby sister.</p>
+  <p class="price">$19.99 on her shop. Illustrated by Andy Catling.</p>
+  <div class="btns"><a class="btn" href="https://ashleeauthors.com/products/the-stink-childrens-book">Get The Stink</a></div>
+ </div>
+</section>
+
+<section class="sec" id="paws"><div class="wrap b3">
+ <img src="img/c-paws.jpg" alt="Cover of Take a Paws: a bulldog and a golden dog racing along a Kauai beach under palm trees at sunset" width="800" height="1138" loading="lazy">
+ <div>
+  <p class="kick">The newest one</p>
+  <h2 class="disp">Take a Paws</h2>
+  <p>When a family vacation takes one lovable dog from the mainland to the island of Kauai, he isn't sure what to expect. Then he meets a local island dog who quickly becomes his new best friend. Together they explore sandy beaches and hidden adventures.</p>
+  <p class="price">$19.99 on her shop. Illustrated by Andy Catling.</p>
+  <div class="btns"><a class="btn" href="https://ashleeauthors.com/products/take-a-paws">Get Take a Paws</a></div>
+ </div>
+</div></section>
+
+<section class="sec" id="ashlee"><div class="wrap">
+ <p class="kick">In her words</p>
+ <p class="tag disp">Big laughs. Sweet stories. Happy bedtimes.</p>
+ <blockquote>Her books are inspired by real family moments, the messy, funny, tender ones that make childhood unforgettable.</blockquote>
+ <p>She believes story time should be full of giggles, connection, and memories that families carry long after the last page is turned.</p>
+ <div class="btns"><a class="btn alt" href="https://ashleeauthors.com/pages/about-the-author">Meet Ashlee on her site</a></div>
+</div></section>
+
+<section class="sec" id="fair"><div class="wrap">
+ <p class="kick">Where to meet her</p>
+ <p class="date disp">Saturday<br>7 November</p>
+ <p>Local Author Fair at Phoenix Public Library. She posted about it on Instagram. Check her post for the times and her table.</p>
+ <div class="btns"><a class="btn" href="https://www.instagram.com/p/DeieaF7C84X/">See her post</a><a class="btn alt" href="https://www.instagram.com/ashleeauthors/">@ashleeauthors</a></div>
+</div></section>
+
+<section class="close" id="end">
+ <p class="big disp">Five more minutes?</p>
+ <p>Her list sends (infrequent) updates about new books and special events.</p>
+ <a class="btn" href="https://ashleeauthors.com/">Join the list on her site</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Ashlee Yates. Not affiliated, not live.</footer>
+
+<nav class="note-nav" id="nav" aria-label="Sections"><b>Skip to</b><a href="#bedtime" data-s="books">Books</a><a href="#ashlee" data-s="ashlee">Ashlee</a><a href="#fair" data-s="fair">The fair</a></nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),rig=document.getElementById('rig'),note=document.getElementById('note'),dark=document.getElementById('dark'),cap=document.getElementById('cap'),nav=document.getElementById('nav');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cl=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return cl((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},ei=function(x){return x*x*x};
+  function draw(p){
+    var cam=eio(seg(p,0,.8)),n=ei(seg(p,.4,.8)),d=seg(p,.04,.62);
+    rig.style.transform='scale('+(1+5.2*(1-cam)).toFixed(4)+')';
+    note.style.transform='scale('+(1+.5*(1-n)).toFixed(4)+') rotate('+(-4*(1-n)).toFixed(3)+'deg)';
+    dark.style.opacity=(1-eo(d)).toFixed(3);
+    cap.classList.toggle('on',p>.86);
+  }
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(cl((y-hero.offsetTop)/t));
+      nav.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+    });
+  }
+  if(rm){draw(1);dark.style.opacity=0}else{draw(0)}
+  addEventListener('scroll',onscroll,{passive:true});addEventListener('resize',onscroll);onscroll();
+  if('IntersectionObserver' in window){
+    var map={bedtime:'books',stink:'books',paws:'books',ashlee:'ashlee',fair:'fair'};
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){nav.querySelectorAll('a').forEach(function(a){a.classList.toggle('cur',a.dataset.s===map[e.target.id])})}})},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){io.observe(document.getElementById(id))});
+  }
+})();
+</script>
+</body>
+</html>

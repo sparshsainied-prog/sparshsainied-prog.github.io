@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Olivia Harlow | The Thief of Tides</title>
+<meta name="description" content="A homepage idea for Olivia Harlow's The Thief of Tides. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Olivia Harlow | The Thief of Tides">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Olivia Harlow. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/oliviaharlow/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--navy:#024764;--deep:#01384f;--ink:#d6e5ed;--red:#862a14;--gold:#f3c34f;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--ink);font:400 19px/1.6 "EB Garamond",Georgia,serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--deep);color:var(--ink);font:500 12.5px/1.1 "EB Garamond",serif;letter-spacing:.03em;text-align:center;border-bottom:1px solid rgba(214,228,236,.25)}
+.disp{font-family:Italiana,"Times New Roman",serif;font-weight:400;letter-spacing:.04em;text-transform:uppercase}
+
+/* hero: pinned, scroll-driven */
+.hero{position:relative;height:380vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.5372))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) * .6505);height:var(--sh);margin-left:calc(var(--sh) * -.32525)}
+.stage img{position:absolute;pointer-events:none;will-change:transform;transform-origin:50% 50%}
+.stage .plate,.stage .frame{left:0;top:0;width:100%}
+.stage .plate,.stage .frame{transform-origin:50% 66%}
+.stage .ship{left:27.107%;top:32.151%;width:52.231%;transform-origin:52% 88%}
+.stage .title{left:17.355%;top:17.634%;width:69.421%}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 16px);padding:0 20px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 12px;font-style:italic;font-size:18px}
+.cap .l,.cap .r{display:none}
+.btn{display:inline-block;padding:11px 22px 10px;border:1.5px solid var(--ink);text-decoration:none;font:400 15px/1 Italiana,serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--navy)}
+.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--navy)}
+.btn.solid:hover{background:transparent;color:var(--ink)}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:calc(var(--strip) + 6px);height:var(--sh);padding:0;pointer-events:none}
+ .cap .l,.cap .r{display:block}
+ .cap .m{display:none}
+ .cap>*{position:absolute;pointer-events:auto;max-width:21vw;margin:0}
+ .cap .l{left:5vw;bottom:2vh;text-align:left}
+ .cap .r{right:5vw;bottom:2vh;text-align:left}
+ .cap p{font-size:20px}
+}
+
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px;line-height:1.2}}
+/* sections */
+.sec{padding:96px 22px;position:relative}
+.wrap{max-width:1020px;margin:0 auto}
+.kick{font:400 14px/1 Italiana,serif;letter-spacing:.3em;text-transform:uppercase;opacity:.85;margin:0 0 20px}
+h2{margin:0 0 18px;font-size:clamp(34px,6vw,62px);line-height:1.02;font-weight:400}
+.book{display:grid;gap:34px;align-items:start}
+.book>img{width:min(330px,78%);box-shadow:0 0 0 1px rgba(214,228,236,.3)}
+@media(min-width:760px){.book{grid-template-columns:330px 1fr;gap:64px}.book.flip{grid-template-columns:1fr 330px}.book.flip>img{order:2}}
+.genre{font-style:italic;margin:0 0 18px;opacity:.9}
+.note{border-left:2px solid currentColor;padding:2px 0 2px 16px;margin:22px 0;font-size:17px}
+.note b{font:400 13px/1 Italiana,serif;letter-spacing:.24em;text-transform:uppercase;display:block;margin-bottom:6px;font-weight:400}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.red{background:var(--red);color:#f7e7d0}
+.red .btn{border-color:var(--gold);color:var(--gold)}
+.red .btn:hover{background:var(--gold);color:var(--red)}
+.red .kick{color:var(--gold)}
+.paper{background:var(--ink);color:var(--navy)}
+.paper .btn{border-color:var(--navy);color:var(--navy)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 26px;margin:0 0 30px;padding:0;list-style:none;font:400 15px/1 Italiana,serif;letter-spacing:.2em;text-transform:uppercase}
+.paper p{max-width:34em}
+.cats{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(2,71,100,.45)}
+.cats li{display:grid;grid-template-columns:6.5em 1fr;gap:12px;padding:14px 0;border-bottom:1px solid rgba(2,71,100,.45)}
+.cats b{font:400 20px/1.2 Italiana,serif;letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+.fair{display:grid;gap:26px}
+.fair .date{font-size:clamp(44px,9vw,104px);line-height:.95;margin:0}
+.close{text-align:center;padding:120px 22px 150px;background:var(--deep)}
+.close .big{font-size:clamp(30px,6.4vw,72px);line-height:1.08;max-width:15em;margin:0 auto 34px}
+.close p{max-width:30em;margin:0 auto 28px}
+footer{padding:26px 22px 90px;text-align:center;font-size:15px;background:var(--deep);color:var(--ink);border-top:1px solid rgba(214,228,236,.2)}
+
+/* chart marks nav */
+.marks{position:fixed;z-index:40;left:50%;bottom:12px;transform:translate(-50%,24px);display:flex;gap:2px;background:var(--deep);border:1px solid rgba(214,228,236,.35);padding:4px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s}
+.marks.on{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+.marks a{display:flex;align-items:baseline;gap:8px;padding:9px 12px 8px;text-decoration:none;font:400 13px/1 Italiana,serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);opacity:.65}
+.marks a i{font-style:normal;font-size:15px}
+.marks a span{display:none}
+.marks a.cur{opacity:1;background:var(--ink);color:var(--navy)}
+@media(min-width:640px){.marks a span{display:inline}}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 190px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .marks{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Olivia Harlow. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" role="img" aria-label="The cover of The Thief of Tides by Olivia Harlow: a tall ship under full sail on a heavy swell, drawn in pale line on deep blue">
+   <img class="plate" src="img/plate.jpg" alt="" width="1210" height="1860">
+   <img class="ship" src="img/ship.webp" alt="" width="632" height="630">
+   <img class="frame" src="img/frame.webp" alt="" width="1210" height="1860">
+   <img class="title" src="img/title.webp" alt="" width="840" height="158">
+  </div>
+  <div class="cap" id="cap">
+   <p class="l">An adventure fantasy romance. Pirates, star maps and the Sands of Time.</p>
+   <p class="r"><a class="btn solid" href="https://www.amazon.com/Thief-Tides/dp/B0DGS7CPR3">Buy on Amazon</a></p>
+   <p class="m"><a class="btn solid" href="https://www.amazon.com/Thief-Tides/dp/B0DGS7CPR3">Buy on Amazon</a></p>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="tides"><div class="wrap book">
+ <img src="img/c-tides.jpg" alt="Cover of The Thief of Tides: a three-masted ship in a storm, in pale line on deep blue" width="605" height="930" loading="lazy">
+ <div>
+  <p class="kick">Book one</p>
+  <h2 class="disp">The Thief of Tides</h2>
+  <p class="genre">Adventure fantasy romance</p>
+  <p>Louie, a notorious pirate known as the "Ghost of the Sea", is offered the opportunity to hunt for a legendary artifact: The Sands of Time. It's said that whoever possesses the Sands will have the power to control time.</p>
+  <p>With the help of an awkward 15-year-old engineer and an irritatingly beautiful spy, Louie will sail the seas, battling enchanted creatures, her first love turned worst enemy, and a cut-throat rival pirate to claim the most coveted treasure of all.</p>
+  <div class="note"><b>Reader note, from Olivia</b>The Thief of Tides contains violence, strong language, and some sexual content.</div>
+  <div class="btns">
+   <a class="btn solid" href="https://www.amazon.com/Thief-Tides/dp/B0DGS7CPR3">Buy on Amazon</a>
+   <a class="btn" href="https://www.goodreads.com/book/show/218726225-the-thief-of-tides">Add to Goodreads</a>
+   <a class="btn" href="https://www.oliviaharlow.com/the-thief-of-tides">Read chapter one</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec red" id="sirens"><div class="wrap book flip">
+ <img src="img/c-sirens.png" alt="Cover of The Thief of Sirens: a sword wound with a vine and crown on deep red, edged in gold smoke" width="584" height="906" loading="lazy">
+ <div>
+  <p class="kick">Book two</p>
+  <h2 class="disp">The Thief of Sirens</h2>
+  <p class="genre">Adventure fantasy romance. Her site lists it for Summer 2026.</p>
+  <p>After her family of rebels were murdered by hunters, vanisher Ariadne swore vengeance. She would carry out their mission to free divinum and end enchantment once and for all.</p>
+  <p>Years later, a strange encounter leads Ari to form an unlikely alliance with the empire's princess and her siren companion.</p>
+  <div class="btns"><a class="btn" href="https://www.oliviaharlow.com/">Subscribe for updates</a></div>
+ </div>
+</div></section>
+
+<section class="sec paper" id="olivia"><div class="wrap">
+ <p class="kick">In her words</p>
+ <h2 class="disp">Hi! I'm Olivia :)</h2>
+ <ul class="facts"><li>Gamer</li><li>Artist</li><li>Cat owner</li></ul>
+ <p>"Has stacks of books on every surface in my home. My rickety Wayfair table can't handle the weight."</p>
+ <p>Her About page has a section she calls Cute Cat Content. Three of them, in her words:</p>
+ <ul class="cats">
+  <li><b>Morie</b><span>"He is not fat. What you see is pure muscle."</span></li>
+  <li><b>Milo</b><span>"He likes to lick keyboards, has an unhealthy obsession with Morie, and frequently stares at the TV when it's off."</span></li>
+  <li><b>Pumpkin</b><span>"He is extremely smart and knows the commands sit, paw and other paw."</span></li>
+ </ul>
+</div></section>
+
+<section class="sec" id="fair"><div class="wrap fair">
+ <p class="kick">Where to meet her</p>
+ <p class="date disp">Saturday<br>7 November</p>
+ <p style="max-width:30em;margin:0">Local author fair at Bucks County Free Library, Doylestown. She posted about it on Instagram on 23 October. Check her post for the times and her table.</p>
+ <div class="btns" style="margin-top:0"><a class="btn solid" href="https://www.instagram.com/p/De0CYyakV1k/">See her post</a><a class="btn" href="https://www.instagram.com/oliviaharlowauthor">@oliviaharlowauthor</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big disp">But notorious pirate Louie Aurum knows better.</p>
+ <p>Sign up for email updates about premium pre-orders, calls for ARC and beta readers, release updates and special edition pop-up sales.</p>
+ <a class="btn solid" href="https://www.oliviaharlow.com/">Join the email list</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Olivia Harlow. Not affiliated, not live.</footer>
+
+<nav class="marks" id="marks" aria-label="Sections">
+ <a href="#tides" data-s="tides"><i>I</i><span>Tides</span></a>
+ <a href="#sirens" data-s="sirens"><i>II</i><span>Sirens</span></a>
+ <a href="#olivia" data-s="olivia"><i>III</i><span>Olivia</span></a>
+ <a href="#fair" data-s="fair"><i>IV</i><span>The fair</span></a>
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),pl=hero.querySelector('.plate'),sh=hero.querySelector('.ship'),fr=hero.querySelector('.frame'),ti=hero.querySelector('.title'),cap=document.getElementById('cap'),marks=document.getElementById('marks');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cl=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return cl((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  function draw(p){
+    var a=eo(seg(p,0,.86)),b=eio(seg(p,0,.84)),c=eo(seg(p,0,.8)),t=eo(seg(p,.46,.82));
+    var rock=Math.sin(p*17)*3.4*(1-b),sway=Math.sin(p*11+1)*.7*(1-a);
+    pl.style.transform='scale('+(1+.55*(1-a)).toFixed(4)+') rotate('+sway.toFixed(3)+'deg)';
+    sh.style.transform='translate3d(0,'+(5*(1-b)).toFixed(3)+'%,0) scale('+(1+1.0*(1-b)).toFixed(4)+') rotate('+rock.toFixed(3)+'deg)';
+    fr.style.transform='scale('+((1+.55*(1-a))*(1+.06*(1-c))).toFixed(4)+')';
+    ti.style.opacity=t.toFixed(3);ti.style.transform='translate3d(0,'+(40*(1-t)).toFixed(2)+'px,0) scale('+(1+.16*(1-t)).toFixed(4)+')';
+    cap.classList.toggle('on',p>.86);
+  }
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(cl((y-hero.offsetTop)/t));
+      marks.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+    });
+  }
+  if(rm){draw(1)}else{draw(0)}
+  addEventListener('scroll',onscroll,{passive:true});addEventListener('resize',onscroll);onscroll();
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){marks.querySelectorAll('a').forEach(function(a){a.classList.toggle('cur',a.dataset.s===e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+    ['tides','sirens','olivia','fair'].forEach(function(id){io.observe(document.getElementById(id))});
+  }
+})();
+</script>
+</body>
+</html>
