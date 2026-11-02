@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Magical Beach Tree, a picture book by Donna K.</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="A homepage idea made by Sparsh Saini for Donna K. Not her official site.">
+<meta property="og:title" content="The Magical Beach Tree by Donna K.">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Donna K. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/donnak/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#1c3679;--deep:#10234f;--sea:#2b4f93;--foam:#dfeaf5;--ink:#10234f;--ink2:#3c5286;--white:#fbfdff;--edge:#f4ee7a;--green:#2f7f5d;--needle:#7cc38e;--bulb:#fbf6ae}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--deep)}
+body{margin:0;font:400 17px/1.72 "Libre Baskerville",Georgia,serif;color:var(--white);background:var(--night);overflow-x:clip}
+::selection{background:var(--edge);color:var(--deep)}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--edge);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%;height:auto}
+.strip{position:absolute;z-index:30;top:0;left:0;right:0;padding:7px 14px;font-size:11.5px;line-height:1.4;text-align:center;background:var(--deep);color:#d5e0f4}
+
+/* hero */
+.hero{position:relative;height:460vh;background:var(--deep)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;contain:strict}
+.art{position:absolute;top:0;left:50%;height:100%;aspect-ratio:820/868;margin-left:calc(-50svh*820/868)}
+.cam{position:absolute;inset:0;transform-origin:50% 92%;will-change:transform}
+.wide{position:absolute;left:-100%;top:0;width:300%;height:100%;max-width:none}
+.pl{position:absolute;max-width:none;height:auto}
+#glow{left:34.146%;top:72.12%;width:34.146%;will-change:opacity}
+#tree{left:40.366%;top:50.806%;width:19.756%;transform-origin:50% 100%;will-change:transform,opacity}
+#tide{left:-100%;width:300%;top:64.516%;height:33.986%;will-change:transform;transform:translate3d(0,120%,0)}
+#tide i{position:absolute;inset:0;width:33.334%;background:url(img/tide.webp) 0 0/100% 100%}
+#tide i:first-child,#tide i:last-child{transform:scaleX(-1)}#tide i+i{left:33.333%}#tide i+i+i{left:66.666%}
+#grass{left:-100%;width:300%;top:81.682%;height:18.318%;transform-origin:50% 100%;will-change:transform;display:flex}
+#grass img{width:33.334%;height:100%;max-width:none}#grass img:first-child,#grass img:last-child{transform:scaleX(-1)}
+.veil{position:absolute;top:0;bottom:0;left:-100%;width:300%;background:#081434;opacity:0;will-change:opacity;pointer-events:none}
+.spray{position:absolute;left:-20%;top:-10%;width:140%;height:120%;object-fit:cover;max-width:none;opacity:0;will-change:transform,opacity;pointer-events:none}
+.tw{position:absolute;width:7%;margin:-3.5% 0 0 -3.5%;opacity:0;will-change:opacity,transform}
+#sea{width:3.4%;margin:-1.7% 0 0 -1.7%}
+
+.title{position:absolute;z-index:4;left:0;right:0;top:19.2%;margin:0;text-align:center;font-weight:400;font-style:italic;color:var(--white);line-height:1.1;font-size:min(11.2svh,13vw);-webkit-text-stroke:.022em var(--edge);paint-order:stroke fill;will-change:transform,opacity}
+.title span{display:block}
+.title .a{font-size:.74em;margin-bottom:.14em}
+.by{position:absolute;z-index:4;left:0;right:0;top:87.5%;text-align:center;line-height:1.3;will-change:opacity}
+.by b{display:block;font-weight:400;font-size:min(2.1svh,17px);letter-spacing:.01em}
+.by small{display:block;font-size:min(1.56svh,13px)}
+.cap{position:absolute;z-index:5;left:50%;top:21%;width:min(84vw,640px);margin-left:calc(min(84vw,640px)/-2);text-align:center;font-style:italic;font-size:clamp(21px,3svh,31px);line-height:1.4;opacity:0;will-change:opacity,transform;pointer-events:none;text-wrap:balance}
+.welcome{position:absolute;z-index:5;left:50%;top:39.5%;width:min(84vw,520px);margin-left:calc(min(84vw,520px)/-2);text-align:center;font-style:italic;font-size:clamp(17px,2.3svh,22px);line-height:1.35;color:var(--bulb);will-change:opacity}
+.go{position:absolute;z-index:6;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);display:flex;justify-content:center;gap:10px;flex-wrap:wrap;will-change:opacity}
+.btn{display:inline-block;padding:.62em 1.2em;font-style:italic;font-size:15px;line-height:1.2;text-decoration:none;color:var(--white);border:1px solid var(--edge);background:rgba(16,35,79,.72);transition:background .16s ease-out,color .16s ease-out,transform .12s ease-out;white-space:nowrap}
+.btn:hover{background:var(--edge);color:var(--deep)}
+.btn:active{transform:translateY(1px)}
+.btn.solid{background:var(--white);color:var(--deep);border-color:var(--edge)}
+.btn.solid:hover{background:var(--edge)}
+@media(max-width:699px){.by{top:85.6%}}
+@media(min-width:900px){
+ .welcome{left:6vw;margin:0;width:22vw;top:40%;text-align:left;font-size:25px}
+ .cap{left:6vw;margin:0;top:36%;width:25vw;text-align:left}
+ .go{left:6vw;right:auto;bottom:auto;top:54%;justify-content:flex-start;flex-direction:column;align-items:flex-start;gap:12px}
+}
+
+/* sections */
+section{padding:clamp(64px,10vw,128px) clamp(20px,6vw,88px)}
+h2{margin:0 0 .6em;font-weight:400;font-style:italic;font-size:clamp(30px,5vw,54px);line-height:1.14;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:58ch;text-wrap:pretty}
+.book{background:linear-gradient(var(--deep),var(--night) 34%);display:grid;gap:clamp(28px,5vw,72px);align-items:center}
+.book img{width:min(78vw,420px);box-shadow:0 22px 44px -12px rgba(4,10,32,.7);border-top:1px solid rgba(255,255,255,.3)}
+.formats{margin-top:1.8em;padding:0;list-style:none;border-top:1px solid rgba(244,238,122,.5);max-width:520px}
+.formats li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:.72em 0;border-bottom:1px solid rgba(244,238,122,.28);font-size:15.5px}
+.formats a{font-style:italic;white-space:nowrap}
+.note{font-size:14.5px;color:#cdd9f0}
+.true{background:var(--foam);color:var(--ink)}
+.true .wrap{display:grid;gap:clamp(28px,5vw,72px);align-items:start}
+.true h2{font-size:clamp(42px,8vw,92px);color:var(--night)}
+.true figure{margin:0}
+.true figcaption{font-size:13px;color:var(--ink2);margin-top:8px}
+.true img{width:100%}
+.lines p{margin-bottom:1.25em}
+.gifts{background:var(--sea);padding:0;display:grid}
+.gifts .txt{padding:clamp(56px,8vw,104px) clamp(20px,6vw,88px)}
+.gifts ul{margin:0;padding:0;list-style:none;font-style:italic;font-size:clamp(25px,4vw,44px);line-height:1.34}
+.gifts li+li{margin-top:.08em}
+.gifts .late{color:var(--bulb)}
+.gifts .pic{min-height:320px;background:url(img/dune.jpg) center/cover}
+.read{background:var(--deep)}
+.read blockquote{margin:0 0 2.1em;max-width:30em}
+.read blockquote p{font-style:italic;font-size:clamp(20px,2.6vw,27px);line-height:1.45;margin-bottom:.4em}
+.read cite{font-style:normal;font-size:14px;color:#c2d0ec}
+.read .pair{display:grid;gap:0 clamp(32px,6vw,80px)}
+.me{background:var(--foam);color:var(--ink);display:grid;gap:clamp(24px,5vw,64px);align-items:center}
+.me h2{color:var(--night)}
+.me img{width:100%;max-width:440px}
+.close{background:var(--night);text-align:left}
+.close h2{font-size:clamp(34px,6.4vw,76px);max-width:15em}
+.close .btn{margin:.4em .5em .4em 0}
+footer{background:var(--deep);padding:26px clamp(20px,6vw,88px) 92px;font-size:13px;color:#c2d0ec}
+footer p{margin:0;max-width:none}
+@media(min-width:900px){
+ .book{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+ .book img{width:100%;max-width:470px;justify-self:end}
+ .true .wrap{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+ .true figure{margin-top:clamp(0px,7vw,110px)}
+ .gifts{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+ .read .pair{grid-template-columns:7fr 5fr}
+ .me{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+}
+
+/* tree button */
+.treebtn{position:fixed;z-index:20;right:14px;bottom:14px;width:60px;height:74px;padding:6px 0 0;border:1px solid var(--edge);background:var(--deep);color:var(--white);cursor:pointer;display:flex;flex-direction:column;align-items:center;font:italic 10.5px/1 "Libre Baskerville",serif;opacity:0;pointer-events:none;transition:opacity .2s ease-out,transform .12s ease-out}
+.treebtn img{height:48px;width:auto;margin-bottom:3px}
+.treebtn:active{transform:translateY(1px)}
+body.past .treebtn{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:21;right:14px;bottom:96px;width:min(78vw,270px);padding:14px 18px 16px;background:var(--deep);border:1px solid var(--edge);display:none;font-style:italic}
+.sheet.open{display:block}
+.sheet a{display:block;padding:.5em 0 .5em 22px;text-decoration:none;position:relative;line-height:1.3}
+.sheet a::before{content:"";position:absolute;left:0;top:.86em;width:9px;height:9px;border-radius:50%;background:var(--bulb);box-shadow:0 1px 3px rgba(251,246,174,.7)}
+.sheet a:hover{text-decoration:underline}
+@media(prefers-reduced-motion:reduce){.hero{height:100vh;height:100svh}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Donna K. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="stage">
+  <div class="art">
+   <div class="cam" id="cam">
+    <img class="wide" src="img/wide.jpg" width="2460" height="868" alt="">
+    <img class="pl" id="glow" src="img/glow.webp" alt="">
+    <img class="pl" id="tree" src="img/tree.webp" alt="">
+    <div class="pl" id="tide"><i></i><i></i><i></i></div>
+    <div class="pl" id="grass"><img src="img/grass.webp" alt=""><img src="img/grass.webp" alt=""><img src="img/grass.webp" alt=""></div>
+   </div>
+   <div class="veil" id="veil"></div>
+   <div class="cam" id="cam2">
+    <img class="tw" id="sea" src="img/twinkle.webp" alt="">
+    <img class="tw t" style="left:47%;top:84.5%" src="img/twinkle.webp" alt="">
+    <img class="tw t" style="left:53.5%;top:87%" src="img/twinkle.webp" alt="">
+    <img class="tw t" style="left:50.5%;top:82.5%" src="img/twinkle.webp" alt="">
+    <img class="tw t" style="left:44.5%;top:88%" src="img/twinkle.webp" alt="">
+    <img class="tw t" style="left:56%;top:84%" src="img/twinkle.webp" alt="">
+   </div>
+  </div>
+  <img class="spray" id="spray" src="img/spray.webp" alt="">
+  <h1 class="title" id="title"><span class="a">The Magical</span><span>Beach Tree</span></h1>
+  <div class="by" id="by"><b>Donna K.</b><small>Illustrations by Olha Tkachenko</small></div>
+  <p class="cap" id="c1">A nor'easter eventually swept the tree out to sea.</p>
+  <p class="cap" id="c2">It seemed to be over.</p>
+  <p class="cap" id="c3">Until, weeks later, a familiar twinkle blinked softly in the seagrass.</p>
+  <p class="welcome" id="wel">"Welcome back, little tree."</p>
+  <div class="go" id="go"><a class="btn solid" href="#buy">Get the book</a><a class="btn" href="#story">The true story</a></div>
+ </div>
+</header>
+
+<main>
+<section class="book" id="buy">
+ <img src="img/cover.jpg" width="820" height="868" alt="The cover of The Magical Beach Tree: a lit tree on a Maine beach under a starry sky" loading="lazy">
+ <div>
+  <h2>A tree the whole shore decided to keep</h2>
+  <p>Hildi and her dog Finn find an unexpected tree on a snowy Maine morning. The beach offers up its treasures, the community comes together around it, and when a fierce storm sweeps it away, nature gives it back.</p>
+  <ul class="formats">
+   <li><span>Hardcover, paperback and Kindle</span><a href="https://www.amazon.com/dp/B0HLB9D9DK">Amazon</a></li>
+   <li><span>Order online</span><a href="https://www.barnesandnoble.com/w/the-magical-beach-tree-donna-k/1151081177?ean=9798994006214">Barnes &amp; Noble</a></li>
+   <li><span>Supports independent bookstores</span><a href="https://bookshop.org/p/books/the-magical-beach-tree/220b99f279cf64fd?ean=9798994006214">Bookshop.org</a></li>
+   <li><span>Add it to your shelf</span><a href="https://www.goodreads.com/book/show/254713136-the-magical-beach-tree">Goodreads</a></li>
+  </ul>
+  <p class="note" style="margin-top:1.4em">Published by Goosefare Publishing. A Spanish edition, El Árbol Mágico de la Playa, is in the works.</p>
+ </div>
+</section>
+
+<section class="true" id="story">
+ <div class="wrap">
+  <div class="lines">
+   <h2>It really happened.</h2>
+   <p>In the days after Christmas Prelude, someone left a tree by the road in coastal Maine. Instead of letting it go to the trash, we carried it down to the beach, anchored it in the cold sand and wrapped it in solar lights.</p>
+   <p>People stopped to admire it and, without a word, began adding offerings of their own. One day, painted rocks appeared beneath the branches, just like wrapped presents. To this day, no one knows who left them.</p>
+   <p>A nor'easter swept the tree out to sea. Weeks later, a familiar twinkle blinked in the seagrass. Every year since, a tree returns to that same stretch of beach, shared by neighbours and strangers alike.</p>
+  </div>
+  <figure><img src="img/tree-day.jpg" width="1100" height="1133" alt="Olha Tkachenko's painting of the tree on the beach by day, hung with shells and sand dollars" loading="lazy"><figcaption>The tree by day, from the book. Art by Olha Tkachenko.</figcaption></figure>
+ </div>
+</section>
+
+<section class="gifts" id="gifts">
+ <div class="txt">
+  <h2 style="font-size:clamp(20px,2.4vw,26px);margin-bottom:1.2em">What the shore put on it</h2>
+  <ul>
+   <li>Shells</li>
+   <li>Sand dollars</li>
+   <li>Driftwood</li>
+   <li>Sea-smoothed stones</li>
+   <li class="late">Painted rocks, from nobody knows who</li>
+  </ul>
+ </div>
+ <div class="pic" role="img" aria-label="Olha Tkachenko's painting of the snowy dune grass above the crescent shore"></div>
+</section>
+
+<section class="read" id="reviews">
+ <h2>What readers noticed</h2>
+ <div class="pair">
+  <div>
+   <blockquote><p>A slow and warm winter story in which a small community comes together to create something magical.</p><cite>Reedsy Discovery, Must Read</cite></blockquote>
+   <blockquote><p>An inviting story of hope, perseverance, and buried treasure from nature.</p><cite>Midwest Book Review</cite></blockquote>
+  </div>
+  <div>
+   <blockquote><p style="font-size:clamp(18px,2vw,21px)">Olha Tkachenko's illustrations are absolutely gorgeous.</p><cite>Readers' Favorite</cite></blockquote>
+   <blockquote><p style="font-size:clamp(18px,2vw,21px)">A warmhearted, mystical story.</p><cite>Independent Book Review</cite></blockquote>
+  </div>
+ </div>
+</section>
+
+<section class="me" id="author">
+ <img src="img/window.jpg" width="900" height="760" alt="Hildi and Finn at the window, spotting something green on the beach, from the book" loading="lazy">
+ <div>
+  <h2>Donna K.</h2>
+  <p>Donna has spent more than thirty years on the coast of Maine, and she and her family treasure their years in Goose Rocks. The shoreline, the seagrass and the changing seasons are where this story comes from.</p>
+  <p>Her dog Finn is the real-life inspiration for Hildi's faithful companion. The Magical Beach Tree is her first children's book.</p>
+  <p><a href="https://bookviewreview.com/2026/10/16/interview-with-author-donna-k/">Read her interview on Book View Review</a></p>
+ </div>
+</section>
+
+<section class="close" id="visit">
+ <h2>Bring the tree to your school, reading or shop.</h2>
+ <p>For school visits, readings or wholesale, Donna is at hello@themagicalbeachtree.com.</p>
+ <a class="btn solid" href="mailto:hello@themagicalbeachtree.com?subject=The%20Magical%20Beach%20Tree">Write to Donna</a><a class="btn" href="https://www.instagram.com/magicalbeachtree/">Instagram</a>
+</section>
+</main>
+
+<footer><p>A mockup made by Sparsh Saini for Donna K. Not affiliated, not live. Cover and paintings by Olha Tkachenko.</p></footer>
+
+<button class="treebtn" id="tb" aria-expanded="false" aria-controls="sh"><img src="img/tree.webp" alt="">Contents</button>
+<nav class="sheet" id="sh" aria-label="Contents">
+ <a href="#buy">The book</a><a href="#story">The true story</a><a href="#gifts">What the shore put on it</a><a href="#reviews">What readers noticed</a><a href="#author">Donna</a><a href="#visit">School visits and readings</a>
+</nav>
+
+<script>
+(function(){
+var tb=document.getElementById('tb'),sh=document.getElementById('sh'),hero=document.querySelector('.hero');
+tb.onclick=function(){var o=sh.classList.toggle('open');tb.setAttribute('aria-expanded',o)};
+sh.onclick=function(e){if(e.target.tagName==='A'){sh.classList.remove('open');tb.setAttribute('aria-expanded',false)}};
+new IntersectionObserver(function(e){document.body.classList.toggle('past',!e[0].isIntersecting)}).observe(hero);
+if(matchMedia('(prefers-reduced-motion: reduce)').matches||location.hash==='#still')return;
+var $=function(i){return document.getElementById(i)};
+var cam=$('cam'),cam2=$('cam2'),tree=$('tree'),glow=$('glow'),tide=$('tide'),grass=$('grass'),veil=$('veil'),spray=$('spray'),title=$('title'),by=$('by'),wel=$('wel'),go=$('go'),c1=$('c1'),c2=$('c2'),c3=$('c3'),sea=$('sea'),tw=[].slice.call(document.querySelectorAll('.tw.t'));
+var ss=function(a,b,v){var t=Math.min(1,Math.max(0,(v-a)/(b-a)));return t*t*(3-2*t)};
+var lin=function(a,b,v){return Math.min(1,Math.max(0,(v-a)/(b-a)))};
+var bell=function(a,b,c,d,v){return ss(a,b,v)*(1-ss(c,d,v))};
+var outBack=function(t){var c=1.25;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+var H,AW,end,top0,dx,dy,narrow;
+function size(){var st=document.querySelector('.stage');H=st.offsetHeight;AW=H*820/868;top0=hero.offsetTop;end=hero.offsetHeight-H;narrow=innerWidth<700;
+ dx=(narrow?.70:.815)-.5024;dx*=AW;dy=(578-730)/868*H;
+ sea.style.left=(narrow?70:81.5)+'%';sea.style.top=(578/868*100)+'%';draw(true)}
+var last=-1,raf=0;
+function draw(f){raf=0;var p=Math.min(1,Math.max(0,(scrollY-top0)/end));if(!f&&p===last)return;last=p;
+ // words
+ var tOut=1-ss(.07,.15,p),tIn=ss(.86,.95,p),tv=Math.max(tOut,tIn);
+ title.style.opacity=tv;title.style.transform='translate3d(0,'+((1-tv)*-16).toFixed(1)+'px,0)';
+ by.style.opacity=Math.max(1-ss(.05,.1,p),ss(.9,.97,p));
+ wel.style.opacity=ss(.93,.985,p);go.style.opacity=Math.max(1-ss(.02,.07,p),ss(.94,.99,p));
+ go.style.pointerEvents=(p<.05||p>.95)?'auto':'none';wel.style.visibility=p>.9?'visible':'hidden';
+ c1.style.opacity=bell(.16,.21,.39,.44,p);c2.style.opacity=bell(.5,.54,.615,.65,p);c3.style.opacity=bell(.665,.7,.75,.785,p);
+ // storm
+ var storm=bell(.08,.2,.38,.52,p);veil.style.opacity=(storm*.56+bell(.5,.56,.74,.88,p)*.3).toFixed(3);
+ spray.style.opacity=(bell(.1,.2,.34,.46,p)*.85).toFixed(3);spray.style.transform='translate3d('+(((p-.25)*-60)).toFixed(2)+'%,'+((p-.25)*16).toFixed(2)+'%,0)';
+ // tide up then back
+ var td=bell(.1,.27,.33,.5,p);tide.style.transform='translate3d(0,'+(1.2-td*1.2).toFixed(3)*100+'%,0)';
+ // tree out to sea
+ glow.style.opacity=Math.max(1-ss(.09,.17,p),ss(.84,.93,p)).toFixed(3);
+ var o=lin(.2,.46,p),oe=ss(0,1,o),sc,tx=0,ty=0,rot=0,op=1;
+ if(p<.66){sc=1-.955*Math.pow(oe,.72);tx=dx*oe;ty=dy*Math.pow(oe,.8)-Math.sin(oe*Math.PI)*H*.018;rot=Math.sin(o*9)*9*(1-oe)+ss(.1,.2,p)*(1-o)*Math.sin(p*70)*2.2;op=p<.45?1:1-ss(.45,.5,p)}
+ else{var u=lin(.71,.9,p);sc=.3+.7*outBack(u);ty=(1-u)*H*.03;op=ss(.71,.76,p);rot=(1-u)*Math.sin(u*10)*2}
+ tree.style.opacity=op.toFixed(3);tree.style.visibility=op<.004?'hidden':'visible';
+ tree.style.transform='translate3d('+tx.toFixed(1)+'px,'+ty.toFixed(1)+'px,0) rotate('+rot.toFixed(2)+'deg) scale('+sc.toFixed(4)+')';
+ // last light at sea
+ var s=bell(.43,.47,.51,.545,p);var fl=p>.49?(.5+.5*Math.round((Math.sin(p*260)+1)/2)):1;sea.style.opacity=(s*fl).toFixed(2);
+ // down into the seagrass and back
+ var dn=bell(.5,.66,.74,.93,p),S=1+dn*1.05;var ct='scale('+S.toFixed(4)+')';cam.style.transform=ct;cam2.style.transform=ct;
+ grass.style.transform='scale('+(1+dn*.62).toFixed(4)+')';
+ // twinkles
+ tw.forEach(function(e,i){var a=.655+i*.016,v=bell(a,a+.012,.82,.875,p);var bl=.72+.28*Math.sin(p*190+i*2);e.style.opacity=(v*bl*(i?1:1)).toFixed(3)});
+}
+addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(function(){draw()})},{passive:true});
+addEventListener('resize',size);addEventListener('load',size);size();
+})();
+</script>
+</body>
+</html>
