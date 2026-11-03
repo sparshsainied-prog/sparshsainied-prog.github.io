@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Spencer Rose | The Princess Thief</title>
+<meta name="description" content="A homepage idea for Spencer Rose's The Princess Thief. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spencer Rose | The Princess Thief">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Spencer Rose. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/spencerrose/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--navy:#06182c;--deep:#030d1b;--teal:#0b3a55;--gold:#d9b86c;--gold2:#a98a45;--ice:#cfeaf7;--cream:#f1ead9;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--ice);font:400 19px/1.62 Alegreya,Georgia,serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--deep);color:var(--gold);font:500 12.5px/1.1 Alegreya,serif;letter-spacing:.03em;text-align:center;border-bottom:1px solid rgba(217,184,108,.35)}
+.disp{font-family:Cinzel,"Times New Roman",serif;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gold)}
+.hero{position:relative;height:340vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.6))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#0b3a55 0,#06182c 55%,#030d1b 100%)}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) * .625);height:var(--sh);margin-left:calc(var(--sh) * -.3125)}
+.stage img{position:absolute;pointer-events:none;will-change:transform}
+.stage .plate{left:0;top:0;width:100%}
+.veil{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 58%,rgba(3,13,27,.55),rgba(3,13,27,.92));opacity:1;will-change:opacity;pointer-events:none}
+.stage .cl,.stage .cr{top:25.5%;width:24%}
+.stage .cl{left:0;transform-origin:0 0}
+.stage .cr{right:0;transform-origin:100% 0}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 14px);padding:0 20px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 12px;font-style:italic;font-size:18px}
+.cap .l,.cap .r{display:none}
+.btn{display:inline-block;padding:11px 20px 10px;border:1.5px solid var(--gold);text-decoration:none;font:600 13px/1.1 Cinzel,serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.btn.solid{background:var(--gold);color:var(--deep)}
+.btn:hover,.btn:focus-visible{background:var(--cream);color:var(--deep);border-color:var(--cream)}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:calc(var(--strip) + 6px);height:var(--sh);padding:0;pointer-events:none}
+ .cap .l,.cap .r{display:block}
+ .cap .m{display:none}
+ .cap>*{position:absolute;pointer-events:auto;max-width:21vw;margin:0}
+ .cap .l{left:5vw;bottom:2vh;text-align:left}
+ .cap .r{right:5vw;bottom:2vh}
+ .cap p{font-size:20px}
+}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px;line-height:1.2}}
+.sec{padding:96px 22px;position:relative}
+.wrap{max-width:1020px;margin:0 auto}
+.kick{font:600 13px/1 Cinzel,serif;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:0 0 20px}
+h2{margin:0 0 18px;font-size:clamp(30px,5.4vw,56px);line-height:1.06}
+.book{display:grid;gap:34px;align-items:start}
+.book>img{width:min(340px,78%);box-shadow:0 0 0 1px rgba(217,184,108,.4),0 18px 50px rgba(0,0,0,.45)}
+@media(min-width:760px){.book{grid-template-columns:340px 1fr;gap:64px}}
+.genre{font-style:italic;margin:0 0 18px;color:var(--gold)}
+.pull{border-left:2px solid var(--gold);padding:2px 0 2px 16px;margin:22px 0;font-size:21px;font-style:italic}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.paper{background:var(--cream);color:var(--deep)}
+.paper .kick{color:#7a5f22}
+.paper .disp{color:#5d4511}
+.paper .btn{border-color:var(--deep);color:var(--deep)}
+.paper .btn.solid{background:var(--deep);color:var(--cream)}
+.paper .btn:hover{background:var(--teal);color:var(--cream)}
+.ledger{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(217,184,108,.4)}
+.ledger li{display:grid;grid-template-columns:3em 1fr;gap:12px;padding:14px 0;border-bottom:1px solid rgba(217,184,108,.4)}
+.ledger b{font:600 17px/1.3 Cinzel,serif;color:var(--gold)}
+.fair{display:grid;gap:22px}
+.fair .date{font-size:clamp(34px,7.4vw,92px);line-height:.98;margin:0}
+.close{text-align:center;padding:110px 22px 150px;background:var(--deep)}
+.close .big{font-size:clamp(26px,5.4vw,56px);line-height:1.1;max-width:16em;margin:0 auto 30px}
+.close p{max-width:30em;margin:0 auto 26px}
+footer{padding:26px 22px 90px;text-align:center;font-size:15px;background:var(--deep);color:var(--ice);border-top:1px solid rgba(217,184,108,.25)}
+.crown{position:fixed;z-index:45;right:12px;top:calc(var(--strip) + 10px);width:48px;height:48px;border-radius:50%;border:1.5px solid var(--gold);background:var(--deep);color:var(--gold);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .35s}
+.crown.on{opacity:1;pointer-events:auto}
+.crown svg{width:26px;height:26px}
+.sheet{position:fixed;z-index:44;right:12px;top:calc(var(--strip) + 66px);min-width:210px;background:var(--deep);border:1px solid var(--gold);padding:8px;display:none}
+.sheet.open{display:block}
+.sheet a{display:block;padding:10px 12px 9px;text-decoration:none;font:600 13px/1 Cinzel,serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.sheet a:hover,.sheet a:focus-visible{background:var(--gold);color:var(--deep)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 190px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .crown{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Spencer Rose. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" role="img" aria-label="The cover of The Princess Thief by Spencer Rose: a gold crown on a glowing ice-blue crystal, framed by dark blue feathers and gold vines">
+   <img class="plate" src="img/plate.jpg" alt="" width="1100" height="1760">
+   <div class="veil" id="veil"></div>
+   <img class="cl" src="img/curtl.webp" alt="" width="264" height="1117">
+   <img class="cr" src="img/curtr.webp" alt="" width="264" height="1117">
+  </div>
+  <div class="cap" id="cap">
+   <p class="l">A sapphic sci-fi retelling of The Goose Girl. Out 4 November.</p>
+   <p class="r"><a class="btn solid" href="https://www.amazon.com.au/dp/B0HKPSDPSQ">Pre-order on Amazon</a></p>
+   <p class="m"><a class="btn solid" href="https://www.amazon.com.au/dp/B0HKPSDPSQ">Pre-order on Amazon</a></p>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="thief"><div class="wrap book">
+ <img src="img/c-thief.jpg" alt="Cover of The Princess Thief: a gold crown on a glowing blue crystal, framed by dark feathers and gold vines" width="800" height="1280" loading="lazy">
+ <div>
+  <p class="kick">New novel</p>
+  <h2 class="disp">The Princess Thief</h2>
+  <p class="genre">Sapphic science fiction. A retelling of The Goose Girl.</p>
+  <p>Sian is sent to the planet Phoenix Gate to steady its shattered monarchy after an attack wipes out the royal family. En route, her girlfriend steals her identity and leaves her stranded. Now she is a goose keeper that no one believes, and the only person who might help is the knight investigating the conspiracy.</p>
+  <p class="pull">"Sword fighting, slow-burn sapphic romance, political intrigue and too many geese."</p>
+  <p>On the cover: "It's only theft if it wasn't already yours."</p>
+  <div class="btns">
+   <a class="btn solid" href="https://www.amazon.com.au/dp/B0HKPSDPSQ">Amazon Australia</a>
+   <a class="btn" href="https://www.amazon.com/dp/B0HKPSDPSQ">Amazon USA</a>
+   <a class="btn" href="https://spencerrosewrites.com/pages/the-princess-thief">Her book page</a>
+   <a class="btn" href="https://tally.so/r/nrXONl">Join the ARC team</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec" id="biokin" style="background:var(--teal)"><div class="wrap">
+ <p class="kick">The series</p>
+ <h2 class="disp">The Biokin Chronicles</h2>
+ <p class="genre">"The Legend of Korra meets Firefly, with a sapphic twist." Closed-door romance. She recommends it for readers 14 and up.</p>
+ <ol class="ledger">
+  <li><b>I</b><span>Sapling's Orbit</span></li>
+  <li><b>II</b><span>Sapling's Aurora</span></li>
+  <li><b>III</b><span>Sapling's Depths</span></li>
+  <li><b>IV</b><span>Sapling's Rising</span></li>
+ </ol>
+ <div class="btns">
+  <a class="btn solid" href="https://spencerrosewrites.com/products/the-biokin-chronicles-collection-box-set-of-all-4-books">Complete series, her shop</a>
+  <a class="btn" href="https://www.goodreads.com/author/show/21257672.Spencer_Rose">Goodreads</a>
+  <a class="btn" href="https://spencerrosewrites.com/pages/free-short-story">Free short story</a>
+ </div>
+</div></section>
+
+<section class="sec paper" id="spencer"><div class="wrap">
+ <p class="kick">In her words</p>
+ <h2 class="disp">Spencer Rose</h2>
+ <p style="max-width:34em">On her Goodreads page she writes sci-fi adventures with a sapphic twist. She is from Sydney and says she loves meeting readers.</p>
+ <p style="max-width:34em">Her Linktree bio reads: "Aurealis-nominated 2026 | Writer of sci-fi. Upcoming novel: The Princess Thief".</p>
+ <div class="btns"><a class="btn solid" href="https://spencerrosewrites.com">Her shop</a><a class="btn" href="https://www.instagram.com/spencerrosewrites">@spencerrosewrites</a></div>
+</div></section>
+
+<section class="sec" id="fair"><div class="wrap fair">
+ <p class="kick">Where to meet her</p>
+ <p class="date disp">Book Fair Australia<br>7 and 8 November</p>
+ <p style="max-width:32em;margin:0">She has a table at Book Fair Australia, Sydney Showground. She posted about it on Instagram on 21 October. Check her post for her table number.</p>
+ <div class="btns" style="margin-top:0"><a class="btn solid" href="https://www.instagram.com/p/Dev7iZCklzu/">See her post</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big disp">It's only theft if it wasn't already yours.</p>
+ <p>A free short story, The Last Flight From Naas, is on her site.</p>
+ <a class="btn solid" href="https://spencerrosewrites.com/pages/free-short-story">Get the free story</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Spencer Rose. Not affiliated, not live.</footer>
+
+<button class="crown" id="crown" aria-label="Sections" aria-expanded="false" aria-controls="sheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 18 4.5 7l5 5L12 5l2.5 7 5-5L21 18Z"/><path d="M3 21h18"/></svg></button>
+<nav class="sheet" id="sheet" aria-label="Sections">
+ <a href="#thief">The Princess Thief</a><a href="#biokin">The Biokin Chronicles</a><a href="#spencer">Spencer</a><a href="#fair">The fair</a>
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=hero.querySelector('.stage'),cl=hero.querySelector('.cl'),cr=hero.querySelector('.cr'),veil=document.getElementById('veil'),cap=document.getElementById('cap'),crown=document.getElementById('crown'),sheet=document.getElementById('sheet');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},eo=function(x){return 1-Math.pow(1-x,3)};
+  function draw(p){
+    var o=eio(seg(p,.06,.84)),v=eo(seg(p,.1,.9)),w=stage.offsetWidth,k=1-o;
+    var sc='scale('+(1+.55*k).toFixed(4)+','+(1+.05*k).toFixed(4)+')';
+    cl.style.transform='translate3d('+(.215*w*k).toFixed(2)+'px,'+(-6*k).toFixed(2)+'px,0) rotate('+(-2.4*k).toFixed(3)+'deg) '+sc;
+    cr.style.transform='translate3d('+(-.215*w*k).toFixed(2)+'px,'+(-6*k).toFixed(2)+'px,0) rotate('+(2.4*k).toFixed(3)+'deg) '+sc;
+    veil.style.opacity=(1-v).toFixed(3);
+    cap.classList.toggle('on',p>.86);
+  }
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      crown.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+      if(!crown.classList.contains('on')){sheet.classList.remove('open');crown.setAttribute('aria-expanded','false')}
+    });
+  }
+  if(rm){draw(1)}else{draw(0)}
+  addEventListener('scroll',onscroll,{passive:true});addEventListener('resize',onscroll);onscroll();
+  crown.addEventListener('click',function(){var s=sheet.classList.toggle('open');crown.setAttribute('aria-expanded',s)});
+  sheet.addEventListener('click',function(){sheet.classList.remove('open');crown.setAttribute('aria-expanded','false')});
+})();
+</script>
+</body>
+</html>
