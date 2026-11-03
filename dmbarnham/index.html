@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>D.M. Barnham | Lionman</title>
+<meta name="description" content="A homepage idea for D.M. Barnham's Lionman, Book 2 of The Book of Ominiue. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="D.M. Barnham | Lionman">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for D.M. Barnham. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/dmbarnham/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--space:#050d24;--deep:#0a1a3c;--glow:#7db4ff;--ice:#dbe8ff;--planet:#2b2118;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--space);color:var(--ice);font:400 18px/1.65 "Open Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:#02060f;color:#a9c9f5;font:600 12.5px/1.15 "Open Sans",sans-serif;text-align:center;border-bottom:1px solid rgba(125,180,255,.35)}
+.lab{font:800 12.5px/1 "Open Sans",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--glow);margin:0 0 18px}
+.hero{position:relative;height:380vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.5))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#12285a,var(--space) 70%)}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) / 1.5);height:var(--sh);margin-left:calc(var(--sh) / -3);overflow:hidden}
+.scene{position:absolute;inset:0;transform-origin:50% 30%;will-change:transform}
+.scene img,.scene .veil,.scene .glow{position:absolute;pointer-events:none}
+.scene .plate{left:0;top:0;width:100%}
+.scene .stars{left:0;top:0;width:100%;will-change:transform}
+.scene .ring{left:25%;top:10%;width:50%;will-change:transform}
+.scene .beam{left:33%;top:40%;width:34%;transform-origin:50% 0;will-change:transform}
+.scene .sphere{left:36.7%;top:57%;width:26%;will-change:transform}
+.scene .veil{inset:0;background:var(--space);opacity:.6}
+.scene .glow{left:10%;top:-4%;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(190,220,255,.95),rgba(120,170,255,.35) 55%,rgba(120,170,255,0));opacity:0;mix-blend-mode:screen}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 10px);padding:0 22px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 10px;font-size:16.5px;line-height:1.35}
+.btn{display:inline-block;padding:13px 24px 12px;border:2px solid var(--ice);color:#fff;background:transparent;text-decoration:none;font:800 13px/1.1 "Open Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:#fff;color:var(--space)}
+.btn.solid{background:#fff;color:var(--space)}
+.btn.solid:hover{background:var(--glow);border-color:var(--glow)}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:auto;bottom:7vh;left:5vw;right:auto;width:21vw;text-align:left;padding:0}
+ .cap p{font-size:19px;margin-bottom:16px}
+}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px}}
+.sec{padding:100px 22px;position:relative}
+.wrap{max-width:1020px;margin:0 auto}
+h2{margin:0 0 22px;font:800 clamp(40px,8vw,92px)/.95 "Open Sans",sans-serif;letter-spacing:-.02em;text-transform:uppercase;color:#fff}
+.book{display:grid;gap:36px;align-items:start}
+.book>img{width:min(340px,80%);box-shadow:0 0 70px rgba(90,150,255,.35)}
+@media(min-width:760px){.book{grid-template-columns:340px 1fr;gap:70px}}
+.lead{font-size:clamp(20px,2.4vw,26px);line-height:1.4;font-weight:600;color:#fff;max-width:26em}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.series{background:var(--planet);border-radius:50% 50% 0 0/70px 70px 0 0;margin-top:-40px;padding-top:140px;border-top:5px solid #fff}
+.ledger{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(255,255,255,.3)}
+.ledger li{display:grid;grid-template-columns:3.2em 1fr auto;gap:12px;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.3)}
+.ledger b{font:800 14px/1 "Open Sans",sans-serif;letter-spacing:.14em;color:var(--glow)}
+.ledger span{font:800 clamp(22px,3.4vw,34px)/1.1 "Open Sans",sans-serif;text-transform:uppercase;color:#fff}
+.ledger a{font:800 12px/1 "Open Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid currentColor}
+.ledger small{display:block;font:400 15px/1.4 "Open Sans",sans-serif;text-transform:none;color:var(--ice);margin-top:6px}
+.her p{max-width:34em}
+.fair{background:linear-gradient(var(--space),var(--deep))}
+.fair .date{font:800 clamp(64px,19vw,230px)/.82 "Open Sans",sans-serif;letter-spacing:-.04em;text-transform:uppercase;color:#fff;margin:0 0 24px}
+.fair .date em{font-style:normal;color:var(--glow);display:block}
+.close{text-align:center;padding:120px 22px 170px;background:var(--deep)}
+.close .big{font:800 clamp(34px,7vw,84px)/.98 "Open Sans",sans-serif;text-transform:uppercase;letter-spacing:-.02em;max-width:12em;margin:0 auto 34px;color:#fff}
+footer{padding:26px 22px 96px;text-align:center;font:400 15px/1.4 "Open Sans",sans-serif;background:#02060f;color:#a9c9f5;border-top:1px solid rgba(125,180,255,.3)}
+.dial{position:fixed;z-index:45;right:12px;bottom:12px;opacity:0;pointer-events:none;transition:opacity .4s}
+.dial.on{opacity:1;pointer-events:auto}
+.dial summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:4px 14px 4px 4px;background:rgba(2,6,15,.85);border:1px solid rgba(125,180,255,.5);border-radius:40px}
+.dial summary::-webkit-details-marker{display:none}
+.dial summary img{width:42px;will-change:transform}
+.dial summary span{font:800 11.5px/1 "Open Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;min-width:6.5em}
+.dial ul{list-style:none;margin:0 0 8px;padding:8px 0;position:absolute;right:0;bottom:100%;min-width:200px;background:rgba(2,6,15,.95);border:1px solid rgba(125,180,255,.5)}
+.dial li a{display:block;padding:10px 16px;text-decoration:none;font:800 12px/1 "Open Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.dial li a:hover,.dial li a:focus-visible{background:#fff;color:var(--space)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--glow);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 180px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .dial{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for D.M. Barnham. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" role="img" aria-label="The cover of Lionman by D.M. Barnham: a toothed ring with a white disc in a starfield, a beam of light running down to a small dark sphere above the curve of a planet">
+   <div class="scene" id="scene">
+    <img class="plate" src="img/plate.jpg" alt="" width="1000" height="1500">
+    <img class="stars" id="st-b" src="img/stars-b.svg" alt="" width="1000" height="1500">
+    <img class="stars" id="st-a" src="img/stars-a.svg" alt="" width="1000" height="1500">
+    <div class="veil" id="veil"></div>
+    <img class="beam" id="beam" src="img/beam.webp" alt="" width="340" height="330">
+    <img class="ring" id="ring" src="img/ring.webp" alt="" width="500" height="500">
+    <div class="glow" id="glow"></div>
+    <img class="sphere" id="sphere" src="img/sphere.webp" alt="" width="260" height="260">
+   </div>
+  </div>
+  <div class="cap" id="cap">
+   <p>Book 2 of The Book of Ominiue. Shayne Forrester faces extradition to Earth, and the lionman Kie'athraden waits.</p>
+   <a class="btn solid" href="https://www.amazon.com.au/dp/B0B6351XJG">Lionman on Amazon</a>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="lionman"><div class="wrap book">
+ <img src="img/cover.jpg" alt="Cover of Lionman by D.M. Barnham" width="800" height="1200" loading="lazy">
+ <div>
+  <p class="lab">The Book of Ominiue, book 2</p>
+  <h2>Lionman</h2>
+  <p class="lead">It has been ten years and Shayne Forrester is facing extradition back to Earth to settle his fate once and for all.</p>
+  <p>The lionman, Kie'athraden, is also waiting. As one of the many selected Ambassadors he will represent his nation and his planet. As the first real alien ambassador, he knows his life will change beyond recognition.</p>
+  <div class="btns"><a class="btn solid" href="https://www.amazon.com.au/dp/B0B6351XJG">Buy on Amazon</a><a class="btn" href="https://books2read.com/ap/n6pkNV/DM-Barnham">All stores</a></div>
+ </div>
+</div></section>
+
+<section class="sec series" id="series"><div class="wrap">
+ <p class="lab">The series</p>
+ <h2>The Book of Ominiue</h2>
+ <ol class="ledger">
+  <li><b>I</b><span>Starborn</span><a href="https://www.goodreads.com/book/show/59839132-starborn">Goodreads</a></li>
+  <li><b>II</b><span>Lionman</span><a href="https://www.amazon.com.au/dp/B0B6351XJG">Amazon</a></li>
+  <li><b>+</b><span>The Skyship of Truskal</span><a href="https://www.goodreads.com/book/show/232324784-the-skyship-of-truskal">Goodreads</a></li>
+ </ol>
+</div></section>
+
+<section class="sec her" id="her"><div class="wrap">
+ <p class="lab">The author</p>
+ <h2>D.M. Barnham</h2>
+ <p>A speculative fiction author and artist in Melbourne, publishing as Barnham Publishing. Her Instagram bio mentions drawing, Discworld and archery.</p>
+ <div class="btns"><a class="btn" href="https://www.instagram.com/d.m.barnham/">@d.m.barnham</a><a class="btn" href="https://books2read.com/ap/n6pkNV/DM-Barnham">Books2Read</a></div>
+</div></section>
+
+<section class="sec fair" id="fair"><div class="wrap">
+ <p class="lab">Only she could have this</p>
+ <p class="date">Sunday<em>22 Nov</em></p>
+ <p style="max-width:32em">She is an attending author at All Booked Out 2026, listed as a speculative fiction author. 10am to 3pm at Brown Hill Community Hall, Ballarat.</p>
+ <div class="btns"><a class="btn solid" href="https://covenpress.com.au/all-booked-out-2026">All Booked Out</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big">There is no going back.</p>
+ <a class="btn solid" href="https://www.amazon.com.au/dp/B0B6351XJG">Lionman on Amazon</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for D.M. Barnham. Not affiliated, not live.</footer>
+
+<details class="dial" id="dial">
+ <summary aria-label="Sections"><img id="dring" src="img/ring.webp" alt="" width="500" height="500"><span id="dl">Lionman</span></summary>
+ <ul>
+  <li><a href="#lionman">Lionman</a></li>
+  <li><a href="#series">The series</a></li>
+  <li><a href="#her">The author</a></li>
+  <li><a href="#fair">22 November</a></li>
+ </ul>
+</details>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=hero.querySelector('.stage'),cap=document.getElementById('cap'),dial=document.getElementById('dial');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(i){return document.getElementById(i)};
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var scene=$('scene'),veil=$('veil'),ring=$('ring'),beam=$('beam'),sph=$('sphere'),glow=$('glow'),sa=$('st-a'),sb=$('st-b');
+  var H=1;
+  function measure(){H=stage.getBoundingClientRect().height}
+  // the gate powers up, the beam fires, the sphere drops down it to the planet
+  function draw(p){
+    scene.style.transform='scale('+(1+.14*(1-eo(seg(p,0,.9)))).toFixed(4)+')';
+    veil.style.opacity=(.6*(1-seg(p,0,.55))).toFixed(3);
+    var kr=1-eio(seg(p,0,.5));
+    ring.style.transform='rotate('+(-110*kr).toFixed(2)+'deg) scale('+(1+.1*kr).toFixed(3)+')';
+    ring.style.opacity=(.3+.7*seg(p,0,.18)).toFixed(3);
+    glow.style.opacity=(Math.max(0,1-Math.abs(p-.4)/.12)*.85).toFixed(3);
+    var tb=eo(seg(p,.34,.62));
+    beam.style.transform='scaleY('+tb.toFixed(4)+')';beam.style.opacity=c01(tb*3).toFixed(3);
+    var ts=seg(p,.5,.93),k=1-eio(ts);
+    sph.style.transform='translate3d(0,'+(-(585/1500)*H*k).toFixed(1)+'px,0) scale('+(.12+.88*(1-k)).toFixed(3)+')';
+    sph.style.opacity=c01(ts*10).toFixed(3);
+    sa.style.transform='translate3d(0,'+(-8*(p)).toFixed(2)+'%,0)';
+    sb.style.transform='translate3d(0,'+(-3*(p)).toFixed(2)+'%,0)';
+    sa.style.opacity=(.95-.5*seg(p,.7,1)).toFixed(2);sb.style.opacity=(.8-.4*seg(p,.7,1)).toFixed(2);
+    cap.classList.toggle('on',p>.9);
+  }
+  var links=[].slice.call(dial.querySelectorAll('a')),dl=$('dl'),dr=$('dring');
+  var secs=['lionman','series','her','fair'].map($);
+  var tick=0,cur=-1;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      dial.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+      if(!rm)dr.style.transform='rotate('+(y*.25).toFixed(1)+'deg)';
+      var mid=y+innerHeight*.5,idx=0;secs.forEach(function(s,i){if(s.offsetTop<=mid)idx=i});
+      if(idx!==cur){cur=idx;dl.textContent=links[idx].textContent}
+    });
+  }
+  measure();
+  if(rm){cap.classList.add('on');veil.style.opacity=0;glow.style.opacity=0;sa.style.opacity=.5;sb.style.opacity=.4}else draw(0);
+  addEventListener('scroll',onscroll,{passive:true});
+  addEventListener('resize',function(){measure();onscroll()});
+  onscroll();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Judith Rook | Ravens Hollow</title>
+<meta name="description" content="A homepage idea for Judith Rook's Ravens Hollow. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Judith Rook | Ravens Hollow">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Judith Rook. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/judithrook/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--night:#0b1625;--storm:#16293f;--cloud:#cdd8e4;--bone:#f3f0ea;--tile:#c9622f;--tile2:#e08a52;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--cloud);font:300 19px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:#050b14;color:#e6c9b4;font:400 12.5px/1.15 Jost,sans-serif;letter-spacing:.05em;text-align:center;border-bottom:1px solid rgba(224,138,82,.4)}
+.lab{font:400 13px/1 Jost,sans-serif;letter-spacing:.34em;text-transform:uppercase}
+.hero{position:relative;height:380vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.5))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--night) url(img/bg.jpg) 50% 0/cover}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) / 1.5);height:var(--sh);margin-left:calc(var(--sh) / -3)}
+.stage img,.stage .veil,.stage .flash{position:absolute;pointer-events:none}
+.stage .plate{left:0;top:0;width:100%}
+.stage .veil{inset:0;background:#07101c;opacity:.72}
+.stage .flash{inset:0;background:#d6e6ff;opacity:0}
+.stage .bird{will-change:transform}
+.stage .wing{left:0;top:60.33%;width:100%;transform-origin:50% 100%;will-change:transform}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 10px);padding:0 22px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 10px;font-size:17px;line-height:1.35;color:var(--cloud)}
+.btn{display:inline-block;padding:13px 24px 12px;border:1px solid var(--tile2);color:var(--bone);background:rgba(11,22,37,.55);text-decoration:none;font:400 12.5px/1.1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--tile);color:#fff;border-color:var(--tile)}
+.btn.solid{background:var(--tile);border-color:var(--tile);color:#fff}
+.btn.solid:hover{background:var(--tile2);border-color:var(--tile2);color:#1a0d05}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:auto;bottom:7vh;left:5vw;right:auto;width:21vw;text-align:left;padding:0}
+ .cap p{font-size:19px;margin-bottom:16px}
+}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px}}
+.sec{padding:100px 22px;position:relative}
+.wrap{max-width:1020px;margin:0 auto}
+h2{margin:0 0 22px;font:400 clamp(38px,7vw,78px)/.98 "Bodoni Moda",Georgia,serif;color:var(--bone);letter-spacing:-.01em}
+h2 em{color:var(--tile2)}
+.lab{color:var(--tile2);margin:0 0 20px}
+.book{display:grid;gap:36px;align-items:start}
+.book>img{width:min(340px,80%);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+@media(min-width:760px){.book{grid-template-columns:340px 1fr;gap:70px}}
+.pull{font:italic 400 clamp(22px,3vw,30px)/1.25 "Bodoni Moda",serif;color:var(--bone);margin:0 0 26px;padding-left:18px;border-left:2px solid var(--tile)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.town{background:linear-gradient(#0b1625,#2a1a17 55%,#0b1625);border-top:1px solid rgba(224,138,82,.25)}
+.town .wrap{display:grid;gap:30px}
+.town .year{font:400 clamp(90px,24vw,260px)/.82 "Bodoni Moda",serif;color:var(--tile);margin:0;letter-spacing:-.03em;opacity:.92}
+@media(min-width:900px){.town .wrap{grid-template-columns:1.1fr 1fr;align-items:end}}
+.paint{background:#e9e4da;color:#1a2433}
+.paint h2{color:#16293f}.paint h2 em{color:#b4501f}.paint .lab{color:#9c4318}
+.paint p{max-width:34em}
+.more{display:grid;gap:22px}
+.more div{border-top:1px solid rgba(205,216,228,.28);padding-top:16px}
+.more h3{font:400 30px/1.1 "Bodoni Moda",serif;color:var(--bone);margin:0 0 8px}
+.more p{margin:0;max-width:30em}
+@media(min-width:760px){.more{grid-template-columns:repeat(2,1fr);gap:50px}}
+.fair{background:#050b14}
+.fair .date{font:400 clamp(44px,11vw,150px)/.9 "Bodoni Moda",serif;color:var(--bone);margin:0 0 24px}
+.fair .date em{color:var(--tile2)}
+.close{text-align:center;padding:120px 22px 170px;background:linear-gradient(#050b14,#16293f)}
+.close .big{font:italic 400 clamp(28px,5.2vw,58px)/1.1 "Bodoni Moda",serif;max-width:16em;margin:0 auto 34px;color:var(--bone)}
+footer{padding:26px 22px 96px;text-align:center;font:300 15px/1.4 Jost,sans-serif;background:#050b14;color:#b8c6d6;border-top:1px solid rgba(224,138,82,.3)}
+.perch{position:fixed;z-index:45;left:0;right:0;bottom:0;height:46px;pointer-events:none;opacity:0;transition:opacity .4s}
+.perch.on{opacity:1}
+.perch .line{position:absolute;left:5vw;right:5vw;bottom:12px;height:1px;background:rgba(205,216,228,.45)}
+.perch a{pointer-events:auto;position:absolute;bottom:2px;width:30px;height:24px;margin-left:-15px;display:block}
+.perch a::before{content:"";position:absolute;left:14px;bottom:10px;width:2px;height:7px;background:rgba(205,216,228,.7)}
+.perch a.cur::before{background:var(--tile2)}
+.perch .r{position:absolute;bottom:13px;left:0;width:34px;margin-left:-17px;transition:transform .7s cubic-bezier(.2,.8,.2,1);will-change:transform}
+.perch .nm{position:absolute;left:5vw;bottom:24px;font:400 11px/1 Jost,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--cloud)}
+a:focus-visible{outline:2px solid var(--tile2);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 180px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .perch,.perch .r{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Judith Rook. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" role="img" aria-label="The cover of Ravens Hollow by Judith Rook: ravens over a stormy sky and the terracotta roofs of a small town, with a great black raven spreading its wings across the foreground">
+   <img class="plate" src="img/plate.jpg" alt="" width="1000" height="1500">
+   <div class="veil" id="veil"></div>
+   <img class="bird" id="b-e" src="img/raven-e.webp" alt="" width="227" height="132" style="left:8.4%;top:20.6%;width:22.7%">
+   <img class="bird" id="b-b" src="img/raven-b.webp" alt="" width="152" height="97" style="left:33.9%;top:7.6%;width:15.2%">
+   <img class="bird" id="b-a" src="img/raven-a.webp" alt="" width="122" height="107" style="left:9.9%;top:2.93%;width:12.2%">
+   <img class="wing" id="wing" src="img/wing.webp" alt="" width="1000" height="397">
+   <img class="bird" id="b-f" src="img/raven-f.webp" alt="" width="282" height="362" style="left:69.9%;top:4.93%;width:28.2%">
+   <div class="flash" id="flash"></div>
+  </div>
+  <div class="cap" id="cap">
+   <p>A gothic ghost story in a small central Victorian town, rooted in the gold rush of 1851.</p>
+   <a class="btn solid" href="https://www.amazon.com.au/dp/B0BSVNC6HC">Ravens Hollow on Amazon</a>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="book"><div class="wrap book">
+ <img src="img/cover.jpg" alt="Cover of Ravens Hollow by Judith Rook" width="800" height="1200" loading="lazy">
+ <div>
+  <p class="lab">Her first novel</p>
+  <h2>Ravens <em>Hollow</em></h2>
+  <p class="pull">Ravens are the sentinels that watch over the town of lost souls.</p>
+  <p>A story of facing confrontations from the past. It follows families haunted by the dead as they become trapped within their final resting place. With the dead watching and the living often providing no comfort, family secrets are forced to be revealed.</p>
+  <div class="btns"><a class="btn solid" href="https://www.amazon.com.au/dp/B0BSVNC6HC">Buy on Amazon</a><a class="btn" href="https://www.goodreads.com/book/show/85762426-ravens-hollow">Goodreads</a></div>
+ </div>
+</div></section>
+
+<section class="sec town" id="town"><div class="wrap">
+ <p class="year" aria-label="1851">1851</p>
+ <div>
+  <p class="lab">The town</p>
+  <h2>A small town <em>rooted in the gold rush</em></h2>
+  <p>Central Victoria. Lee Ping, a Chinese migrant and gold digger, is murdered and his soul is left to drift, trapped in the eternal terror of Ravens Hollow.</p>
+ </div>
+</div></section>
+
+<section class="sec paint" id="painter"><div class="wrap">
+ <p class="lab">The painter</p>
+ <h2>Painting first, <em>then the words</em></h2>
+ <p>In her bio, Judith says her main passion through her life has been painting. She exhibited in Victoria through the 1970s, then in Queensland through to the 2000s.</p>
+ <p>Her solo exhibition "Wisdom in a Wicker Basket" paired each painting with a poem, and that is what started her writing. Now living in Ballarat, she joined her U3A writing group and finished the story. She dedicated her first novel to her father, who was an avid reader and writer.</p>
+</div></section>
+
+<section class="sec" id="more"><div class="wrap">
+ <p class="lab">More from her</p>
+ <div class="more">
+  <div><h3>Beyond the Horizon</h3><p>Published 2025.</p><div class="btns" style="margin-top:16px"><a class="btn" href="https://www.goodreads.com/book/show/231295244-beyond-the-horizon">Goodreads</a></div></div>
+  <div><h3>Whispers</h3><p>For younger readers. A magical realism story with a boy called Sonny, wise owls and a crazy kookaburra.</p></div>
+ </div>
+</div></section>
+
+<section class="sec fair" id="fair"><div class="wrap">
+ <p class="lab">Only she could have this</p>
+ <p class="date">Sunday<br><em>22 November</em></p>
+ <p style="max-width:32em">She is an attending author at All Booked Out 2026, 10am to 3pm at Brown Hill Community Hall, Ballarat.</p>
+ <div class="btns"><a class="btn solid" href="https://covenpress.com.au/all-booked-out-2026">All Booked Out</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big">Ravens are the sentinels that watch over the town of lost souls.</p>
+ <a class="btn solid" href="https://www.amazon.com.au/dp/B0BSVNC6HC">Ravens Hollow on Amazon</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Judith Rook. Not affiliated, not live.</footer>
+
+<nav class="perch" id="perch" aria-label="Sections">
+ <span class="nm" id="nm">Ravens Hollow</span>
+ <div class="line"></div>
+ <a href="#book" data-n="Ravens Hollow" aria-label="Ravens Hollow"></a>
+ <a href="#town" data-n="The town" aria-label="The town"></a>
+ <a href="#painter" data-n="The painter" aria-label="The painter"></a>
+ <a href="#more" data-n="More books" aria-label="More books"></a>
+ <a href="#fair" data-n="22 November" aria-label="All Booked Out"></a>
+ <img class="r" id="perchr" src="img/raven-b.webp" alt="" width="152" height="97">
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=hero.querySelector('.stage'),cap=document.getElementById('cap'),perch=document.getElementById('perch');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(i){return document.getElementById(i)};
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var veil=$('veil'),flash=$('flash'),wing=$('wing');
+  // birds fly in on arcs about the middle of the cover
+  var birds=[
+    {el:$('b-f'),ang:-78,sc:1.9,a:.08,b:.80},
+    {el:$('b-e'),ang:96,sc:2.3,a:.20,b:.70},
+    {el:$('b-b'),ang:-112,sc:2.5,a:.14,b:.62},
+    {el:$('b-a'),ang:130,sc:2.6,a:.24,b:.74}
+  ];
+  function measure(){
+    var r=stage.getBoundingClientRect();
+    birds.forEach(function(b){var e=b.el;
+      e.style.transformOrigin=(r.width/2-e.offsetLeft)+'px '+(r.height*.5-e.offsetTop)+'px'});
+  }
+  function draw(p){
+    birds.forEach(function(b){var t=seg(p,b.a,b.b),k=1-eio(t);
+      b.el.style.transform='rotate('+(b.ang*k).toFixed(2)+'deg) scale('+(1+(b.sc-1)*k).toFixed(3)+')';
+      b.el.style.opacity=(.15+.85*c01(t*6)).toFixed(2)});
+    var w=seg(p,0,.62),kw=1-eo(w);
+    wing.style.transform='translate3d(0,'+(kw*9).toFixed(2)+'%,0) scale('+(1+kw*1.9).toFixed(3)+')';
+    veil.style.opacity=(.72*(1-seg(p,.06,.7))).toFixed(3);
+    flash.style.opacity=(Math.max(0,1-Math.abs(p-.585)/.03)*.5+Math.max(0,1-Math.abs(p-.66)/.02)*.22).toFixed(3);
+    cap.classList.toggle('on',p>.9);
+  }
+  var secs=['book','town','painter','more','fair'].map(function(id){return $(id)});
+  var links=[].slice.call(perch.querySelectorAll('a')),pr=$('perchr'),nm=$('nm');
+  function placePerch(){
+    var line=perch.querySelector('.line').getBoundingClientRect();
+    links.forEach(function(a,i){a.style.left=(line.left+line.width*(i+.5)/links.length)+'px'});
+  }
+  var cur=-1;
+  function setCur(i){if(i===cur)return;cur=i;links.forEach(function(a,k){a.classList.toggle('cur',k===i)});
+    var a=links[i];if(!a)return;nm.textContent=a.getAttribute('data-n');
+    pr.style.transform='translateX('+(parseFloat(a.style.left)+1)+'px)'}
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      var on=y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05;perch.classList.toggle('on',on);
+      var mid=y+innerHeight*.5,idx=0;secs.forEach(function(s,i){if(s.offsetTop<=mid)idx=i});setCur(idx);
+    });
+  }
+  measure();placePerch();
+  if(rm){birds.forEach(function(b){b.el.style.transform='none'});wing.style.transform='none';veil.style.opacity=0;cap.classList.add('on')}else draw(0);
+  addEventListener('scroll',onscroll,{passive:true});
+  addEventListener('resize',function(){measure();placePerch();cur=-1;onscroll()});
+  onscroll();
+})();
+</script>
+</body>
+</html>
