@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kevin Wiczer | Divine Lessons from Your Guides</title>
+<meta name="description" content="A homepage idea for Kevin Wiczer's Divine Lessons from Your Guides. Not their official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kevin Wiczer | Divine Lessons from Your Guides">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Kevin Wiczer. Not their official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/kevinwiczer/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--navy:#06133a;--navy2:#0b2263;--blue:#143a8c;--cream:#f1e6c8;--glow:#bfe0ff;--amber:#f2a51f;--amber2:#e0821a;--teal:#4f93b4;--brown:#2b1503;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:#e3ecf9;font:400 21px/1.55 "Cormorant Garamond",Georgia,serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:#020822;color:var(--glow);font:400 12px/1.15 Cinzel,serif;letter-spacing:.05em;text-align:center;border-bottom:1px solid rgba(191,224,255,.25)}
+.caps{font-family:Cinzel,Georgia,serif;font-weight:400;letter-spacing:.18em;text-transform:uppercase}
+
+/* hero: the guides arrive, then the light climbs the cover */
+.hero{position:relative;height:420vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.658))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 60%,#0c2468 0%,#07153d 60%,#040c26 100%)}
+.sw{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) * .6031);height:var(--sh);margin-left:calc(var(--sh) * -.30155);overflow:hidden;background:#07153d}
+.stage{position:absolute;inset:0}
+.stage img{position:absolute;pointer-events:none;will-change:transform,opacity}
+.stage .plate{left:0;top:0;width:100%;transform-origin:50% 75%}
+.veil{position:absolute;left:-1%;right:-1%;top:0;height:230%;background:linear-gradient(#030a22 0,#030a22 43.5%,rgba(3,10,34,.7) 46%,rgba(3,10,34,0) 50%);will-change:transform;pointer-events:none}
+.halo{position:absolute;left:30.9%;top:57.7%;width:50%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(210,236,255,.8) 0,rgba(140,190,255,.35) 32%,rgba(80,130,230,0) 68%);opacity:0;will-change:transform,opacity;pointer-events:none}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 8px);padding:0 22px;text-align:center}
+.cap .hint,.cap .end{transition:opacity .5s,transform .5s}
+.cap .end{opacity:0;transform:translateY(10px)}
+.cap.on .end{opacity:1;transform:none}
+.cap .hint{position:absolute;left:0;right:0;top:4px;font-size:12px;color:var(--glow)}
+.cap.on .hint{opacity:0}
+.cap p{margin:0 0 10px;font-size:19px;line-height:1.3}
+.cap .r{display:none}
+.btn{display:inline-block;padding:13px 26px 12px;border:1px solid var(--cream);color:var(--cream);background:rgba(241,230,200,.08);text-decoration:none;font:600 12px/1.1 Cinzel,serif;letter-spacing:.2em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--cream);color:var(--navy)}
+.btn.solid{background:var(--cream);color:var(--navy)}
+.btn.solid:hover,.btn.solid:focus-visible{background:#fff8e2}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:calc(var(--strip) + 6px);height:var(--sh);padding:0;pointer-events:none}
+ .cap .hint{left:5vw;right:auto;top:auto;bottom:2vh;max-width:18vw;text-align:left}
+ .cap .r{display:block}
+ .cap .m{display:none}
+ .cap .end{position:absolute;inset:0}
+ .cap .end>*{position:absolute;pointer-events:auto;max-width:21vw;margin:0}
+ .cap .l{left:5vw;bottom:2vh;text-align:left}
+ .cap .r{right:5vw;bottom:2vh}
+ .cap p{font-size:23px}
+}
+@media(max-width:899px){.pin,.sw{background:#06133a}}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:11.5px}}
+
+.sec{padding:100px 22px;position:relative}
+.wrap{max-width:1040px;margin:0 auto}
+.kick{font:400 12px/1.2 Cinzel,serif;letter-spacing:.32em;text-transform:uppercase;color:var(--glow);margin:0 0 20px}
+h2{margin:0 0 20px;font:600 clamp(34px,5.6vw,66px)/1.06 Cinzel,serif;color:var(--cream);letter-spacing:.01em}
+.book{display:grid;gap:42px;align-items:start}
+.book>img{width:min(330px,76%);box-shadow:0 0 70px rgba(120,180,255,.35),0 20px 50px rgba(0,0,10,.6)}
+@media(min-width:780px){.book{grid-template-columns:330px 1fr;gap:72px}}
+.said{font-style:italic;color:var(--glow);margin:0 0 16px}
+.pull{border-left:2px solid var(--glow);padding:2px 0 2px 18px;margin:24px 0;font-size:clamp(24px,3vw,31px);font-style:italic;line-height:1.3;color:var(--cream)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.lead{max-width:33em}
+
+.sun{background:linear-gradient(170deg,var(--amber) 0%,var(--amber2) 100%);color:var(--brown)}
+.sun .kick{color:#5a2c00}
+.sun h2{color:var(--brown)}
+.sun .said{color:#5a2c00}
+.sun .btn{border-color:var(--brown);color:var(--brown);background:rgba(43,21,3,.06)}
+.sun .btn:hover,.sun .btn:focus-visible{background:var(--brown);color:var(--amber)}
+.sun .btn.solid{background:var(--brown);color:#ffd88a}
+.sun .book>img{box-shadow:0 20px 50px rgba(70,30,0,.45);width:min(360px,80%);border-radius:50% 50% 4px 4px / 38% 38% 4px 4px}
+@media(min-width:780px){.sun .book{grid-template-columns:360px 1fr}}
+
+.fair .time{margin:0 0 6px;font:600 clamp(56px,13vw,170px)/.96 Cinzel,serif;color:var(--cream);letter-spacing:-.01em}
+.fair .where{font-size:clamp(22px,3vw,32px);max-width:24em;margin:0 0 6px;color:var(--glow);font-style:italic}
+.fair{background:radial-gradient(ellipse at 20% 0%,#10307f 0%,var(--navy) 65%)}
+
+.about{background:var(--cream);color:#1a2650}
+.about .kick{color:#3a5aa8}
+.about h2{color:#0b2263}
+.about .btn{border-color:#0b2263;color:#0b2263;background:transparent}
+.about .btn:hover,.about .btn:focus-visible{background:#0b2263;color:var(--cream)}
+.about .btn.solid{background:#0b2263;color:var(--cream)}
+.about .pull{border-color:#3a5aa8;color:#0b2263}
+
+.close{text-align:center;padding:120px 22px 150px;background:linear-gradient(#06133a,#020822)}
+.close .big{font:italic 400 clamp(28px,5vw,58px)/1.16 "Cormorant Garamond",serif;max-width:19em;margin:0 auto 14px;color:var(--cream)}
+.close .by{margin:0 0 34px;font:400 12px/1.2 Cinzel,serif;letter-spacing:.3em;text-transform:uppercase;color:var(--glow)}
+footer{padding:26px 22px 96px;text-align:center;font:400 15px/1.4 "Cormorant Garamond",serif;background:#020822;color:#c9d8ef;border-top:1px solid rgba(191,224,255,.2)}
+
+/* constellation nav */
+.consl{position:fixed;z-index:45;left:10px;bottom:10px;display:flex;align-items:center;gap:12px;padding:8px 16px 8px 8px;background:rgba(4,12,40,.82);border:1px solid rgba(191,224,255,.35);opacity:0;pointer-events:none;transition:opacity .35s}
+.consl.on{opacity:1;pointer-events:auto}
+.consl .map{position:relative;width:64px;height:56px;flex:none}
+.consl svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.consl svg polyline{fill:none;stroke:rgba(191,224,255,.4);stroke-width:1}
+.consl a{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;display:block}
+.consl a::before{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#8fa8d6;transition:all .25s}
+.consl a.cur::before{width:11px;height:11px;margin:-5.5px 0 0 -5.5px;background:#fff;box-shadow:0 0 12px 3px rgba(191,224,255,.9)}
+.consl span{font:400 12px/1 Cinzel,serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);min-width:7em}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+.sun a:focus-visible,.about a:focus-visible{outline-color:#0b2263}
+@media(min-width:900px){.consl{left:14px;bottom:auto;top:50%;transform:translateY(-50%);flex-direction:column;padding:12px 10px 10px;gap:8px}.consl span{display:none}}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 190px)}
+ .veil{display:none}
+ .cap .end{opacity:1;transform:none;transition:none}
+ .cap .hint{display:none}
+ .consl{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Kevin Wiczer. Not their official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="sw"><div class="stage" id="stage" role="img" aria-label="The cover of Divine Lessons from Your Guides by Kevin Wiczer: two glowing figures clasp hands over an open book of light, under the title in cream capitals on a deep blue night sky">
+   <img class="plate" id="plate" src="img/plate.jpg" alt="" width="904" height="1499">
+   <div class="veil" id="veil"></div>
+   <div class="halo" id="halo"></div>
+   <img id="gB" src="img/g-B.webp" alt="" width="480" height="165" style="left:27.655%;top:78.052%;width:53.097%">
+   <img id="gF" src="img/g-F.webp" alt="" width="480" height="490" style="left:27.655%;top:49.366%;width:53.097%;transform-origin:50% 100%">
+  </div></div>
+  <div class="cap" id="cap">
+   <p class="hint caps" id="hint">Scroll to meet your guides</p>
+   <div class="end">
+    <p class="l">Two hundred channelled messages, in his words, to use like an oracle.</p>
+    <p class="r"><a class="btn solid" href="https://www.amazon.com/dp/B0FY8G1Q2B">Get the book</a></p>
+    <p class="m"><a class="btn solid" href="https://www.amazon.com/dp/B0FY8G1Q2B">Get the book</a></p>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="lessons"><div class="wrap book">
+ <img src="img/cover.jpg" alt="Cover of Divine Lessons from Your Guides by Kevin Wiczer" width="560" height="929" loading="lazy">
+ <div>
+  <p class="kick">GetKevInsight Press</p>
+  <h2>Divine Lessons from Your Guides</h2>
+  <p class="said">Kevin Wiczer describes it, on his site, as an oracle book.</p>
+  <p class="pull">"A powerful oracle book designed to help you connect with the wisdom of your spirit team."</p>
+  <p class="lead">It holds 200 channelled messages, and he says you can use them like an oracle: ask, open, and read what comes.</p>
+  <div class="btns">
+   <a class="btn solid" href="https://www.amazon.com/dp/B0FY8G1Q2B">Get it on Amazon</a>
+   <a class="btn" href="https://www.getkevinsight.com">His site</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec sun" id="whispers"><div class="wrap book">
+ <img src="img/whispers.jpg" alt="Golden artwork of a glowing figure with a heart of light, under a bright star, in swirling orange and teal" width="640" height="640" loading="lazy">
+ <div>
+  <p class="kick">Second book</p>
+  <h2>Whispers from the Infinite</h2>
+  <p class="said">Channeled Messages from the Eternal Source, in his words:</p>
+  <p class="lead" style="font-size:25px;line-height:1.35">"A profound collection of channeled messages designed to help you reconnect with your true nature."</p>
+  <div class="btns">
+   <a class="btn solid" href="https://a.co/d/0iIrTqQw">Get it on Amazon</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec fair" id="fair"><div class="wrap">
+ <p class="kick">Only he could have this</p>
+ <p class="time">Saturday<br>12 to 3</p>
+ <p class="where">Local Author Fair at Schaumburg Public Library.</p>
+ <p class="lead" style="margin:10px 0 0">Kevin is doing a five minute reading from Whispers from the Infinite.</p>
+ <div class="btns"><a class="btn solid" href="https://www.instagram.com/p/DfPbjEuJkLo/">His post about it</a></div>
+</div></section>
+
+<section class="sec about" id="kevin"><div class="wrap">
+ <p class="kick">In his words</p>
+ <h2>Kevin Wiczer</h2>
+ <p class="lead">He calls himself a spiritual reader, offering "soul tarot readings and spiritual guidance designed to help you connect with your inner wisdom and your guides."</p>
+ <p class="lead">His readings, he says, blend intuitive guidance with tarot, and his work also takes in his books and channelled messages. His imprint is GetKevInsight Press.</p>
+ <div class="btns"><a class="btn solid" href="https://www.getkevinsight.com">getkevinsight.com</a><a class="btn" href="https://www.instagram.com/kevinwiczer/">@kevinwiczer</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big">"My mission is to create a safe, compassionate space where clarity, healing, and inspiration can flow."</p>
+ <p class="by">Kevin Wiczer, on his site</p>
+ <a class="btn solid" href="https://www.amazon.com/dp/B0FY8G1Q2B">Open Divine Lessons</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Kevin Wiczer. Not affiliated, not live.</footer>
+
+<nav class="consl" id="consl" aria-label="Sections">
+ <div class="map">
+  <svg viewBox="0 0 64 56" aria-hidden="true"><polyline points="8,44 22,16 34,36 48,10 58,28"/></svg>
+  <a href="#lessons" data-n="Divine Lessons" aria-label="Divine Lessons" style="left:12.5%;top:78.6%"></a>
+  <a href="#whispers" data-n="Whispers" aria-label="Whispers from the Infinite" style="left:34.4%;top:28.6%"></a>
+  <a href="#fair" data-n="The fair" aria-label="The author fair" style="left:53.1%;top:64.3%"></a>
+  <a href="#kevin" data-n="Kevin" aria-label="Kevin Wiczer" style="left:75%;top:17.9%"></a>
+  <a href="#end" data-n="His mission" aria-label="His mission" style="left:90.6%;top:50%"></a>
+ </div>
+ <span id="cl">Divine Lessons</span>
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=document.getElementById('stage'),cap=document.getElementById('cap');
+  var plate=document.getElementById('plate'),veil=document.getElementById('veil'),halo=document.getElementById('halo');
+  var gF=document.getElementById('gF'),gB=document.getElementById('gB');
+  var consl=document.getElementById('consl'),cl=document.getElementById('cl');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var W=300,H=500;
+  function measure(){W=stage.offsetWidth;H=stage.offsetHeight}
+  function draw(p){
+    // the open book glows, then the two guides rise out of its light, still joined
+    var m=eo(seg(p,.1,.46));
+    gF.style.transform='translate3d(0,'+((1-m)*H*.11).toFixed(1)+'px,0) scale('+(.9+.1*m).toFixed(4)+')';
+    gF.style.opacity=m.toFixed(3);
+    gB.style.opacity=(.45+.55*eo(seg(p,0,.3))).toFixed(3);
+    // the lesson lands: a bloom of light at their hands
+    var hb=Math.sin(Math.PI*seg(p,.38,.7));
+    halo.style.opacity=(hb*.9).toFixed(3);
+    halo.style.transform='scale('+(.6+.9*seg(p,.38,.7)).toFixed(3)+')';
+    // the light climbs the cover and lights the title
+    var v=eio(seg(p,.42,.9));
+    veil.style.transform='translate3d(0,'+(-v*97).toFixed(2)+'%,0)';
+    plate.style.transform='scale('+(1.06-.06*eo(seg(p,.3,1))).toFixed(4)+')';
+    cap.classList.toggle('on',p>.93);
+  }
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      consl.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*.6);
+    });
+  }
+  measure();
+  if(rm){cap.classList.add('on')}else draw(0);
+  addEventListener('scroll',onscroll,{passive:true});
+  addEventListener('resize',function(){measure();onscroll()});
+  onscroll();
+  var links=[].slice.call(consl.querySelectorAll('a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      links.forEach(function(a){var m=a.getAttribute('href')=='#'+e.target.id;a.classList.toggle('cur',m);if(m)cl.textContent=a.getAttribute('data-n')});
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    ['lessons','whispers','fair','kevin','end'].forEach(function(id){io.observe(document.getElementById(id))});
+  }
+})();
+</script>
+</body>
+</html>

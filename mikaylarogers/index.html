@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mikayla Rogers | Through a Different Lens</title>
+<meta name="description" content="A homepage idea for Mikayla Rogers' Through a Different Lens. Not their official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mikayla Rogers | Through a Different Lens">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Mikayla Rogers. Not their official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/mikaylarogers/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--pink:#e8a9cd;--pink2:#e091bf;--mag:#c4408f;--magd:#8f2a68;--ink:#1c0f16;--cream:#f5f0f1;--paper:#f6f4f3;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--pink);color:var(--ink);font:400 18px/1.6 Montserrat,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:50;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--ink);color:#f3c4df;font:400 12px/1.15 Montserrat,sans-serif;letter-spacing:.02em;text-align:center}
+.script{font-family:"Kaushan Script","Brush Script MT",cursive;font-weight:400}
+.caps{font-weight:400;letter-spacing:.14em;text-transform:uppercase}
+
+/* hero: one still life, one shutter */
+.hero{position:relative;height:400vh;--sh:min(calc(100svh - 150px),calc(100vw * 1.4995))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#eeb9d6 0%,var(--pink) 55%,var(--pink2) 100%)}
+.sw{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) * .6669);height:var(--sh);margin-left:calc(var(--sh) * -.33345);overflow:hidden}
+.stage{position:absolute;inset:0;transform-origin:50% 38%}
+.stage img{position:absolute;pointer-events:none}
+.stage .plate{left:0;top:0;width:100%}
+.stage .ph{left:11.025%;top:21.471%;width:80.265%;opacity:0}
+.stage .glow{position:absolute;left:63.8%;top:7.3%;width:30%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,244,250,.95) 0,rgba(255,206,232,.7) 28%,rgba(255,190,225,0) 68%);opacity:0;pointer-events:none}
+.flash{position:absolute;inset:0;background:#fff7fb;opacity:0;pointer-events:none}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 10px);padding:0 22px;text-align:center}
+.cap .hint,.cap .end{transition:opacity .45s,transform .45s}
+.cap .end{opacity:0;transform:translateY(10px)}
+.cap.on .end{opacity:1;transform:none}
+.cap .hint{position:absolute;left:0;right:0;top:0;opacity:1;font-size:13px}
+.cap.on .hint{opacity:0}
+.cap p{margin:0 0 12px;font-size:17px;line-height:1.4}
+.cap .r{display:none}
+.btn{display:inline-block;padding:13px 24px 12px;background:var(--ink);color:#fbd3e8;text-decoration:none;font:500 12.5px/1.1 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;border:2px solid var(--ink);border-radius:2px;box-shadow:3px 3px 0 var(--mag);transition:transform .15s,box-shadow .15s}
+.btn:hover,.btn:focus-visible{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--mag)}
+.btn.alt{background:var(--paper);color:var(--ink);border-color:var(--ink)}
+@media(min-width:900px){
+ .sw{overflow:visible}
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:calc(var(--strip) + 6px);height:var(--sh);padding:0;pointer-events:none}
+ .cap .hint{left:5vw;right:auto;top:auto;bottom:2vh;max-width:18vw;text-align:left}
+ .cap .r{display:block}
+ .cap .m{display:none}
+ .cap .end>*{position:absolute;pointer-events:auto;max-width:21vw;margin:0}
+ .cap .l{left:5vw;bottom:2vh;text-align:left}
+ .cap .r{right:5vw;bottom:2vh}
+ .cap .end{position:absolute;inset:0}
+ .cap p{font-size:20px}
+}
+@media(max-width:899px){.pin{background:#ecb1d3}}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px}}
+
+/* sections */
+.sec{padding:100px 22px;position:relative}
+.wrap{max-width:1040px;margin:0 auto}
+.kick{font:500 12px/1 Montserrat,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--magd);margin:0 0 20px}
+h2{margin:0 0 20px;font:400 clamp(38px,7vw,78px)/1.02 "Kaushan Script",cursive;color:var(--ink)}
+.print{background:var(--paper);padding:14px 14px 44px;box-shadow:0 2px 0 rgba(120,60,90,.18),0 18px 40px rgba(110,30,80,.28)}
+.print .cp{position:absolute;left:0;right:0;bottom:10px;text-align:center;font:400 18px/1 "Kaushan Script",cursive;color:var(--ink)}
+.print{position:relative}
+.book{display:grid;gap:40px;align-items:start}
+.book .print{width:min(340px,78%);transform:rotate(-2deg)}
+.book .print img{width:100%}
+@media(min-width:780px){.book{grid-template-columns:340px 1fr;gap:72px}}
+.cream{background:var(--cream)}
+.genre{margin:0 0 18px;font-weight:500;letter-spacing:.04em;color:var(--magd)}
+.pull{margin:26px 0;padding:0 0 0 20px;border-left:4px solid var(--mag);font:400 clamp(24px,3.4vw,34px)/1.25 "Kaushan Script",cursive}
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.lead{max-width:34em}
+
+.cast{display:grid;gap:34px;margin-top:40px}
+.cast .print{max-width:320px}
+.cast .print .ph2{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#f1c6de,#e8a9cd);color:var(--magd);font:400 92px/1 "Kaushan Script",cursive}
+.cast .print p{margin:18px 4px 0;font-size:16px;line-height:1.5}
+@media(min-width:820px){.cast{grid-template-columns:repeat(3,1fr);align-items:start;gap:40px}.cast .print:nth-child(1){transform:rotate(-2.2deg)}.cast .print:nth-child(2){transform:translateY(54px) rotate(1.4deg)}.cast .print:nth-child(3){transform:translateY(14px) rotate(-.8deg)}.cast{padding-bottom:70px}}
+@media(max-width:819px){.cast .print:nth-child(2){margin-left:auto;transform:rotate(1.6deg)}.cast .print:nth-child(1){transform:rotate(-1.6deg)}}
+
+.sign{background:var(--mag);color:#fff3f9}
+.sign .kick{color:#ffd1ea}
+.sign .date{margin:0 0 6px;font:400 clamp(60px,15vw,190px)/.92 "Kaushan Script",cursive;color:#fff}
+.sign .where{font:500 clamp(18px,2.6vw,26px)/1.4 Montserrat,sans-serif;max-width:24em;margin:0 0 10px}
+.sign .btn{background:#fff3f9;color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.sign .btn.alt{background:transparent;color:#fff3f9;border-color:#fff3f9;box-shadow:none}
+
+.side{display:grid;gap:26px}
+.side .big{font:400 clamp(30px,5.4vw,64px)/1.1 "Kaushan Script",cursive;margin:0;max-width:15em}
+.close{background:var(--ink);color:#f7cfe5;text-align:center;padding:120px 22px 150px}
+.close .big{font:400 clamp(34px,7vw,84px)/1.08 "Kaushan Script",cursive;max-width:13em;margin:0 auto 34px;color:#fbd3e8}
+.close .btn{background:#fbd3e8;color:var(--ink);border-color:#fbd3e8;box-shadow:3px 3px 0 var(--mag)}
+footer{padding:26px 22px 96px;text-align:center;font:300 14px/1.4 Montserrat,sans-serif;background:var(--ink);color:#e9c3da;border-top:1px solid rgba(251,211,232,.25)}
+
+/* lens dial nav */
+.lens{position:fixed;z-index:45;right:12px;bottom:12px;display:flex;flex-direction:column;align-items:flex-end;gap:10px;opacity:0;pointer-events:none;transition:opacity .35s}
+.lens.on{opacity:1;pointer-events:auto}
+.dial{width:58px;height:58px;border-radius:50%;border:0;padding:0;cursor:pointer;color:#fff;font:500 12px/1 Montserrat,sans-serif;letter-spacing:.04em;background:radial-gradient(circle at 50% 50%,#3a1a2c 0 22%,#120a0f 23% 38%,#6b6670 39% 41%,#1a1217 42% 60%,#8e8892 61% 64%,#26191f 65%);box-shadow:0 4px 14px rgba(60,10,40,.5)}
+.dial span{display:block;transform:translateY(0)}
+.tray{margin:0;padding:6px 0;list-style:none;background:var(--paper);box-shadow:0 14px 34px rgba(80,20,60,.4);display:none;min-width:210px}
+.tray.open{display:block}
+.tray a{display:flex;gap:12px;align-items:baseline;padding:11px 18px;text-decoration:none;font:400 15px/1.2 Montserrat,sans-serif;color:var(--ink)}
+.tray a b{font:400 18px/1 "Kaushan Script",cursive;color:var(--mag);min-width:1.6em}
+.tray a.cur{background:#f3d3e5}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.sign a:focus-visible,.close a:focus-visible{outline-color:#fff}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 190px)}
+ .stage .ph{opacity:1}
+ .cap .end{opacity:1;transform:none;transition:none}
+ .cap .hint{display:none}
+ .lens,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Mikayla Rogers. Not their official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="sw"><div class="stage" id="stage" role="img" aria-label="The cover of Through a Different Lens by Mikayla Rogers: a stack of printed photographs on pink, a framed portrait of a woman in sunglasses at the wheel of a pink car, and a film camera on its chain">
+   <img class="plate" src="img/plate.jpg" alt="" width="907" height="1360">
+   <img class="ph" id="murk" src="img/murk.webp" alt="" width="728" height="468">
+   <img class="ph" id="photo" src="img/photo.webp" alt="" width="728" height="468">
+   <div class="glow" id="glow"></div>
+  </div></div>
+  <div class="flash" id="flash"></div>
+  <div class="cap" id="cap">
+   <p class="hint caps" id="hint">Scroll to take the picture</p>
+   <div class="end">
+    <p class="l">Daniela comes home to the small town she grew up in. Nothing is ever that simple, though.</p>
+    <p class="r"><a class="btn" href="https://www.amazon.com/dp/B0DLH58N39">Get it on Amazon</a></p>
+    <p class="m"><a class="btn" href="https://www.amazon.com/dp/B0DLH58N39">Get it on Amazon</a></p>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec cream" id="book"><div class="wrap book">
+ <div class="print"><img src="img/cover.jpg" alt="Cover of Through a Different Lens by Mikayla Rogers" width="640" height="960" loading="lazy"></div>
+ <div>
+  <p class="kick">Through a Different Lens</p>
+  <h2>Home is a small town.</h2>
+  <p class="genre">Mature-age small town romance, dramedy and women's fiction. Set in Australia.</p>
+  <p class="lead">Daniela has always kicked life's bum despite the challenges it's pelted at her. When her beloved babcia is in a car accident, she heads back to the small town she was dragged up in, ready to fix everything.</p>
+  <p class="lead">Next door is Sean, her old love. Since his wife died he has been trying to wrangle his rebellious teenage daughter, and the last thing he needs is Daniela back.</p>
+  <p class="pull">Nothing is ever that simple, though.</p>
+  <div class="btns">
+   <a class="btn" href="https://www.amazon.com/dp/B0DLH58N39">Get it on Amazon</a>
+   <a class="btn alt" href="https://www.goodreads.com/book/show/221024063">Goodreads</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec" id="frame"><div class="wrap">
+ <p class="kick">Who is in the frame</p>
+ <h2>Three people and one town.</h2>
+ <div class="cast">
+  <div class="print"><div class="ph2" aria-hidden="true">D</div><p><b>Daniela.</b> Sassy, and ready to fix everything.</p></div>
+  <div class="print"><div class="ph2" aria-hidden="true">S</div><p><b>Sean.</b> Widowed, next door, raising a rebellious teenage daughter. Does he have the strength to fight for her?</p></div>
+  <div class="print"><div class="ph2" aria-hidden="true">B</div><p><b>Babcia.</b> The reason Daniela comes home, after a car accident.</p></div>
+ </div>
+</div></section>
+
+<section class="sec sign" id="signing"><div class="wrap">
+ <p class="kick">Only she could have this</p>
+ <p class="date">22 November</p>
+ <p class="where">Mikayla is signing at All Booked Out, at Brown Hill Community Hall in Ballarat, from 10am.</p>
+ <div class="btns">
+  <a class="btn" href="https://covenpress.com.au/all-booked-out-2026">Tickets and authors</a>
+  <a class="btn alt" href="https://www.instagram.com/p/DfDubM-PaLd/">Her post about it</a>
+ </div>
+</div></section>
+
+<section class="sec cream" id="playlist"><div class="wrap side">
+ <p class="kick">The last page</p>
+ <p class="big">The book ends with a playlist.</p>
+ <p class="lead" style="margin:0">The novel has a playlist in its endmatter, after the last chapter.</p>
+</div></section>
+
+<section class="sec" id="mikayla"><div class="wrap">
+ <p class="kick">In her words</p>
+ <h2>Mikayla Rogers</h2>
+ <p class="lead">An indie author in Ballarat, Australia, writing mature-age small town romance with dramedy and women's fiction elements.</p>
+ <div class="btns"><a class="btn" href="https://www.instagram.com/mikaylarogersbooks/">@mikaylarogersbooks</a><a class="btn alt" href="https://www.amazon.com/dp/B0DLH58N39">Through a Different Lens</a></div>
+</div></section>
+
+<section class="sec close" id="end">
+ <p class="big">Is she really a success, or has she merely been surviving at surface level?</p>
+ <a class="btn" href="https://www.amazon.com/dp/B0DLH58N39">Read Daniela's answer</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Mikayla Rogers. Not affiliated, not live.</footer>
+
+<nav class="lens" id="lens" aria-label="Sections">
+ <ul class="tray" id="tray">
+  <li><a href="#book" data-n="1"><b>1</b>The book</a></li>
+  <li><a href="#frame" data-n="2"><b>2</b>Who is in the frame</a></li>
+  <li><a href="#signing" data-n="3"><b>3</b>The signing</a></li>
+  <li><a href="#playlist" data-n="4"><b>4</b>The playlist</a></li>
+  <li><a href="#mikayla" data-n="5"><b>5</b>Mikayla</a></li>
+ </ul>
+ <button class="dial" id="dial" type="button" aria-expanded="false" aria-controls="tray" aria-label="Sections"><span id="dn">1</span></button>
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=document.getElementById('stage'),cap=document.getElementById('cap');
+  var photo=document.getElementById('photo'),murk=document.getElementById('murk'),glow=document.getElementById('glow'),flash=document.getElementById('flash');
+  var lens=document.getElementById('lens'),dial=document.getElementById('dial'),tray=document.getElementById('tray'),dn=document.getElementById('dn');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var narrow=matchMedia('(max-width:899px)');
+  function draw(p){
+    var top=narrow.matches?1.55:1.38;
+    // lean in to the print, hold at the click, step back to the whole cover
+    var s=1+(top-1)*eio(seg(p,0,.4))-(top-1)*eio(seg(p,.8,1));
+    // a tiny jolt as the shutter fires
+    var j=Math.sin(seg(p,.4,.46)*Math.PI);
+    stage.style.transform='translate3d(0,'+(j*-5).toFixed(1)+'px,0) scale('+s.toFixed(4)+')';
+    glow.style.opacity=(seg(p,.28,.4)*(1-seg(p,.44,.54))).toFixed(3);
+    flash.style.opacity=(Math.sin(seg(p,.4,.5)*Math.PI)*.92).toFixed(3);
+    murk.style.opacity=(eo(seg(p,.45,.62))).toFixed(3);
+    photo.style.opacity=(eo(seg(p,.58,.88))).toFixed(3);
+    cap.classList.toggle('on',p>.92);
+  }
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      lens.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+    });
+  }
+  if(rm){cap.classList.add('on');photo.style.opacity=1}else draw(0);
+  addEventListener('scroll',onscroll,{passive:true});
+  addEventListener('resize',onscroll);
+  onscroll();
+  dial.addEventListener('click',function(){var o=tray.classList.toggle('open');dial.setAttribute('aria-expanded',o)});
+  tray.addEventListener('click',function(e){if(e.target.closest('a'))tray.classList.remove('open'),dial.setAttribute('aria-expanded',false)});
+  addEventListener('keydown',function(e){if(e.key==='Escape'){tray.classList.remove('open');dial.setAttribute('aria-expanded',false)}});
+  var links=[].slice.call(tray.querySelectorAll('a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      links.forEach(function(a){var m=a.getAttribute('href')=='#'+e.target.id;a.classList.toggle('cur',m);if(m)dn.textContent=a.getAttribute('data-n')});
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    ['book','frame','signing','playlist','mikayla'].forEach(function(id){io.observe(document.getElementById(id))});
+  }
+})();
+</script>
+</body>
+</html>
