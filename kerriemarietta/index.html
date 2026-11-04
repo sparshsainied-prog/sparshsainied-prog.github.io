@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kerrie Marietta | This Too</title>
+<meta name="description" content="A homepage idea for Kerrie Marietta's This Too. Not her official site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kerrie Marietta | This Too">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Kerrie Marietta. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/kerriemarietta/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+<style>:where(img){height:auto}</style>
+<style>
+:root{--navy:#221d46;--pink:#d468b4;--blush:#ffcbf1;--peach:#ef9f46;--gold:#f2af2a;--mint:#2bcea3;--violet:#5201ff;--crimson:#a3162b;--ink:#221d46;--strip:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:#fff;font:500 18px/1.6 Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;z-index:60;top:0;left:0;right:0;height:var(--strip);display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--navy);color:var(--blush);font:600 12px/1.15 Montserrat,sans-serif;letter-spacing:.02em;text-align:center;border-bottom:2px solid var(--pink)}
+.script{font-family:Yellowtail,cursive;font-weight:400}
+.hero{position:relative;height:460vh;--sh:min(calc(100svh - 160px),calc(100vw * 1.599))}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--navy) url(img/bg.jpg) 50% 50%/cover}
+.stage{position:absolute;left:50%;top:calc(var(--strip) + 6px);width:calc(var(--sh) / 1.599);height:var(--sh);margin-left:calc(var(--sh) / -3.198);overflow:hidden;container-type:inline-size}
+.stage>*{position:absolute;pointer-events:none}
+.stage .sky{inset:0;background:url(img/sky.jpg) 0 0/100% 100%}
+.stage img{height:auto}
+.stage .cloud{will-change:transform}
+.stage .skyline{left:0;top:0;width:100%;transform-origin:50% 100%;will-change:transform}
+.stage .wreal{left:81.24%;top:26.67%;width:18.76%}
+.stage canvas{left:0;top:0;width:100%;height:100%;opacity:0}
+.stage .card{left:0;top:0;width:36cqw;padding:2.6cqw 3cqw 3cqw;background:#fff;color:var(--navy);border-radius:2.4cqw;font:700 3.9cqw/1.28 Montserrat,sans-serif;opacity:0;will-change:transform,opacity}
+.stage .card b{display:block;margin:0 0 1cqw;font:800 2.5cqw/1 Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.stage .tag{left:16.63%;top:5.47%;width:66.52%;will-change:transform,opacity}
+.stage .title{left:16.31%;top:15.6%;width:71.86%;will-change:transform,opacity}
+.cap{position:absolute;left:0;right:0;top:calc(var(--strip) + 6px + var(--sh) + 8px);padding:0 22px;text-align:center;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.cap.on{opacity:1;transform:none}
+.cap p{margin:0 0 12px;font-size:15px;line-height:1.35;font-weight:700;color:var(--navy)}
+.btn{display:inline-block;padding:14px 24px;border:3px solid var(--navy);background:var(--blush);color:var(--navy);text-decoration:none;font:800 13px/1.1 Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase;box-shadow:5px 5px 0 var(--navy);transition:transform .15s,box-shadow .15s}
+.btn:hover,.btn:focus-visible{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--navy)}
+.btn.pink{background:var(--pink);color:#fff}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor;box-shadow:5px 5px 0 currentColor}
+.cap .btn{border-color:var(--navy);box-shadow:5px 5px 0 var(--pink);background:var(--navy);color:#fff}
+@media(min-width:900px){
+ .hero{--sh:calc(100svh - 76px)}
+ .cap{top:auto;bottom:7vh;left:5vw;right:auto;width:22vw;text-align:left;padding:0}
+ .cap p{font-size:19px;margin-bottom:18px}
+}
+@media(max-width:640px){:root{--strip:40px}.strip{font-size:12px}}
+.sec{padding:96px 22px;position:relative}
+.wrap{max-width:1040px;margin:0 auto}
+h2{margin:0 0 20px;font:800 clamp(34px,6vw,64px)/1 Montserrat,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.kick{margin:0 0 14px;font:800 13px/1 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px}
+.book{background:var(--blush);color:var(--navy)}
+.book .grid{display:grid;gap:40px;align-items:center}
+.book img{width:min(340px,78%);box-shadow:14px 14px 0 var(--navy);justify-self:center}
+.book h2{font:400 clamp(70px,13vw,150px)/.86 Yellowtail,cursive;text-transform:none;letter-spacing:0;color:var(--navy);margin-bottom:26px}
+.book p{max-width:32em}
+.book .fact{font:700 14px/1.5 Montserrat,sans-serif;letter-spacing:.04em;margin-top:26px;color:#5a2d57}
+@media(min-width:780px){.book .grid{grid-template-columns:340px 1fr;gap:80px}.book img{justify-self:start}}
+.pair{display:grid;padding:0}
+.pair>div{padding:84px 24px 110px;position:relative}
+.pair .abi{background:var(--violet);color:#fff}
+.pair .lun{background:var(--crimson);color:#fff}
+.pair h3{margin:0 0 12px;font:400 clamp(64px,12vw,130px)/.9 Yellowtail,cursive}
+.pair p{max-width:26em;margin:0 0 14px}
+.pair .q{font:800 clamp(20px,2.6vw,27px)/1.25 Montserrat,sans-serif;max-width:15em;color:var(--blush)}
+@media(min-width:820px){.pair{grid-template-columns:1fr 1fr}.pair>div{padding:110px 6vw 130px}.pair .lun{padding-top:170px}}
+.hills{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px}
+.kerrie{background:var(--mint);color:#fff;overflow:hidden}
+.kerrie h2{font-size:clamp(52px,12vw,150px);line-height:.92;margin-bottom:34px}
+.kerrie p{max-width:30em;color:var(--navy);font-weight:700}
+.kerrie .btn{background:#fff}
+.where{background:var(--navy);color:#fff}
+.where .tix{display:grid;gap:28px;margin-top:30px}
+.tix>div{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding:26px;background:var(--blush);color:var(--navy);box-shadow:10px 10px 0 var(--pink);border-radius:6px}
+.tix .d{font:800 clamp(64px,11vw,110px)/.82 Montserrat,sans-serif;text-align:center;color:var(--pink)}
+.tix .d small{display:block;margin-top:6px;font:800 clamp(16px,2.4vw,24px)/1 Montserrat,sans-serif;letter-spacing:.2em;color:var(--navy)}
+.tix h3{margin:0 0 8px;font:800 clamp(18px,2.4vw,26px)/1.15 Montserrat,sans-serif}
+.tix p{margin:0 0 14px;font-size:16px}
+.tix a{font:800 12px/1 Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+@media(min-width:900px){.where .tix{grid-template-columns:1fr 1fr;gap:44px}}
+.close{text-align:center;padding:130px 22px 190px;background:linear-gradient(#d468b4,#df8083 45%,#e68d6e);color:#fff}
+.close .big{font:800 clamp(26px,5vw,56px)/1.08 Montserrat,sans-serif;text-transform:uppercase;max-width:16em;margin:0 auto 36px}
+.close .btn{background:#fff}
+footer{padding:26px 22px 100px;text-align:center;font:500 14px/1.4 Montserrat,sans-serif;background:var(--navy);color:var(--blush);border-top:2px solid var(--pink)}
+.nav{position:fixed;z-index:55;right:14px;bottom:14px}
+.nav button{width:56px;height:56px;border-radius:50%;border:3px solid var(--navy);background:var(--blush);padding:0;cursor:pointer;box-shadow:4px 4px 0 var(--navy);opacity:0;pointer-events:none;transition:opacity .4s}
+.nav.on button{opacity:1;pointer-events:auto}
+.nav svg{width:100%;height:100%;display:block;will-change:transform}
+.nav ul{list-style:none;margin:0;padding:8px;position:absolute;right:0;bottom:68px;min-width:210px;background:var(--blush);border:3px solid var(--navy);box-shadow:6px 6px 0 var(--navy);display:none}
+.nav.open ul{display:block}
+.nav li a{display:block;padding:12px 14px;color:var(--navy);text-decoration:none;font:800 13px/1 Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.nav li a:hover,.nav li a:focus-visible,.nav li a.cur{background:var(--navy);color:var(--blush)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero{height:auto}
+ .pin{position:relative;height:calc(var(--sh) + var(--strip) + 190px)}
+ .cap{opacity:1;transform:none;transition:none}
+ .nav button{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Kerrie Marietta. Not her official site.</div>
+
+<header class="hero" id="top">
+ <div class="pin">
+  <div class="stage" id="stage" role="img" aria-label="The cover of This Too by Kerrie Marietta: two friends sit either side of a pink fountain in front of a Melbourne skyline at sunset, with a Ferris wheel behind the buildings">
+   <div class="sky"></div>
+   <img class="cloud" id="cl-a" src="img/cloud-a.webp" alt="" width="215" height="105" style="left:0;top:11.33%;width:22.92%">
+   <img class="cloud" id="cl-b" src="img/cloud-b.webp" alt="" width="295" height="125" style="left:25.59%;top:3%;width:31.45%">
+   <img class="cloud" id="cl-c" src="img/cloud-c.webp" alt="" width="148" height="110" style="left:84.22%;top:9.33%;width:15.78%">
+   <img class="skyline" id="skyline" src="img/skyline.webp" alt="" width="938" height="1500">
+   <img class="wreal" id="wreal" src="img/wheel-real.webp" alt="" width="176" height="190">
+   <canvas id="wheel"></canvas>
+   <div class="card" id="k0"><b>Luna</b>&ldquo;brave enough to choose the life and love she truly deserves&rdquo;</div>
+   <div class="card" id="k1"><b>Luna</b>&ldquo;bold, magnetic, and effortlessly confident&rdquo;</div>
+   <div class="card" id="k2"><b>Abigail</b>&ldquo;shed her &lsquo;sweet and na&iuml;ve&rsquo; label&rdquo;</div>
+   <img class="tag" id="tag" src="img/tag.webp" alt="" width="624" height="69">
+   <img class="title" id="title" src="img/title.webp" alt="" width="674" height="581">
+  </div>
+  <h1 class="vh">This Too by Kerrie Marietta</h1>
+  <div class="cap" id="cap">
+   <p>Abigail moves to Melbourne for university. Her best friend Luna has secrets of her own.</p>
+   <a class="btn" href="https://www.amazon.com.au/This-Too-Kerrie-Marietta/dp/1764673700/">Get This Too</a>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec book" id="book"><div class="wrap grid">
+ <img src="img/cover.jpg" alt="Cover of This Too by Kerrie Marietta" width="800" height="1280" loading="lazy">
+ <div>
+  <p class="kick">Her debut novel</p>
+  <h2>This Too</h2>
+  <p>When small-town girl Abigail moves to Melbourne for university, she hopes it&rsquo;s her chance to shed her &ldquo;sweet and na&iuml;ve&rdquo; label and finally become like her best friend, Luna: bold, magnetic, and effortlessly confident. But beneath her seemingly perfect facade, Luna hides the scars of her mother&rsquo;s abandonment and her father&rsquo;s suffocating control, concealing her true self even from Abigail.</p>
+  <p>As new relationships and old wounds collide, the two friends&rsquo; bond begins to strain under the weight of secrets, jealousy, and unspoken truths.</p>
+  <div class="btns"><a class="btn" href="https://www.amazon.com.au/This-Too-Kerrie-Marietta/dp/1764673700/">Paperback on Amazon</a><a class="btn ghost" href="https://www.amazon.com.au/This-Too-Kerrie-Marietta-ebook/dp/B0H4RP52RV/">Kindle</a><a class="btn ghost" href="https://www.goodreads.com/book/show/254715315-this-too">Goodreads</a></div>
+  <p class="fact">Published 4 September 2026. 356 pages. 4.3 on Goodreads from 25 ratings.</p>
+ </div>
+</div></section>
+
+<section class="pair" id="friends" aria-label="Abigail and Luna">
+ <div class="abi">
+  <p class="kick">She moves to Melbourne</p>
+  <h3>Abigail</h3>
+  <p>A small-town girl who hopes university is her chance to shed her &ldquo;sweet and na&iuml;ve&rdquo; label.</p>
+  <p class="q">She must decide how much of herself she&rsquo;s willing to lose to feel wanted.</p>
+  <svg class="hills" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V38C70 6 150 14 230 30S350 44 400 24V60Z" fill="#f2af2a"/></svg>
+ </div>
+ <div class="lun">
+  <p class="kick">She seems to have it all</p>
+  <h3>Luna</h3>
+  <p>Bold, magnetic, and effortlessly confident, with scars from her mother&rsquo;s abandonment and her father&rsquo;s suffocating control.</p>
+  <p class="q">She must confront whether she&rsquo;s brave enough to choose the life and love she truly deserves.</p>
+  <svg class="hills" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C80 40 160 8 250 22S360 40 400 18V60Z" fill="#2bcea3"/></svg>
+ </div>
+</section>
+
+<section class="sec kerrie" id="kerrie"><div class="wrap">
+ <p class="kick" style="color:var(--navy)">The author</p>
+ <h2>Kerrie<br>Marietta</h2>
+ <p>Kerrie is a contemporary romance author from Melbourne, Australia. She enjoys creating flawed characters and exploring what makes them tick as they navigate life.</p>
+ <p>She is an avid reader and enjoys cancelled plans.</p>
+ <div class="btns"><a class="btn" href="https://kerriemarietta.com/">Her website</a></div>
+</div></section>
+
+<section class="sec where" id="meet"><div class="wrap">
+ <p class="kick" style="color:var(--gold)">Only she could have this</p>
+ <h2>Two dates<br>on her link page</h2>
+ <div class="tix">
+  <div><div class="d">22<small>Nov</small></div><div><h3>All Booked Out Book Festival &amp; Author Signing Market</h3><p>Sunday 22 November 2026, 10am to 3pm, Brown Hill.</p><a href="https://www.eventbrite.com.au/e/all-booked-out-book-festival-author-signing-market-abof2026-tickets-2000804418877">Event page</a></div></div>
+  <div><div class="d">24<small>Apr</small></div><div><h3>A Thousand Lives Romance Book Convention, ATLCON2027</h3><p>Saturday 24 April 2027, 10am to 4pm, Ascot Vale.</p><a href="https://www.eventbrite.com.au/e/a-thousand-lives-romance-book-convention-atlcon2027-tickets-2000359323585">Event page</a></div></div>
+ </div>
+</div></section>
+
+<section class="close" id="end">
+ <p class="big">A story of love, second chances, and finding yourself along the way.</p>
+ <a class="btn" href="https://www.amazon.com.au/This-Too-Kerrie-Marietta/dp/1764673700/">Get This Too</a>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for Kerrie Marietta. Not affiliated, not live.</footer>
+
+<nav class="nav" id="nav" aria-label="Sections">
+ <ul id="navlist">
+  <li><a href="#book">The book</a></li>
+  <li><a href="#friends">Abigail and Luna</a></li>
+  <li><a href="#kerrie">Kerrie</a></li>
+  <li><a href="#meet">Two dates</a></li>
+ </ul>
+ <button type="button" id="navbtn" aria-expanded="false" aria-controls="navlist" aria-label="Menu">
+  <svg viewBox="-30 -30 60 60" id="navwheel" aria-hidden="true"><g fill="none" stroke="#221d46" stroke-linecap="round"><circle r="24" stroke-width="4"/><circle r="15" stroke-width="2"/><path stroke-width="2.4" d="M0-24V24M-24 0H24M-17-17L17 17M17-17L-17 17"/></g><circle r="4" fill="#d468b4"/></svg>
+ </button>
+</nav>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'),stage=document.getElementById('stage'),cap=document.getElementById('cap');
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(i){return document.getElementById(i)};
+  var c01=function(x){return x<0?0:x>1?1:x},seg=function(p,a,b){return c01((p-a)/(b-a))};
+  var eo=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var GW=938,GH=1500,HX=899,HY=574,TX=690,TY=790,S1=3.25,NODES=14,STEP=360/NODES,PHI0=1,NAVY='#221d46';
+  var cv=$('wheel'),ctx=cv.getContext('2d'),wreal=$('wreal'),sky=$('skyline'),title=$('title'),tag=$('tag');
+  var clouds=[{el:$('cl-a'),dx:96},{el:$('cl-b'),dx:-84},{el:$('cl-c'),dx:70}];
+  // cards ride three gondolas; each is read when its gondola passes the band centre
+  var CARDS=[{el:$('k0'),k:10},{el:$('k1'),k:5},{el:$('k2'),k:0}],BAND=300;
+  var K=1,DPR=1,cw=0,ch=0;
+  function layout(){var r=stage.getBoundingClientRect();K=r.width/GW;DPR=Math.min(window.devicePixelRatio||1,3);cw=Math.round(r.width*DPR);ch=Math.round(r.height*DPR);cv.width=cw;cv.height=ch;CARDS.forEach(function(c){c.h=c.el.offsetHeight})}
+  function cabin(x,y,s){ctx.save();ctx.translate(x,y);ctx.scale(s,s);ctx.fillStyle=NAVY;
+    ctx.fillRect(-3.5,4,7,10);
+    ctx.beginPath();ctx.moveTo(-11,17);ctx.arcTo(-11,12,-7,12,3.5);ctx.lineTo(7,12);ctx.arcTo(11,12,11,16,3.5);ctx.lineTo(11,36);ctx.arcTo(11,39,7,39,3.5);ctx.lineTo(-7,39);ctx.arcTo(-11,39,-11,35,3.5);ctx.closePath();
+    ctx.moveTo(-8,16);ctx.lineTo(-8,28);ctx.lineTo(8,28);ctx.lineTo(8,16);ctx.closePath();ctx.fill('evenodd');ctx.restore()}
+  function wheel(hx,hy,s,th){
+    ctx.setTransform(K*DPR,0,0,K*DPR,0,0);ctx.clearRect(0,0,GW,GH);
+    var rad=Math.PI/180;
+    ctx.save();ctx.translate(hx,hy);ctx.scale(s,s);ctx.rotate(th*rad);
+    ctx.strokeStyle=NAVY;ctx.fillStyle=NAVY;ctx.lineCap='round';
+    ctx.lineWidth=12;ctx.beginPath();ctx.arc(0,0,154,0,6.2832);ctx.stroke();
+    ctx.lineWidth=5;ctx.beginPath();ctx.arc(0,0,118,0,6.2832);ctx.stroke();
+    ctx.lineWidth=2.4;ctx.beginPath();
+    for(var k=0;k<NODES;k++){var a=(PHI0+k*STEP)*rad,sn=Math.sin(a),cs=Math.cos(a);
+      ctx.moveTo(0,0);ctx.lineTo(154*sn,-154*cs);
+      var a1=a-.187,a2=a+.187;
+      ctx.moveTo(158*sn,-158*cs);ctx.lineTo(118*Math.sin(a1),-118*Math.cos(a1));
+      ctx.moveTo(158*sn,-158*cs);ctx.lineTo(118*Math.sin(a2),-118*Math.cos(a2));}
+    ctx.stroke();
+    for(k=0;k<NODES;k++){a=(PHI0+k*STEP)*rad;ctx.beginPath();ctx.arc(158*Math.sin(a),-158*Math.cos(a),7,0,6.2832);ctx.fill()}
+    ctx.beginPath();ctx.arc(0,0,9,0,6.2832);ctx.fill();
+    ctx.restore();
+    for(k=0;k<NODES;k++){a=(PHI0+k*STEP+th)*rad;cabin(hx+s*158*Math.sin(a),hy-s*158*Math.cos(a),s)}
+  }
+  function draw(p){
+    var up=eio(seg(p,.10,.34)),dn=eio(seg(p,.64,.86)),f=up*(1-dn);
+    var s=1+(S1-1)*f,hx=HX+(TX-HX)*f,hy=HY+(TY-HY)*f;
+    var g=seg(p,.12,.88);g=.7*g+.3*eio(g);var th=360*g;
+    var mix=seg(p,.07,.10)-seg(p,.87,.90);
+    wreal.style.opacity=(1-mix).toFixed(3);
+    if(mix>0.002){cv.style.opacity=mix.toFixed(3);wheel(hx,hy,s,th)}else{cv.style.opacity=0}
+    // title and tagline leave, then return
+    var out=eo(seg(p,.03,.14)),inn=eo(seg(p,.88,.97)),to=p<.5?1-out:inn,ty=p<.5?out*6:(1-inn)*6;
+    title.style.opacity=to.toFixed(3);title.style.transform='translate3d(0,'+ty.toFixed(2)+'%,0)';
+    tag.style.opacity=to.toFixed(3);tag.style.transform='translate3d(0,'+(-ty*.7).toFixed(2)+'%,0)';
+    sky.style.transform='scale('+(1+.045*f).toFixed(4)+')';
+    clouds.forEach(function(c){c.el.style.transform='translate3d('+(c.dx*f*K).toFixed(2)+'px,0,0)'});
+    var rad=Math.PI/180,vis=eo(seg(s,1.7,2.5));
+    CARDS.forEach(function(c){var ang=(PHI0+c.k*STEP+th)%360,d=Math.abs(((ang-BAND+540)%360)-180),o=vis*(1-seg(d,26,50));
+      var x=hx+s*158*Math.sin(ang*rad),y=hy-s*158*Math.cos(ang*rad);
+      c.el.style.opacity=o.toFixed(3);
+      c.el.style.transform='translate3d('+((x+16*s)*K).toFixed(1)+'px,'+((y+24*s)*K-c.h/2).toFixed(1)+'px,0)'});
+    cap.classList.toggle('on',p>.94);
+  }
+  var nav=$('nav'),nb=$('navbtn'),nw=$('navwheel');
+  nb.addEventListener('click',function(){var o=nav.classList.toggle('open');nb.setAttribute('aria-expanded',o)});
+  var links=[].slice.call(nav.querySelectorAll('a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  links.forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');nb.setAttribute('aria-expanded',false)})});
+  var tick=0;
+  function onscroll(){
+    if(tick)return;tick=requestAnimationFrame(function(){tick=0;
+      var y=scrollY,t=hero.offsetHeight-innerHeight;
+      if(!rm)draw(c01((y-hero.offsetTop)/t));
+      nav.classList.toggle('on',y>hero.offsetTop+hero.offsetHeight-innerHeight*1.05);
+      nw.style.transform='rotate('+(y*.12).toFixed(1)+'deg)';
+      var mid=y+innerHeight*.5,idx=-1;secs.forEach(function(s,i){if(s.offsetTop<=mid)idx=i});links.forEach(function(a,i){a.classList.toggle('cur',i===idx)});
+    });
+  }
+  layout();
+  if(rm){cv.style.display='none';CARDS.forEach(function(c){c.el.style.display='none'})}else draw(0);
+  addEventListener('scroll',onscroll,{passive:true});
+  addEventListener('resize',function(){layout();onscroll()});
+  document.fonts&&document.fonts.ready.then(function(){layout();if(!rm)onscroll()});
+  onscroll();
+})();
+</script>
+</body>
+</html>
